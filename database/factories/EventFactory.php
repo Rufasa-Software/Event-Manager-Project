@@ -14,7 +14,7 @@ class EventFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'role_name' => $this->faker->word(),
         ];
     }
 }
