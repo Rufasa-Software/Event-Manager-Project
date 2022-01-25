@@ -17,8 +17,8 @@ class CreateEventsTable extends Migration
             $table->id();
             $table->string('event_name');
             $table->date('event_date');
-            $table->url('event_img');
-            $table->number('event_capacity');
+            $table->string('event_img');
+            $table->integer('event_capacity');
             $table->timestamps();
         });
     }

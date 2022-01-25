@@ -14,7 +14,7 @@ class RolesFactory extends Factory
     public function definition()
     {
         return [
-            'role_name'=>$this->faker->word(),
+            'role_name'=>$this->faker->word("usuario"|"administrador"),
         ];
     }
 }
