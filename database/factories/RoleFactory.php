@@ -14,10 +14,7 @@ class RolesFactory extends Factory
     public function definition()
     {
         return [
-            'event_name' => $this->faker->word(),
-            'event_date' => $this->faker->date(),
-            'event_img' => $this->faker->imageUrl(200,200),
-            'event_capacity' => $this->faker->numberBetween(10,200),
+            'role_name' => $this->faker->word("usuario"|"administrador"),
         ];
     }
 }
