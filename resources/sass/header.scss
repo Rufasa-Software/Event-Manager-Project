@@ -9,9 +9,14 @@ header {
     #login, #register, #home {
         font-size: 18px;
 
-            
+   
         #link {
             color: #A911E6;
+        }
+
+        #link:hover {
+            transition-delay:0.1s;
+            color: #E7ABFF;
         }
     }
 
