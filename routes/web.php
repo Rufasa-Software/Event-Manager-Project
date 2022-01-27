@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\EventController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,3 +21,10 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+// Route::get('/admin-dashboard', [EventController::class, 'index'])->name('admin-dashboard');
+// App\Http\Controllers\EventController::validate()
+
+Route::get('/admin', function () {
+    return view('admin');
+});
