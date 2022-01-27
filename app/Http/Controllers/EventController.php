@@ -66,10 +66,10 @@ class EventController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id_event)
+    public function edit($id)
     {
-        $event = Event::find($id_event);
-        return view('events.edit')->with('event',$event);
+        $event= Event::find($id);
+        return view('events.edit')->with('event', $event);
     }
 
     /**

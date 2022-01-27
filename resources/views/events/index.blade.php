@@ -19,13 +19,13 @@
     <tbody>
       @foreach ($events as $event)
       <tr>
-          <td>{{$event->id_event}}</td>
+          <td>{{$event->id}}</td>
           <td>{{$event->event_name}}</td>
           <td>{{$event->event_date}}</td>
           <td>{{$event->event_image}}</td>
           <td>{{$event->event_capacity}}</td>
 
-            <a href="/events/{{$event->id_event}}/edit" class="btn btn-info">Editar</a>         
+            <a href="/events/{{$event->id}}/edit" class="btn btn-info">Editar</a>         
                 @csrf
             <button type="submit" class="btn btn-danger">Delete</button>
       </tr>
