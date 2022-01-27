@@ -1,6 +1,10 @@
+@extends('layouts.plantillabase')
+
+@section('contenido')
+
 <h2>CREAR EVENTOS</h2>
 
-<form action="/articulos" method="POST">
+<form action="/events" method="POST">
     @csrf
   <div class="mb-3">
     <label for="" class="form-label">Nombre</label>
@@ -23,6 +27,8 @@
     <input id="event_capacity" name="event_capacity" type="number" class="form-control" tabindex="3">
   </div>
 
-  <a href="/events" class="btn btn-secondary" tabindex="5">Cancelar</a>
+  <a href="/events" class="btn btn-secondary" tabindex="5">Cerrar</a>
   <button type="submit" class="btn btn-primary" tabindex="4">Guardar</button>
 </form>
+
+@endsection

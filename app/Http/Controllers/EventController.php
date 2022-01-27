@@ -15,7 +15,7 @@ class EventController extends Controller
     public function index()
     {
         $events = Event::All();
-        return view('event.index')->with('events',$events);
+        return view('events.index')->with('events',$events);
     }
 
     /**
@@ -25,7 +25,7 @@ class EventController extends Controller
      */
     public function create()
     {
-        return view('event.create');
+        return view('events.create');
     }
 
     /**
@@ -46,7 +46,7 @@ class EventController extends Controller
 
         $events->save();
 
-        return redirect('VISTA QUE ENVÍA AL GUARDAR');
+        return redirect('/events');
     }
 
     /**
@@ -55,7 +55,7 @@ class EventController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($id_event)
     {
         //
     }
@@ -66,9 +66,10 @@ class EventController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit($id_event)
     {
-        //
+        $event = Event::find($id_event);
+        return view('events.edit')->with('event',$event);
     }
 
     /**
@@ -78,7 +79,7 @@ class EventController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, $id_event)
     {
         //
     }
@@ -89,7 +90,7 @@ class EventController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy($id_event)
     {
         //
     }

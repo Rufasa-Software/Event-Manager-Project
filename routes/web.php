@@ -20,6 +20,6 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::resource('Events', 'App\Http\Controllers\EventController');
+Route::resource('events', 'App\Http\Controllers\EventController');
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
