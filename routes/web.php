@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,5 +19,7 @@ Route::get('/', function () {
 });
 
 // Auth::routes();
+
+Route::resource('events', 'App\Http\Controllers\EventController');
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
