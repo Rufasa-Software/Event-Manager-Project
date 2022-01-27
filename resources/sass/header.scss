@@ -1,27 +1,22 @@
-body  {
-    font-family: Rasa;
+header {
+    background-color: #1C1D2B;
 
-    header {
-        background-color: #1C1D2B;
+    #title {
+        font-size: 24px;
+        color: #71BE5D;
+    }
 
-        #title {
-            font-size: 24px;
-            color: #71BE5D;
-        }
-
-        #login, #register, #home {
-            font-size: 18px;
+    #login, #register, #home {
+        font-size: 18px;
 
             
-            #link {
-                color: #A911E6;
-            }
-        }
-
-        #bar {
-            height: 40px;
-            border: 1px solid #A911E6;
+        #link {
+            color: #A911E6;
         }
     }
-    
+
+    #bar {
+        height: 40px;
+        border: 1px solid #A911E6;
+    }
 }

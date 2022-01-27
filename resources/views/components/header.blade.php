@@ -9,11 +9,11 @@
         {{$slot}}
 
         {{-- Version de Login | Register for the front page--}}
-        {{-- <ul class="nav nav-pills">
+        <ul class="nav nav-pills">
             <li id="login" class="nav-item fs-2"><a href="/login" id="link" class="nav-link text-decoration-none mr-3" aria-current="page">Login</a></li>
             <span id="bar" class="mt-2"></span>
             <li id="register" class="nav-item fs-2 ml-1"><a href="/register" id="link" class="nav-link text-decoration-none mr-3">Register</a></li>
-        </ul> --}}
+        </ul>
 
         {{-- Version Home for the User page --}}
         {{-- <ul class="nav nav-pills">
