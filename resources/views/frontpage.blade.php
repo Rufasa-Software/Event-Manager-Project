@@ -5,25 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portada</title>
+    <link rel="stylesheet" href="../css/app.css">
 </head>
-
-<style>
-
-</style>
-
 <body>
-    <header>
-        <h1>Portada</h1>
-    </header>
-    <main>
-        
-    </main>
-    <footer>
-
-    </footer>
+    <x-header></x-header>
 </body>
-
-<script>
-
-</script>
 </html>
