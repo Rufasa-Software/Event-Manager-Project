@@ -8,22 +8,20 @@
     <link rel="stylesheet" href="../css/app.css">
 </head>
 <body>
-    <div class="d-grid gap-2 col-6 mx-auto">
-        {{-- <button class="btn btn-primary" type="button">Crear nuevo evento</button> --}}
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Crear nuevo evento</button>
-        <script>
-            $('.openBtn').on('click',function(){
-                $('.modal-body').load('modal.blade.php',function(){
-                    $('#myModal').modal({show:true});
-                });
-            });
-            </script>
-        
+    <div class="d-flex justify-content-center">
+        <div>
+                <button class="btnEvento" type="button"><a id="link_admin" href='/modal'>Crear nuevo evento</a></button>
+        </div>
+    </div>
+    <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="Check">
+            <label class="form-check-label" for="Check"></label>
+    </div>
 
-        <button class="btn btn-primary" type="button">Añadir a destacados</button>
-
-      </div>
-
-
-</body>
+    <div class="d-flex justify-content-end">
+        <div>
+                <button class="btnDestacados text-white" type="button">Añadir a destacados</button>
+        </div>
+    </div>    
+    </body>
 </html>

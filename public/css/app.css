@@ -11286,3 +11286,36 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.body {
+  border: 5px solid red;
+}
+
+.btnEvento {
+  margin-top: 50px;
+  background-color: #A911E6;
+  border-radius: 10px;
+  font-size: 18px;
+  width: 500px;
+  height: 50px;
+}
+
+#link_admin {
+  text-decoration: none;
+  color: white;
+}
+
+.btnDestacados {
+  background-color: #A911E6;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 18px;
+  text-align: right;
+  border-radius: 10px;
+  color: white;
+}
+
+.body {
+  width: 800px;
+  border: 3px solid red;
+}
