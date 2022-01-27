@@ -8,8 +8,10 @@
 @import '~bootstrap/scss/bootstrap';
 
 // Styles
-@import './header.scss';
-@import './footer.scss';
+@import 'header';
+@import 'footer';
+@import 'tabs';
+@import 'card';
 
 body  {
     height: 100%;

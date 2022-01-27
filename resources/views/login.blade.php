@@ -4,16 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Portada</title>
-    <link rel="stylesheet" href="../css/app.css">
+    <title>Document</title>
 </head>
 <body>
-    <x-header></x-header>
-    <x-footer/>
-   
-    <main>
-        <x-tabs-component />
-    </main>
-    <script src="../js/app.js"></script>
+    <h1>Hola Mundo!!!!</h1>
 </body>
 </html>
