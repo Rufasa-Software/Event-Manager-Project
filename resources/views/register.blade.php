@@ -9,7 +9,7 @@
 </head>
 <body>
     <x-header></x-header>
-    <h2 class="d-flex justify-content-center text-white">Esta página no ha sido habilitada!!</h2>
+    <h2 class="d-flex justify-content-center text-white">Esta página tampoco ha sido habilitada!!</h2>
     <x-footer/>
 </body>
 </html>

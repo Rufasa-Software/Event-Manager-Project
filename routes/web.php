@@ -18,6 +18,26 @@ Route::get('/', function () {
     return view('frontpage');
 });
 
+Route::get('/login', function () {
+    return view('login');
+});
+
+Route::get('/register', function () {
+    return view('register');
+});
+
+Route::get('/admin', function () {
+    return view('admin');
+});
+
+Route::get('/plantilla', function () {
+    return view('layouts.plantillabase');
+});
+
+Route::get('/events', function () {
+    return view('events.index');
+});
+
 // Auth::routes();
 
 Route::resource('events', 'App\Http\Controllers\EventController');
