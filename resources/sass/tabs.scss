@@ -1,0 +1,28 @@
+main {
+    margin-top: 5%;    
+
+section#tabs {
+    width: 90%;
+    margin: 0 auto;
+    .nav-tabs {
+        border-bottom: 1px solid $title-color;
+    }
+    
+    .nav-link.active {
+        color: $title-color;
+        font-weight: bold;
+        border-color: $title-color $title-color transparent $title-color;
+    }
+    .nav-link {
+        color: white;
+    }
+    
+    
+}
+}
+@media (min-width: $breakpoint-tablet) {
+        #tabs {
+            width: 70%;
+            
+        }
+}
