@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\EventController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,6 +29,10 @@ Route::get('/register', function () {
 
 Route::get('/admin', function () {
     return view('admin');
+});
+
+Route::get('/modal', function () {
+    return view('modal');
 });
 
 Route::get('/plantilla', function () {

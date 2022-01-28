@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url(https://fonts.googleapis.com/css2?family=Rasa:wght@600&family=Roboto&display=swap);
 @charset "UTF-8";
 
@@ -61,6 +62,70 @@
   --bs-body-bg: #14151F;
 }
 
+=======
+@import url(https://fonts.googleapis.com/css?family=Nunito);
+@charset "UTF-8";
+/*!
+ * Bootstrap v5.1.3 (https://getbootstrap.com/)
+ * Copyright 2011-2021 The Bootstrap Authors
+ * Copyright 2011-2021 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+:root {
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #198754;
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+  --bs-gray-100: #f8f9fa;
+  --bs-gray-200: #e9ecef;
+  --bs-gray-300: #dee2e6;
+  --bs-gray-400: #ced4da;
+  --bs-gray-500: #adb5bd;
+  --bs-gray-600: #6c757d;
+  --bs-gray-700: #495057;
+  --bs-gray-800: #343a40;
+  --bs-gray-900: #212529;
+  --bs-primary: #0d6efd;
+  --bs-secondary: #6c757d;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+  --bs-primary-rgb: 13, 110, 253;
+  --bs-secondary-rgb: 108, 117, 125;
+  --bs-success-rgb: 25, 135, 84;
+  --bs-info-rgb: 13, 202, 240;
+  --bs-warning-rgb: 255, 193, 7;
+  --bs-danger-rgb: 220, 53, 69;
+  --bs-light-rgb: 248, 249, 250;
+  --bs-dark-rgb: 33, 37, 41;
+  --bs-white-rgb: 255, 255, 255;
+  --bs-black-rgb: 0, 0, 0;
+  --bs-body-color-rgb: 33, 37, 41;
+  --bs-body-bg-rgb: 248, 250, 252;
+  --bs-font-sans-serif: "Nunito", sans-serif;
+  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+  --bs-body-font-family: var(--bs-font-sans-serif);
+  --bs-body-font-size: 0.9rem;
+  --bs-body-font-weight: 400;
+  --bs-body-line-height: 1.6;
+  --bs-body-color: #212529;
+  --bs-body-bg: #f8fafc;
+}
+
+>>>>>>> features/Alba-modalAdmin
 *,
 *::before,
 *::after {
@@ -106,47 +171,87 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 }
 
 h1, .h1 {
+<<<<<<< HEAD
   font-size: calc(1.375rem + 1.5vw);
 }
 @media (min-width: 1200px) {
   h1, .h1 {
     font-size: 2.5rem;
+=======
+  font-size: calc(1.35rem + 1.2vw);
+}
+@media (min-width: 1200px) {
+  h1, .h1 {
+    font-size: 2.25rem;
+>>>>>>> features/Alba-modalAdmin
   }
 }
 
 h2, .h2 {
+<<<<<<< HEAD
   font-size: calc(1.325rem + 0.9vw);
 }
 @media (min-width: 1200px) {
   h2, .h2 {
     font-size: 2rem;
+=======
+  font-size: calc(1.305rem + 0.66vw);
+}
+@media (min-width: 1200px) {
+  h2, .h2 {
+    font-size: 1.8rem;
+>>>>>>> features/Alba-modalAdmin
   }
 }
 
 h3, .h3 {
+<<<<<<< HEAD
   font-size: calc(1.3rem + 0.6vw);
 }
 @media (min-width: 1200px) {
   h3, .h3 {
     font-size: 1.75rem;
+=======
+  font-size: calc(1.2825rem + 0.39vw);
+}
+@media (min-width: 1200px) {
+  h3, .h3 {
+    font-size: 1.575rem;
+>>>>>>> features/Alba-modalAdmin
   }
 }
 
 h4, .h4 {
+<<<<<<< HEAD
   font-size: calc(1.275rem + 0.3vw);
 }
 @media (min-width: 1200px) {
   h4, .h4 {
     font-size: 1.5rem;
+=======
+  font-size: calc(1.26rem + 0.12vw);
+}
+@media (min-width: 1200px) {
+  h4, .h4 {
+    font-size: 1.35rem;
+>>>>>>> features/Alba-modalAdmin
   }
 }
 
 h5, .h5 {
+<<<<<<< HEAD
   font-size: 1.25rem;
 }
 
 h6, .h6 {
   font-size: 1rem;
+=======
+  font-size: 1.125rem;
+}
+
+h6, .h6 {
+  font-size: 0.9rem;
+>>>>>>> features/Alba-modalAdmin
 }
 
 p {
@@ -485,7 +590,11 @@ progress {
 }
 
 .lead {
+<<<<<<< HEAD
   font-size: 1.25rem;
+=======
+  font-size: 1.125rem;
+>>>>>>> features/Alba-modalAdmin
   font-weight: 300;
 }
 
@@ -579,7 +688,11 @@ progress {
 
 .blockquote {
   margin-bottom: 1rem;
+<<<<<<< HEAD
   font-size: 1.25rem;
+=======
+  font-size: 1.125rem;
+>>>>>>> features/Alba-modalAdmin
 }
 .blockquote > :last-child {
   margin-bottom: 0;
@@ -602,7 +715,11 @@ progress {
 
 .img-thumbnail {
   padding: 0.25rem;
+<<<<<<< HEAD
   background-color: #14151F;
+=======
+  background-color: #f8fafc;
+>>>>>>> features/Alba-modalAdmin
   border: 1px solid #dee2e6;
   border-radius: 0.25rem;
   max-width: 100%;
@@ -2161,19 +2278,31 @@ progress {
   padding-bottom: calc(0.375rem + 1px);
   margin-bottom: 0;
   font-size: inherit;
+<<<<<<< HEAD
   line-height: 1.5;
+=======
+  line-height: 1.6;
+>>>>>>> features/Alba-modalAdmin
 }
 
 .col-form-label-lg {
   padding-top: calc(0.5rem + 1px);
   padding-bottom: calc(0.5rem + 1px);
+<<<<<<< HEAD
   font-size: 1.25rem;
+=======
+  font-size: 1.125rem;
+>>>>>>> features/Alba-modalAdmin
 }
 
 .col-form-label-sm {
   padding-top: calc(0.25rem + 1px);
   padding-bottom: calc(0.25rem + 1px);
+<<<<<<< HEAD
   font-size: 0.875rem;
+=======
+  font-size: 0.7875rem;
+>>>>>>> features/Alba-modalAdmin
 }
 
 .form-text {
@@ -2186,11 +2315,19 @@ progress {
   display: block;
   width: 100%;
   padding: 0.375rem 0.75rem;
+<<<<<<< HEAD
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
   background-color: #14151F;
+=======
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #212529;
+  background-color: #f8fafc;
+>>>>>>> features/Alba-modalAdmin
   background-clip: padding-box;
   border: 1px solid #ced4da;
   -webkit-appearance: none;
@@ -2212,13 +2349,21 @@ progress {
 }
 .form-control:focus {
   color: #212529;
+<<<<<<< HEAD
   background-color: #14151F;
+=======
+  background-color: #f8fafc;
+>>>>>>> features/Alba-modalAdmin
   border-color: #86b7fe;
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
 }
 .form-control::-webkit-date-and-time-value {
+<<<<<<< HEAD
   height: 1.5em;
+=======
+  height: 1.6em;
+>>>>>>> features/Alba-modalAdmin
 }
 .form-control::-moz-placeholder {
   color: #6c757d;
@@ -2313,7 +2458,11 @@ progress {
   width: 100%;
   padding: 0.375rem 0;
   margin-bottom: 0;
+<<<<<<< HEAD
   line-height: 1.5;
+=======
+  line-height: 1.6;
+>>>>>>> features/Alba-modalAdmin
   color: #212529;
   background-color: transparent;
   border: solid transparent;
@@ -2325,9 +2474,15 @@ progress {
 }
 
 .form-control-sm {
+<<<<<<< HEAD
   min-height: calc(1.5em + 0.5rem + 2px);
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
+=======
+  min-height: calc(1.6em + 0.5rem + 2px);
+  padding: 0.25rem 0.5rem;
+  font-size: 0.7875rem;
+>>>>>>> features/Alba-modalAdmin
   border-radius: 0.2rem;
 }
 .form-control-sm::-webkit-file-upload-button {
@@ -2350,9 +2505,15 @@ progress {
 }
 
 .form-control-lg {
+<<<<<<< HEAD
   min-height: calc(1.5em + 1rem + 2px);
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
+=======
+  min-height: calc(1.6em + 1rem + 2px);
+  padding: 0.5rem 1rem;
+  font-size: 1.125rem;
+>>>>>>> features/Alba-modalAdmin
   border-radius: 0.3rem;
 }
 .form-control-lg::-webkit-file-upload-button {
@@ -2375,6 +2536,7 @@ progress {
 }
 
 textarea.form-control {
+<<<<<<< HEAD
   min-height: calc(1.5em + 0.75rem + 2px);
 }
 textarea.form-control-sm {
@@ -2382,6 +2544,15 @@ textarea.form-control-sm {
 }
 textarea.form-control-lg {
   min-height: calc(1.5em + 1rem + 2px);
+=======
+  min-height: calc(1.6em + 0.75rem + 2px);
+}
+textarea.form-control-sm {
+  min-height: calc(1.6em + 0.5rem + 2px);
+}
+textarea.form-control-lg {
+  min-height: calc(1.6em + 1rem + 2px);
+>>>>>>> features/Alba-modalAdmin
 }
 
 .form-control-color {
@@ -2393,11 +2564,19 @@ textarea.form-control-lg {
   cursor: pointer;
 }
 .form-control-color::-moz-color-swatch {
+<<<<<<< HEAD
   height: 1.5em;
   border-radius: 0.25rem;
 }
 .form-control-color::-webkit-color-swatch {
   height: 1.5em;
+=======
+  height: 1.6em;
+  border-radius: 0.25rem;
+}
+.form-control-color::-webkit-color-swatch {
+  height: 1.6em;
+>>>>>>> features/Alba-modalAdmin
   border-radius: 0.25rem;
 }
 
@@ -2406,11 +2585,19 @@ textarea.form-control-lg {
   width: 100%;
   padding: 0.375rem 2.25rem 0.375rem 0.75rem;
   -moz-padding-start: calc(0.75rem - 3px);
+<<<<<<< HEAD
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
   background-color: #14151F;
+=======
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #212529;
+  background-color: #f8fafc;
+>>>>>>> features/Alba-modalAdmin
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
   background-position: right 0.75rem center;
@@ -2448,7 +2635,11 @@ textarea.form-control-lg {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
   padding-left: 0.5rem;
+<<<<<<< HEAD
   font-size: 0.875rem;
+=======
+  font-size: 0.7875rem;
+>>>>>>> features/Alba-modalAdmin
   border-radius: 0.2rem;
 }
 
@@ -2456,13 +2647,21 @@ textarea.form-control-lg {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 1rem;
+<<<<<<< HEAD
   font-size: 1.25rem;
+=======
+  font-size: 1.125rem;
+>>>>>>> features/Alba-modalAdmin
   border-radius: 0.3rem;
 }
 
 .form-check {
   display: block;
+<<<<<<< HEAD
   min-height: 1.5rem;
+=======
+  min-height: 1.44rem;
+>>>>>>> features/Alba-modalAdmin
   padding-left: 1.5em;
   margin-bottom: 0.125rem;
 }
@@ -2474,9 +2673,15 @@ textarea.form-control-lg {
 .form-check-input {
   width: 1em;
   height: 1em;
+<<<<<<< HEAD
   margin-top: 0.25em;
   vertical-align: top;
   background-color: #14151F;
+=======
+  margin-top: 0.3em;
+  vertical-align: top;
+  background-color: #f8fafc;
+>>>>>>> features/Alba-modalAdmin
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -2578,10 +2783,17 @@ textarea.form-control-lg {
   outline: 0;
 }
 .form-range:focus::-webkit-slider-thumb {
+<<<<<<< HEAD
   box-shadow: 0 0 0 1px #14151F, 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
 }
 .form-range:focus::-moz-range-thumb {
   box-shadow: 0 0 0 1px #14151F, 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+=======
+  box-shadow: 0 0 0 1px #f8fafc, 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+.form-range:focus::-moz-range-thumb {
+  box-shadow: 0 0 0 1px #f8fafc, 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+>>>>>>> features/Alba-modalAdmin
 }
 .form-range::-moz-focus-outer {
   border: 0;
@@ -2760,9 +2972,15 @@ textarea.form-control-lg {
   display: flex;
   align-items: center;
   padding: 0.375rem 0.75rem;
+<<<<<<< HEAD
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
+=======
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.6;
+>>>>>>> features/Alba-modalAdmin
   color: #212529;
   text-align: center;
   white-space: nowrap;
@@ -2776,7 +2994,11 @@ textarea.form-control-lg {
 .input-group-lg > .input-group-text,
 .input-group-lg > .btn {
   padding: 0.5rem 1rem;
+<<<<<<< HEAD
   font-size: 1.25rem;
+=======
+  font-size: 1.125rem;
+>>>>>>> features/Alba-modalAdmin
   border-radius: 0.3rem;
 }
 
@@ -2785,7 +3007,11 @@ textarea.form-control-lg {
 .input-group-sm > .input-group-text,
 .input-group-sm > .btn {
   padding: 0.25rem 0.5rem;
+<<<<<<< HEAD
   font-size: 0.875rem;
+=======
+  font-size: 0.7875rem;
+>>>>>>> features/Alba-modalAdmin
   border-radius: 0.2rem;
 }
 
@@ -2826,7 +3052,11 @@ textarea.form-control-lg {
   max-width: 100%;
   padding: 0.25rem 0.5rem;
   margin-top: 0.1rem;
+<<<<<<< HEAD
   font-size: 0.875rem;
+=======
+  font-size: 0.7875rem;
+>>>>>>> features/Alba-modalAdmin
   color: #fff;
   background-color: rgba(25, 135, 84, 0.9);
   border-radius: 0.25rem;
@@ -2841,11 +3071,19 @@ textarea.form-control-lg {
 
 .was-validated .form-control:valid, .form-control.is-valid {
   border-color: #198754;
+<<<<<<< HEAD
   padding-right: calc(1.5em + 0.75rem);
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23198754' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
   background-position: right calc(0.375em + 0.1875rem) center;
   background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+=======
+  padding-right: calc(1.6em + 0.75rem);
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23198754' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right calc(0.4em + 0.1875rem) center;
+  background-size: calc(0.8em + 0.375rem) calc(0.8em + 0.375rem);
+>>>>>>> features/Alba-modalAdmin
 }
 .was-validated .form-control:valid:focus, .form-control.is-valid:focus {
   border-color: #198754;
@@ -2853,8 +3091,13 @@ textarea.form-control-lg {
 }
 
 .was-validated textarea.form-control:valid, textarea.form-control.is-valid {
+<<<<<<< HEAD
   padding-right: calc(1.5em + 0.75rem);
   background-position: top calc(0.375em + 0.1875rem) right calc(0.375em + 0.1875rem);
+=======
+  padding-right: calc(1.6em + 0.75rem);
+  background-position: top calc(0.4em + 0.1875rem) right calc(0.4em + 0.1875rem);
+>>>>>>> features/Alba-modalAdmin
 }
 
 .was-validated .form-select:valid, .form-select.is-valid {
@@ -2864,7 +3107,11 @@ textarea.form-control-lg {
   padding-right: 4.125rem;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e"), url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23198754' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
   background-position: right 0.75rem center, center right 2.25rem;
+<<<<<<< HEAD
   background-size: 16px 12px, calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+=======
+  background-size: 16px 12px, calc(0.8em + 0.375rem) calc(0.8em + 0.375rem);
+>>>>>>> features/Alba-modalAdmin
 }
 .was-validated .form-select:valid:focus, .form-select.is-valid:focus {
   border-color: #198754;
@@ -2915,7 +3162,11 @@ textarea.form-control-lg {
   max-width: 100%;
   padding: 0.25rem 0.5rem;
   margin-top: 0.1rem;
+<<<<<<< HEAD
   font-size: 0.875rem;
+=======
+  font-size: 0.7875rem;
+>>>>>>> features/Alba-modalAdmin
   color: #fff;
   background-color: rgba(220, 53, 69, 0.9);
   border-radius: 0.25rem;
@@ -2930,11 +3181,19 @@ textarea.form-control-lg {
 
 .was-validated .form-control:invalid, .form-control.is-invalid {
   border-color: #dc3545;
+<<<<<<< HEAD
   padding-right: calc(1.5em + 0.75rem);
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
   background-position: right calc(0.375em + 0.1875rem) center;
   background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+=======
+  padding-right: calc(1.6em + 0.75rem);
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right calc(0.4em + 0.1875rem) center;
+  background-size: calc(0.8em + 0.375rem) calc(0.8em + 0.375rem);
+>>>>>>> features/Alba-modalAdmin
 }
 .was-validated .form-control:invalid:focus, .form-control.is-invalid:focus {
   border-color: #dc3545;
@@ -2942,8 +3201,13 @@ textarea.form-control-lg {
 }
 
 .was-validated textarea.form-control:invalid, textarea.form-control.is-invalid {
+<<<<<<< HEAD
   padding-right: calc(1.5em + 0.75rem);
   background-position: top calc(0.375em + 0.1875rem) right calc(0.375em + 0.1875rem);
+=======
+  padding-right: calc(1.6em + 0.75rem);
+  background-position: top calc(0.4em + 0.1875rem) right calc(0.4em + 0.1875rem);
+>>>>>>> features/Alba-modalAdmin
 }
 
 .was-validated .form-select:invalid, .form-select.is-invalid {
@@ -2953,7 +3217,11 @@ textarea.form-control-lg {
   padding-right: 4.125rem;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e"), url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e");
   background-position: right 0.75rem center, center right 2.25rem;
+<<<<<<< HEAD
   background-size: 16px 12px, calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+=======
+  background-size: 16px 12px, calc(0.8em + 0.375rem) calc(0.8em + 0.375rem);
+>>>>>>> features/Alba-modalAdmin
 }
 .was-validated .form-select:invalid:focus, .form-select.is-invalid:focus {
   border-color: #dc3545;
@@ -2991,7 +3259,11 @@ textarea.form-control-lg {
 .btn {
   display: inline-block;
   font-weight: 400;
+<<<<<<< HEAD
   line-height: 1.5;
+=======
+  line-height: 1.6;
+>>>>>>> features/Alba-modalAdmin
   color: #212529;
   text-align: center;
   text-decoration: none;
@@ -3004,7 +3276,11 @@ textarea.form-control-lg {
   background-color: transparent;
   border: 1px solid transparent;
   padding: 0.375rem 0.75rem;
+<<<<<<< HEAD
   font-size: 1rem;
+=======
+  font-size: 0.9rem;
+>>>>>>> features/Alba-modalAdmin
   border-radius: 0.25rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
@@ -3479,13 +3755,21 @@ textarea.form-control-lg {
 
 .btn-lg, .btn-group-lg > .btn {
   padding: 0.5rem 1rem;
+<<<<<<< HEAD
   font-size: 1.25rem;
+=======
+  font-size: 1.125rem;
+>>>>>>> features/Alba-modalAdmin
   border-radius: 0.3rem;
 }
 
 .btn-sm, .btn-group-sm > .btn {
   padding: 0.25rem 0.5rem;
+<<<<<<< HEAD
   font-size: 0.875rem;
+=======
+  font-size: 0.7875rem;
+>>>>>>> features/Alba-modalAdmin
   border-radius: 0.2rem;
 }
 
@@ -3557,7 +3841,11 @@ textarea.form-control-lg {
   min-width: 10rem;
   padding: 0.5rem 0;
   margin: 0;
+<<<<<<< HEAD
   font-size: 1rem;
+=======
+  font-size: 0.9rem;
+>>>>>>> features/Alba-modalAdmin
   color: #212529;
   text-align: left;
   list-style: none;
@@ -3792,7 +4080,11 @@ textarea.form-control-lg {
   display: block;
   padding: 0.5rem 1rem;
   margin-bottom: 0;
+<<<<<<< HEAD
   font-size: 0.875rem;
+=======
+  font-size: 0.7875rem;
+>>>>>>> features/Alba-modalAdmin
   color: #6c757d;
   white-space: nowrap;
 }
@@ -3979,8 +4271,13 @@ textarea.form-control-lg {
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
   color: #495057;
+<<<<<<< HEAD
   background-color: #14151F;
   border-color: #dee2e6 #dee2e6 #14151F;
+=======
+  background-color: #f8fafc;
+  border-color: #dee2e6 #dee2e6 #f8fafc;
+>>>>>>> features/Alba-modalAdmin
 }
 .nav-tabs .dropdown-menu {
   margin-top: -1px;
@@ -4046,10 +4343,17 @@ textarea.form-control-lg {
   justify-content: space-between;
 }
 .navbar-brand {
+<<<<<<< HEAD
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
   margin-right: 1rem;
   font-size: 1.25rem;
+=======
+  padding-top: 0.32rem;
+  padding-bottom: 0.32rem;
+  margin-right: 1rem;
+  font-size: 1.125rem;
+>>>>>>> features/Alba-modalAdmin
   text-decoration: none;
   white-space: nowrap;
 }
@@ -4081,7 +4385,11 @@ textarea.form-control-lg {
 
 .navbar-toggler {
   padding: 0.25rem 0.75rem;
+<<<<<<< HEAD
   font-size: 1.25rem;
+=======
+  font-size: 1.125rem;
+>>>>>>> features/Alba-modalAdmin
   line-height: 1;
   background-color: transparent;
   border: 1px solid transparent;
@@ -4510,7 +4818,11 @@ textarea.form-control-lg {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
+<<<<<<< HEAD
   background-color: #1C1D2B;
+=======
+  background-color: #fff;
+>>>>>>> features/Alba-modalAdmin
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
@@ -4586,8 +4898,13 @@ textarea.form-control-lg {
   border-bottom: 0;
 }
 .card-header-tabs .nav-link.active {
+<<<<<<< HEAD
   background-color: #1C1D2B;
   border-bottom-color: #1C1D2B;
+=======
+  background-color: #fff;
+  border-bottom-color: #fff;
+>>>>>>> features/Alba-modalAdmin
 }
 
 .card-header-pills {
@@ -4671,10 +4988,17 @@ textarea.form-control-lg {
   align-items: center;
   width: 100%;
   padding: 1rem 1.25rem;
+<<<<<<< HEAD
   font-size: 1rem;
   color: #212529;
   text-align: left;
   background-color: #14151F;
+=======
+  font-size: 0.9rem;
+  color: #212529;
+  text-align: left;
+  background-color: #f8fafc;
+>>>>>>> features/Alba-modalAdmin
   border: 0;
   border-radius: 0;
   overflow-anchor: none;
@@ -4725,7 +5049,11 @@ textarea.form-control-lg {
 }
 
 .accordion-item {
+<<<<<<< HEAD
   background-color: #14151F;
+=======
+  background-color: #f8fafc;
+>>>>>>> features/Alba-modalAdmin
   border: 1px solid rgba(0, 0, 0, 0.125);
 }
 .accordion-item:first-of-type {
@@ -4860,7 +5188,11 @@ textarea.form-control-lg {
 
 .pagination-lg .page-link {
   padding: 0.75rem 1.5rem;
+<<<<<<< HEAD
   font-size: 1.25rem;
+=======
+  font-size: 1.125rem;
+>>>>>>> features/Alba-modalAdmin
 }
 .pagination-lg .page-item:first-child .page-link {
   border-top-left-radius: 0.3rem;
@@ -4873,7 +5205,11 @@ textarea.form-control-lg {
 
 .pagination-sm .page-link {
   padding: 0.25rem 0.5rem;
+<<<<<<< HEAD
   font-size: 0.875rem;
+=======
+  font-size: 0.7875rem;
+>>>>>>> features/Alba-modalAdmin
 }
 .pagination-sm .page-item:first-child .page-link {
   border-top-left-radius: 0.2rem;
@@ -5019,7 +5355,11 @@ textarea.form-control-lg {
   display: flex;
   height: 1rem;
   overflow: hidden;
+<<<<<<< HEAD
   font-size: 0.75rem;
+=======
+  font-size: 0.675rem;
+>>>>>>> features/Alba-modalAdmin
   background-color: #e9ecef;
   border-radius: 0.25rem;
 }
@@ -5573,7 +5913,11 @@ textarea.form-control-lg {
 
 .modal-title {
   margin-bottom: 0;
+<<<<<<< HEAD
   line-height: 1.5;
+=======
+  line-height: 1.6;
+>>>>>>> features/Alba-modalAdmin
 }
 
 .modal-body {
@@ -5765,7 +6109,11 @@ textarea.form-control-lg {
   font-family: var(--bs-font-sans-serif);
   font-style: normal;
   font-weight: 400;
+<<<<<<< HEAD
   line-height: 1.5;
+=======
+  line-height: 1.6;
+>>>>>>> features/Alba-modalAdmin
   text-align: left;
   text-align: start;
   text-decoration: none;
@@ -5776,7 +6124,11 @@ textarea.form-control-lg {
   word-spacing: normal;
   white-space: normal;
   line-break: auto;
+<<<<<<< HEAD
   font-size: 0.875rem;
+=======
+  font-size: 0.7875rem;
+>>>>>>> features/Alba-modalAdmin
   word-wrap: break-word;
   opacity: 0;
 }
@@ -5867,7 +6219,11 @@ textarea.form-control-lg {
   font-family: var(--bs-font-sans-serif);
   font-style: normal;
   font-weight: 400;
+<<<<<<< HEAD
   line-height: 1.5;
+=======
+  line-height: 1.6;
+>>>>>>> features/Alba-modalAdmin
   text-align: left;
   text-align: start;
   text-decoration: none;
@@ -5878,7 +6234,11 @@ textarea.form-control-lg {
   word-spacing: normal;
   white-space: normal;
   line-break: auto;
+<<<<<<< HEAD
   font-size: 0.875rem;
+=======
+  font-size: 0.7875rem;
+>>>>>>> features/Alba-modalAdmin
   word-wrap: break-word;
   background-color: #fff;
   background-clip: padding-box;
@@ -5972,7 +6332,11 @@ textarea.form-control-lg {
 .popover-header {
   padding: 0.5rem 1rem;
   margin-bottom: 0;
+<<<<<<< HEAD
   font-size: 1rem;
+=======
+  font-size: 0.9rem;
+>>>>>>> features/Alba-modalAdmin
   background-color: #f0f0f0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   border-top-left-radius: calc(0.3rem - 1px);
@@ -6316,7 +6680,11 @@ textarea.form-control-lg {
 
 .offcanvas-title {
   margin-bottom: 0;
+<<<<<<< HEAD
   line-height: 1.5;
+=======
+  line-height: 1.6;
+>>>>>>> features/Alba-modalAdmin
 }
 
 .offcanvas-body {
@@ -7597,6 +7965,7 @@ textarea.form-control-lg {
 }
 
 .fs-1 {
+<<<<<<< HEAD
   font-size: calc(1.375rem + 1.5vw) !important;
 }
 
@@ -7618,6 +7987,29 @@ textarea.form-control-lg {
 
 .fs-6 {
   font-size: 1rem !important;
+=======
+  font-size: calc(1.35rem + 1.2vw) !important;
+}
+
+.fs-2 {
+  font-size: calc(1.305rem + 0.66vw) !important;
+}
+
+.fs-3 {
+  font-size: calc(1.2825rem + 0.39vw) !important;
+}
+
+.fs-4 {
+  font-size: calc(1.26rem + 0.12vw) !important;
+}
+
+.fs-5 {
+  font-size: 1.125rem !important;
+}
+
+.fs-6 {
+  font-size: 0.9rem !important;
+>>>>>>> features/Alba-modalAdmin
 }
 
 .fst-italic {
@@ -7657,7 +8049,11 @@ textarea.form-control-lg {
 }
 
 .lh-base {
+<<<<<<< HEAD
   line-height: 1.5 !important;
+=======
+  line-height: 1.6 !important;
+>>>>>>> features/Alba-modalAdmin
 }
 
 .lh-lg {
@@ -11231,6 +11627,7 @@ textarea.form-control-lg {
 }
 @media (min-width: 1200px) {
   .fs-1 {
+<<<<<<< HEAD
     font-size: 2.5rem !important;
   }
 
@@ -11244,6 +11641,21 @@ textarea.form-control-lg {
 
   .fs-4 {
     font-size: 1.5rem !important;
+=======
+    font-size: 2.25rem !important;
+  }
+
+  .fs-2 {
+    font-size: 1.8rem !important;
+  }
+
+  .fs-3 {
+    font-size: 1.575rem !important;
+  }
+
+  .fs-4 {
+    font-size: 1.35rem !important;
+>>>>>>> features/Alba-modalAdmin
   }
 }
 @media print {
@@ -11287,6 +11699,7 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+<<<<<<< HEAD
 header {
   background-color: #1C1D2B;
 }
@@ -11357,4 +11770,38 @@ main #tabs .nav-link {
 body {
   height: 100%;
   font-family: Rasa;
+=======
+.body {
+  border: 5px solid red;
+}
+
+.btnEvento {
+  margin-top: 50px;
+  background-color: #A911E6;
+  border-radius: 10px;
+  font-size: 18px;
+  width: 500px;
+  height: 50px;
+}
+
+#link_admin {
+  text-decoration: none;
+  color: white;
+}
+
+.btnDestacados {
+  background-color: #A911E6;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 18px;
+  text-align: right;
+  border-radius: 10px;
+  color: white;
+}
+
+.body {
+  width: 800px;
+  border: 3px solid red;
+>>>>>>> features/Alba-modalAdmin
 }
