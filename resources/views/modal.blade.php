@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="../css/app.css">
 </head>
 <body>
-    <x-modal />    
+    <x-header></x-header>
+    <x-modal />  
+    <x-footer/>
 </body>
 </html>

@@ -1,4 +1,4 @@
-<div>
+<div class="formulario">
   <div class="mb-3">
     <input type="text" class="form-control" id="event_name" placeholder="Nombre del evento">
   </div>
@@ -17,7 +17,7 @@
   </div>
 
   <div class="mb-3">
-    <input id="event_capacity" name=event_capacity" type="text" class="form-control"  placeholder="Capacidad del Evento"tabindex="4">
+    <input id="event_capacity" name=event_capacity" type="number" class="form-control"  placeholder="Capacidad del Evento"tabindex="4">
   </div>
 
   <div class="modal-footer">

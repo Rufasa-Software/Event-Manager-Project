@@ -11381,4 +11381,15 @@ body {
   text-align: right;
   border-radius: 10px;
   color: white;
+  margin-top: 20px;
+}
+
+.icons_group {
+  color: white;
+}
+
+.formulario {
+  margin-top: 50px;
+  margin-left: 200px;
+  margin-right: 200px;
 }
