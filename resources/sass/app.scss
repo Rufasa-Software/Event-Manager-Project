@@ -1,8 +1,19 @@
-// Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+// Font
+@import url('https://fonts.googleapis.com/css2?family=Rasa:wght@600&family=Roboto&display=swap');
 
 // Variables
 @import 'variables';
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+// Styles
+@import 'header';
+@import 'footer';
+@import 'tabs';
+@import 'card';
+
+body  {
+    height: 100%;
+    font-family: Rasa;
+}

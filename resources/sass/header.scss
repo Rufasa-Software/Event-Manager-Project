@@ -1,0 +1,39 @@
+header {
+    background-color: $card-bg;
+
+    #title {
+        font-size: 36px;
+        color: $green-title;
+    }
+
+    #link {
+        font-size: 24px;
+        color: $title-color;
+    }
+
+    #link:hover {
+        transition-delay:0.1s;
+        color: #E7ABFF;
+    }
+
+    #bar {
+        align-self: center;
+        height: 40px;
+        border: 1px solid $title-color;
+    }
+
+    @media (max-width: 800px) {
+        #title {
+            font-size: 24px;
+        }
+
+        #link {
+            font-size: 18px;
+        }
+
+        #bar {
+            align-self: center;
+            height: 20px;
+        }
+    }
+}

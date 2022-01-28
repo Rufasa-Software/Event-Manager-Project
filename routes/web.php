@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,9 +15,31 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('frontpage');
 });
 
-Auth::routes();
+Route::get('/login', function () {
+    return view('login');
+});
+
+Route::get('/register', function () {
+    return view('register');
+});
+
+Route::get('/admin', function () {
+    return view('admin');
+});
+
+Route::get('/plantilla', function () {
+    return view('layouts.plantillabase');
+});
+
+Route::get('/events', function () {
+    return view('events.index');
+});
+
+// Auth::routes();
+
+Route::resource('events', 'App\Http\Controllers\EventController');
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
