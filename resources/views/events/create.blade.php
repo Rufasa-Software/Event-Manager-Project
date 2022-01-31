@@ -20,7 +20,7 @@
   </div>
   <div class="mb-3">
     <label for="" class="form-label">Imagen</label>
-    <input id="event_img" name="event_img" type="url" class="form-control" tabindex="3">
+    <input id="event_image" name="event_image" type="text" class="form-control" tabindex="3">
   </div>
   <div class="mb-3">
     <label for="" class="form-label">Capacidad</label>
