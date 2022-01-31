@@ -24,10 +24,12 @@
           <td>{{$event->event_date}}</td>
           <td>{{$event->event_image}}</td>
           <td>{{$event->event_capacity}}</td>
-
+          <form action="{{ route ('events.destroy', $event->id)}}" method="POST">
             <a href="/events/{{$event->id}}/edit" class="btn btn-info">Editar</a>         
-                @csrf
+              @csrf
+              @method('DELETE')
             <button type="submit" class="btn btn-danger">Delete</button>
+          </form>
       </tr>
       @endforeach
     </tbody>

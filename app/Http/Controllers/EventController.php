@@ -48,7 +48,7 @@ class EventController extends Controller
 
         return redirect('/events');
     }
-    
+
     /**
      * Show the form for editing the specified resource.
      *
@@ -68,9 +68,19 @@ class EventController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id_event)
+    public function update(Request $request, $id)
     {
-        //
+        $event = Event::find($id);
+
+        $event->event_name = $request->get('event_name');
+        $event->event_date = $request->get('event_date');
+        $event->event_description = $request->get('event_description');
+        $event->event_image = $request->get('event_img');
+        $event->event_capacity = $request->get('event_capacity');
+
+        $event->save();
+
+        return redirect('/events');
     }
 
     /**
@@ -79,8 +89,10 @@ class EventController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id_event)
+    public function destroy($id)
     {
-        //
+        $event = Event::find($id);
+        $event->delete();
+        return redirect('/events');
     }
 }
