@@ -15,7 +15,7 @@
 
     <div class="mb-3">
       <label for="formFile" class="form-label"></label>
-      <input id="event_img" name="event_img" class="form-control" type="file" tabindex="4">
+      <input id="event_image" name="event_image" class="form-control" type="file" tabindex="4">
     </div>
 
     <div class="mb-3">

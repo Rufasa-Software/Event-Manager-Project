@@ -41,7 +41,7 @@ class EventController extends Controller
         $events->event_name = $request->get('event_name');
         $events->event_date = $request->get('event_date');
         $events->event_description = $request->get('event_description');
-        $events->event_image = $request->get('event_img');
+        $events->event_image = $request->get('event_image');
         $events->event_capacity = $request->get('event_capacity');
 
         $events->save();

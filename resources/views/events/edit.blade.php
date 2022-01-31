@@ -3,7 +3,7 @@
 @section('contenido')
 <h2>EDITAR EVENTOS</h2>
 
-<form action="/events/{{$event->id}}" method="POST">
+<form action="/admin/{{$event->id}}/edit" method="POST">
   
     @csrf    
     @method('PUT')
@@ -22,7 +22,7 @@
     </div>
     <div class="mb-3">
       <label for="" class="form-label">Imagen</label>
-      <input id="event_img" name="event_img" type="url" class="form-control" value="{{$event->event_img}}"/>
+      <input id="event_image" name="event_image" type="url" class="form-control" value="{{$event->event_image}}"/>
     </div>
     <div class="mb-3">
       <label for="" class="form-label">Capacidad</label>

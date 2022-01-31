@@ -11,7 +11,7 @@
 <body>
     <div class="d-flex justify-content-center">
         <div>
-                <button class="btnEvento" type="button"><a id="link_admin" href="events/create">Crear nuevo evento</a></button>
+                <button class="btnEvento" type="button"><a id="link_admin" href="admin/create">Crear nuevo evento</a></button>
         </div>
     </div>
     <div class="mb-3 form-check color-white">
@@ -34,14 +34,14 @@
         <tbody>
          @foreach ($events as $event)
             <tr>
-                <td>{{$event->id_event}}</td>
+                <td>{{$event->id}}</td>
                 <td>{{$event->event_name}}</td>
                 <td>{{$event->event_date}}</td>
                 <td>{{$event->event_image}}</td>
                 <td>{{$event->event_capacity}}</td>
                 <td>
-                    <div class="icons_group">   
-                        <a href="/events/{{$event->id_event}}/edit" class="far fa-edit"></a>      
+                    <div class="icons_group">
+                        <a href="/admin/{{$event->id}}/edit" class="far fa-edit"></a>      
                         @csrf
                         <button type="submit" class="far fa-trash-alt"></button>
                     </div>
