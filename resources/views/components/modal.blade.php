@@ -1,4 +1,4 @@
-<form action="/events" method="POST">
+<form action="/" method="POST">
   @csrf
   <div class="formulario">
     <div class="mb-3">
@@ -24,7 +24,7 @@
 
     <div class="modal-footer">
       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><a id="link_admin" href="/admin">Cerrar</a></button>
-      <button type="button" class="btn btn-primary"><a id="link_admin" href="/admin">Guardar</a></button>
+      <button type="submit" class="btn btn-primary"><a id="link_admin" href="/admin">Guardar</a></button>
     </div>
   </div>
 </form>

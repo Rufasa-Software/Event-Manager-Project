@@ -11,7 +11,7 @@
 <body>
     <div class="d-flex justify-content-center">
         <div>
-                <button class="btnEvento" type="button"><a id="link_admin" href="admin/create">Crear nuevo evento</a></button>
+            <button class="btnEvento" type="button"><a id="link_admin" href="admin/create">Crear nuevo evento</a></button>
         </div>
     </div>
     <div class="mb-3 form-check color-white">
@@ -22,7 +22,7 @@
     <table class="table table-dark table-striped mt-4">
         <thead>
           <tr>
-            <th scope="col">id_event</th>
+            <th scope="col">id</th>
             <th scope="col">event_name</th>
             <th scope="col">event_date</th>
             <th scope="col">event_image</th>

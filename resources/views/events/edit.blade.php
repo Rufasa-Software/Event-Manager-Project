@@ -1,6 +1,3 @@
-@extends('layouts.plantillabase')
-
-@section('contenido')
 <h2>EDITAR EVENTOS</h2>
 
 <form action="/admin/{{$event->id}}/edit" method="POST">
@@ -32,5 +29,3 @@
   <a href="/events" class="btn btn-secondary">Cancelar</a>
   <button type="submit" class="btn btn-primary">Guardar</button>
 </form>
-
-@endsection

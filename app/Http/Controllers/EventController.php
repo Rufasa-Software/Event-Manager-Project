@@ -46,7 +46,7 @@ class EventController extends Controller
 
         $events->save();
 
-        return redirect('/events');
+        return redirect('/admin');
     }
 
     /**
