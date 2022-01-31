@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EventController;
+use App\Models\Event;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,27 +17,24 @@ use App\Http\Controllers\EventController;
 */
 
 Route::get('/', function () {
-    return view('frontpage');
+    return view('events.index');
 });
 
 Route::get('/login', function () {
-    return view('login');
+    return view('events.login');
 });
 
 Route::get('/register', function () {
-    return view('register');
+    return view('events.register');
 });
 
-Route::get('/events/admin', function () {
-    return view('events.admin');
+Route::get('/admin', function () {
+    $events = Event::All();
+    return view('events.admin')->with('events',$events);
 });
 
-Route::get('events/admin/create', function () {
+Route::get('/admin/create', function () {
     return view('events.create');
-});
-
-Route::get('/events', function () {
-    return view('events.index');
 });
 
 // Auth::routes();
