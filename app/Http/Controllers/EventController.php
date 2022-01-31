@@ -48,18 +48,7 @@ class EventController extends Controller
 
         return redirect('/events');
     }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id_event)
-    {
-        //
-    }
-
+    
     /**
      * Show the form for editing the specified resource.
      *
