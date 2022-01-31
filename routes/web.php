@@ -27,16 +27,12 @@ Route::get('/register', function () {
     return view('register');
 });
 
-Route::get('/admin', function () {
-    return view('admin');
+Route::get('/events/admin', function () {
+    return view('events.admin');
 });
 
-Route::get('/modal', function () {
-    return view('modal');
-});
-
-Route::get('/plantilla', function () {
-    return view('layouts.plantillabase');
+Route::get('events/admin/create', function () {
+    return view('events.create');
 });
 
 Route::get('/events', function () {

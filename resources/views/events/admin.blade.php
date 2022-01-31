@@ -11,7 +11,7 @@
 <body>
     <div class="d-flex justify-content-center">
         <div>
-                <button class="btnEvento" type="button"><a id="link_admin" href='/modal'>Crear nuevo evento</a></button>
+                <button class="btnEvento" type="button"><a id="link_admin" href='admin/create'>Crear nuevo evento</a></button>
         </div>
     </div>
     <div class="mb-3 form-check color-white">
