@@ -16,15 +16,15 @@ use App\Http\Controllers\EventController;
 */
 
 Route::get('/', function () {
-    return view('frontpage');
+    return view('events.index');
 });
 
 Route::get('/login', function () {
-    return view('login');
+    return view('events.login');
 });
 
 Route::get('/register', function () {
-    return view('register');
+    return view('events.register');
 });
 
 Route::get('/admin', function () {
@@ -35,13 +35,9 @@ Route::get('/modal', function () {
     return view('modal');
 });
 
-Route::get('/plantilla', function () {
-    return view('layouts.plantillabase');
-});
 
-Route::get('/events', function () {
-    return view('events.index');
-});
+
+
 
 // Auth::routes();
 

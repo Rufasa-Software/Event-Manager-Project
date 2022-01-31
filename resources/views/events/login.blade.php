@@ -10,6 +10,7 @@
 <body>
     <x-header></x-header>
     <h2 class="d-flex justify-content-center text-white">Esta página no ha sido habilitada!!</h2>
+    @yield('content')
     <x-footer/>
 </body>
 </html>
