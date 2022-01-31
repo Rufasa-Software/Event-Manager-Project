@@ -35,10 +35,6 @@ Route::get('/modal', function () {
     return view('modal');
 });
 
-Route::get('/plantilla', function () {
-    return view('layouts.plantillabase');
-});
-
 Route::get('/events', function () {
     return view('events.index');
 });
