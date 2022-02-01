@@ -24,6 +24,7 @@
             <th scope="col">id</th>
             <th scope="col">event_name</th>
             <th scope="col">event_date</th>
+            <th scope="col">event_description</th>
             <th scope="col">event_image</th>
             <th scope="col">event_capacity</th>
             <th scope="col"></th>
@@ -36,6 +37,7 @@
                 <td>{{$event->id}}</td>
                 <td>{{$event->event_name}}</td>
                 <td>{{$event->event_date}}</td>
+                <td>{{$event->event_description}}</td>
                 <td>{{$event->event_image}}</td>
                 <td>{{$event->event_capacity}}</td>
                 <td>

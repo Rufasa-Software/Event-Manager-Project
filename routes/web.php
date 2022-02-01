@@ -20,28 +20,27 @@ Route::get('/', function () {
     return view('events.index');
 });
 
-Route::get('/login', function () {
-    return view('events.login');
+Route::get('/admin/create', function () {
+    return view('events.create');
 });
 
-Route::get('/register', function () {
-    return view('events.register');
-});
+Route::post('/admin/create','EventController@store');
 
 Route::get('/admin', function () {
     $events = Event::All();
     return view('events.admin')->with('events',$events);
 });
 
-Route::get('/admin/create', function () {
-    return view('events.create');
-});
-
 Auth::routes();  
 
 // Route::get('/',[, 'index']);
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::resource('events', 'App\Http\Controllers\EventController')->middleware('auth');
+
+Route::resource('events','App\Http\Controllers\EventController');
+
+Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+    return view('dashboard');
+})->name('dashboard');
 
 // landingpage - No auth - create controller
 // access to dashboard - auth
