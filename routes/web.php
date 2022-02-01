@@ -35,9 +35,9 @@ Route::get('/modal', function () {
     return view('modal');
 });
 
-
-
-
+Route::get('/events', function () {
+    return view('events.index');
+});
 
 // Auth::routes();
 

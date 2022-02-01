@@ -41,23 +41,12 @@ class EventController extends Controller
         $events->event_name = $request->get('event_name');
         $events->event_date = $request->get('event_date');
         $events->event_description = $request->get('event_description');
-        $events->event_image = $request->get('event_img');
+        $events->event_image = $request->get('event_image');
         $events->event_capacity = $request->get('event_capacity');
 
         $events->save();
 
         return redirect('/events');
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id_event)
-    {
-        //
     }
 
     /**
@@ -79,9 +68,19 @@ class EventController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id_event)
+    public function update(Request $request, $id)
     {
-        //
+        $event = Event::find($id);
+
+        $event->event_name = $request->get('event_name');
+        $event->event_date = $request->get('event_date');
+        $event->event_description = $request->get('event_description');
+        $event->event_image = $request->get('event_image');
+        $event->event_capacity = $request->get('event_capacity');
+
+        $event->save();
+
+        return redirect('/events');
     }
 
     /**
@@ -90,8 +89,10 @@ class EventController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id_event)
+    public function destroy($id)
     {
-        //
+        $event = Event::find($id);
+        $event->delete();
+        return redirect('/events');
     }
 }
