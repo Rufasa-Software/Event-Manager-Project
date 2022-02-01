@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EventController;
+use App\Models\Event;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,19 +29,31 @@ Route::get('/register', function () {
 });
 
 Route::get('/admin', function () {
-    return view('admin');
+    $events = Event::All();
+    return view('events.admin')->with('events',$events);
 });
 
-Route::get('/modal', function () {
-    return view('modal');
+Route::get('/admin/create', function () {
+    return view('events.create');
 });
 
-Route::get('/events', function () {
-    return view('events.index');
-});
+Auth::routes();  
 
-// Auth::routes();
-
-Route::resource('events', 'App\Http\Controllers\EventController');
-
+// Route::get('/',[, 'index']);
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::resource('events', 'App\Http\Controllers\EventController')->middleware('auth');
+
+// landingpage - No auth - create controller
+// access to dashboard - auth
+
+// Normal User - auth
+//list my events
+// unsuscribe
+
+//Admin User - auth
+// list events
+// store
+// delete
+// edit
+// create 
+// update,
