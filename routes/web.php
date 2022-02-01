@@ -15,32 +15,36 @@ use App\Http\Controllers\EventController;
 |
 */
 
+// Route::get('/login', function () {
+//     return view('login');
+// });
+
+// Route::get('/register', function () {
+//     return view('register');
+// });
+
+// Route::get('/admin', function () {
+//     return view('admin');
+// });
+
+// Route::get('/modal', function () {
+//     return view('modal');
+// });
+
+// Route::get('/events', function () {
+//     return view('events.index');
+// });
+
 Route::get('/', function () {
-    return view('frontpage');
+    return view('index');
 });
-
-Route::get('/login', function () {
-    return view('login');
-});
-
-Route::get('/register', function () {
-    return view('register');
-});
-
-Route::get('/admin', function () {
-    return view('admin');
-});
-
-Route::get('/modal', function () {
-    return view('modal');
-});
-
-Route::get('/events', function () {
-    return view('events.index');
-});
-
-// Auth::routes();
 
 Route::resource('events', 'App\Http\Controllers\EventController');
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::resource('roles', 'App\Http\Controllers\RoleController');
+
+Route::resource('users', 'App\Http\Controllers\UserController');
+
+Auth::routes();
+
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
