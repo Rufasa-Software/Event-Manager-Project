@@ -37,8 +37,8 @@ Route::get('/admin/create', function () {
     return view('events.create');
 });
 
-// Auth::routes();
+Auth::routes();  
 
-Route::resource('events', 'App\Http\Controllers\EventController');
+Route::resource('events', [App\Http\Controllers\EventController::class]);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
