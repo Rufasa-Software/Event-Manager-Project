@@ -1,4 +1,4 @@
-<form action="/" method="POST">
+<form action="/admin" method="POST">
   @csrf
   <div class="formulario">
     <div class="mb-3">
