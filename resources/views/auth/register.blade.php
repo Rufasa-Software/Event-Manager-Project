@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('events.register')
 
 @section('content')
 <div class="container">

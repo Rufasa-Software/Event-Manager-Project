@@ -8,8 +8,11 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
-    <x-header></x-header>
-    <h2 class="d-flex justify-content-center text-white">Esta página no ha sido habilitada!!</h2>
+    <x-header>
+        <ul class="nav nav-pills">
+            <li id="register" class="nav-item fs-2"><a href="/register" id="link" class="nav-link text-decoration-none mr-3" aria-current="page">Register</a></li>
+        </ul>
+    </x-header>
     @yield('content')
     <x-footer/>
 </body>
