@@ -17,7 +17,8 @@ use App\Models\Event;
 */
 
 Route::get('/', function () {
-    return view('events.index');
+    $events = Event::All();
+    return view('events.index')->with('events',$events);
 });
 
 Route::get('/login', function () {
