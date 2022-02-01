@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tech Event Manager</title>
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    
+     
 </head>
 <body>
 <div id="app">
