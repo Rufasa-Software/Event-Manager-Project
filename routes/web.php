@@ -39,6 +39,21 @@ Route::get('/admin/create', function () {
 
 Auth::routes();  
 
-Route::resource('events', [App\Http\Controllers\EventController::class]);
-
+// Route::get('/',[, 'index']);
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::resource('events', 'App\Http\Controllers\EventController')->middleware('auth');
+
+// landingpage - No auth - create controller
+// access to dashboard - auth
+
+// Normal User - auth
+//list my events
+// unsuscribe
+
+//Admin User - auth
+// list events
+// store
+// delete
+// edit
+// create 
+// update,
