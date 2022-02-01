@@ -13,7 +13,7 @@ class Event extends Model
         'event_name',
         'event_date',
         'event_description',
-        'event_img',
+        'event_image',
         'event_capacity',
     ];
 }
