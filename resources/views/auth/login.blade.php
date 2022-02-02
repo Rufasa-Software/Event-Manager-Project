@@ -1,7 +1,6 @@
 @extends('events.login')
 
 @section('content')
-<div></div>
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -60,7 +59,7 @@
 
                                 @if (Route::has('password.request'))
                                     <a class="btn btn-link" href="{{ route('password.request') }}">
-                                        {{ __('¿Olvidaste la contraseña?') }}
+                                        {{ __('¿Olvidaste tu contraseña?') }}
                                     </a>
                                 @endif
                             </div>

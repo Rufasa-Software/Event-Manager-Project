@@ -16020,6 +16020,13 @@ main #tabs .nav-link {
     font-size: regular;
   }
 }
+main {
+  margin-top: 3%;
+}
+main .card {
+  border: 1px solid red;
+}
+
 body {
   height: 100%;
   font-family: Rasa;
