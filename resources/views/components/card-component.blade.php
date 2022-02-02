@@ -1,5 +1,4 @@
 
-<div>
   <div class="card mb-3 card-event">
       <div class="row g-0">
         <div class="col-md-4">
@@ -32,4 +31,3 @@
         </div>
       </div>
   </div>
-</div>

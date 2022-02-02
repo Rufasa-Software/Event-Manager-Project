@@ -15964,6 +15964,7 @@ main #tabs .nav-link {
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
+  flex-basis: 40%;
   justify-content: space-between;
 }
 
@@ -15972,6 +15973,7 @@ main #tabs .nav-link {
   color: white;
   border-radius: 15px;
   margin: 3%;
+  border: 1px solid red;
 }
 .card .col-md-4 {
   width: 30%;
@@ -16018,11 +16020,13 @@ main #tabs .nav-link {
     margin-top: 4%;
     font-style: italic;
     font-size: regular;
+    border: 1px solid blue;
   }
 }
 body {
   height: 100%;
   font-family: Rasa;
+  box-sizing: border-box;
 }
 
 .btnEvento {
