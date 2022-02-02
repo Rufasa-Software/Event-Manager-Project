@@ -35,6 +35,8 @@ Route::put('/admin/edit/{id}',  [EventController::class, 'update']);
 
 Route::get('/admin/delete/{id}', [EventController::class, 'destroy']);
 
+Route::resource('events', 'App\Http\Controllers\EventController');
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
