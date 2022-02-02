@@ -1,4 +1,4 @@
-@extends('events.login')
+@extends('login')
 
 @section('content')
 <div class="container">

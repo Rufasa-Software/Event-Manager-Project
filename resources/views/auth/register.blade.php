@@ -1,4 +1,4 @@
-@extends('events.register')
+@extends('register')
 
 @section('content')
 <div class="container">
