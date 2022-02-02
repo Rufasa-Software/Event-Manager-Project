@@ -1,6 +1,6 @@
 <h2>EDITAR EVENTOS</h2>
 
-<form action="/admin/{{$event->id}}/edit" method="POST">
+<form action="/admin/edit/{{$event->id}}" method="POST">
   
     @csrf    
     @method('PUT')

@@ -16,24 +16,21 @@ use App\Models\Event;
 |
 */
 
-Route::get('/', function () {
-    return view('events.index');
-});
 
-Route::get('/admin/create', function () {
-    return view('events.create');
-});
+Route::get('/', [App\Http\Controllers\IndexController::class, 'index'])->name('index');
 
-Route::post('/admin/create','EventController@store');
+Route::get('/admin/create',  [EventController::class, 'create']);
 
-Route::get('/admin', function () {
-    $events = Event::All();
-    return view('events.admin')->with('events',$events);
-});
+Route::post('/admin/create',  [EventController::class, 'store']);
 
-Auth::routes();  
+Route::get('/admin/edit/{id}', [EventController::class, 'edit']);
 
-// Route::get('/',[, 'index']);
+Route::put('/admin/edit/{id}',  [EventController::class, 'update']);
+
+Route::get('/admin', [EventController::class, 'index']);
+
+Auth::routes();
+
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::resource('events','App\Http\Controllers\EventController');

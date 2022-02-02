@@ -42,7 +42,7 @@
                 <td>{{$event->event_capacity}}</td>
                 <td>
                     <div class="icons_group">
-                        <a href="/admin/{{$event->id}}/edit" class="far fa-edit"></a>      
+                        <a href="/admin/edit/{{$event->id}}" class="far fa-edit"></a>      
                         @csrf
                         <button type="submit" class="far fa-trash-alt"></button>
                     </div>

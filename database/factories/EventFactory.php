@@ -17,7 +17,7 @@ class EventFactory extends Factory
             'event_name' => $this->faker->word(),
             'event_date' => $this->faker->date(),
             'event_description' => $this->faker->text(255),
-            'event_img' => $this->faker->imageUrl(200,200),
+            'event_image' => $this->faker->imageUrl(200,200),
             'event_capacity' => $this->faker->numberBetween(10,200),
         ];
     }

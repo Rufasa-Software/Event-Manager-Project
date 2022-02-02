@@ -1,4 +1,4 @@
-<!-- <form action="/" method="POST">
+<form action="/events" method="POST">
   @csrf
   <div class="formulario">
     <div class="mb-3">
@@ -6,11 +6,11 @@
     </div>
 
     <div class="mb-3">
-    <input class="form-control" id="event_date" name="event_date" type="date" placeholder="Fecha del evento">
+      <input class="form-control" id="event_date" name="event_date" type="date" placeholder="Fecha del evento">
     </div>
 
     <div class="mb-3">
-      <textarea class="form-control" id="event_desciption" name="event_desciption" placeholder= "Descripción del Evento"rows="3" tabindex="3"></textarea>
+      <input class="form-control" id="event_description" name="event_description" type="text" placeholder= "Descripción" tabindex="3">
     </div>
 
     <div class="mb-3">
@@ -18,17 +18,17 @@
     </div>
 
     <div class="mb-3">
-      <input class="form-control" id="event_capacity" name="event_capacity" type="number" placeholder="Capacidad del Evento"tabindex="4">
+      <input class="form-control" id="event_capacity" name="event_capacity" type="number" placeholder="Capacidad" tabindex="4">
     </div>
 
     <div class="modal-footer">
       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><a id="link_admin" href="/admin">Cerrar</a></button>
-      <button type="submit" class="btn btn-primary"><a id="link_admin" href="/admin">Guardar</a></button>
+      <button type="submit" class="btn btn-primary" tabindex="4">Guardar</button>
     </div>
   </div>
-</form> -->
+</form>
 
-<form action="/admin" method="POST">
+{{-- <form action="/admin/create" method="POST">
     @csrf
   <div class="mb-3">
     <label for="" class="form-label">Nombre</label>
@@ -52,5 +52,5 @@
   </div>
   <a href="/admin" class="btn btn-secondary" tabindex="5">Cancelar</a>
   <button type="submit" class="btn btn-primary" tabindex="4">Guardar</button>
-</form>
+</form> --}}
 
