@@ -51,9 +51,9 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 // unsuscribe
 
 //Admin User - auth
-// list events
-// store
-// delete
-// edit
-// create 
-// update,
+// list events /
+// store /
+// delete /
+// edit /
+// create /
+// update /
