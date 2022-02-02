@@ -43,7 +43,7 @@
                 <td>
                     <div class="icons_group">
                         <form action="{{ route('events.destroy',$event->id) }}" method="POST">
-                            <a href="/events/edit/{{$event->id}}" class="far fa-edit"></a>         
+                            <a href="/admin/edit/{{$event->id}}" class="far fa-edit"></a>         
                                 @csrf
                                 @method('DELETE')
                             <button type="submit" class="far fa-trash-alt"></button>
