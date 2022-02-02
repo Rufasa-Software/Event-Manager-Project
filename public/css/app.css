@@ -15926,9 +15926,10 @@ header #bar {
 }
 
 footer {
-  position: absolute;
+  flex-wrap: wrap;
   bottom: 0;
   width: 100%;
+  border: solid 1px #1C1D2B;
   background-color: #1C1D2B;
 }
 footer #copyright {
