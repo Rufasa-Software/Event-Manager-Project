@@ -53,17 +53,17 @@ class UserTest extends TestCase
         $this->assertTrue($user1->name != $user2->name);
     }
 
-    public function test_store()
-    {
-        $response = $this->post('/web/events', [
-            'event_name' => 'Php',
-            'event_date' => '10/10/2023',
-            'event_description' => 'Hello PHP!!',
-            'event_img' => 'https://unsplash.com/images/stock/high-resolution',
-            'event_capacity' => '12',
-        ]);
+    // public function test_store()
+    // {
+    //     $response = $this->post('/web/events', [
+    //         'event_name' => 'Php',
+    //         'event_date' => '10/10/2023',
+    //         'event_description' => 'Hello PHP!!',
+    //         'event_img' => 'https://unsplash.com/images/stock/high-resolution',
+    //         'event_capacity' => '12',
+    //     ]);
 
-        $response->assertStatus(200);
-    }
+    //     $response->assertStatus(200);
+    // }
 
 }
