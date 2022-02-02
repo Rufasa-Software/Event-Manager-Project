@@ -16,33 +16,31 @@ use App\Models\Event;
 |
 */
 
-Route::get('/', function () {
-    $events = Event::All();
-    return view('events.index')->with('events',$events);
-});
+// Route::get('/login', function () {
+//     return view('events.login');
+// });
 
-Route::get('/login', function () {
-    return view('events.login');
-});
+// Route::get('/register', function () {
+//     return view('events.register');
+// });
 
-Route::get('/register', function () {
-    return view('events.register');
-});
+// Route::get('/admin', function () {
+//     $events = Event::All();
+//     return view('events.admin')->with('events',$events);
+// });
 
-Route::get('/admin', function () {
-    $events = Event::All();
-    return view('events.admin')->with('events',$events);
-});
-
-Route::get('/admin/create', function () {
-    return view('events.create');
-});
+// Route::get('/admin/create', function () {
+//     return view('events.create');
+// });
 
 Auth::routes();  
 
 // Route::get('/',[, 'index']);
+
+Route::get('/', [App\Http\Controllers\IndexController::class, 'index'])->name('index');
+Route::resource('/admin', 'App\Http\Controllers\EventController');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::resource('events', 'App\Http\Controllers\EventController')->middleware('auth');
+
 
 // landingpage - No auth - create controller
 // access to dashboard - auth

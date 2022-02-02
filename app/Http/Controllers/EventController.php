@@ -15,7 +15,7 @@ class EventController extends Controller
     public function index()
     {
         $events = Event::All();
-        return view('events.index')->with('events',$events);
+        return view('events.admin')->with('events',$events);
     }
 
     /**
@@ -80,7 +80,7 @@ class EventController extends Controller
 
         $event->save();
 
-        return redirect('/events');
+        return redirect('/admin');
     }
 
     /**
@@ -93,6 +93,6 @@ class EventController extends Controller
     {
         $event = Event::find($id);
         $event->delete();
-        return redirect('/events');
+        return redirect('/admin');
     }
 }
