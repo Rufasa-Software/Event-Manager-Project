@@ -11,9 +11,16 @@ class CardComponent extends Component
      *
      * @return void
      */
-    public function __construct()
+
+    public $events;
+    public $event; 
+
+    public function __construct($events, $event)
     {
-        //
+        
+        $this->events=$events;
+        $this->event=$event;
+   
     }
 
     /**
