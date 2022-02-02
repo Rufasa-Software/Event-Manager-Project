@@ -1,0 +1,30 @@
+main {
+    margin-top: 3%;   
+
+    .container {
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+// @media (min-width: $breakpoint-tablet) {
+//     .container {
+//         width: 70%;   
+//     }
+// }
+
+// @media (max-width: 800px) {
+//     #title {
+//         font-size: 24px;
+//     }
+
+//     #link {
+//         font-size: 18px;
+//     }
+
+//     #bar {
+//         align-self: center;
+//         height: 20px;
+//     }
+// }

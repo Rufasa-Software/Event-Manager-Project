@@ -15,8 +15,7 @@
             <li id="register" class="nav-item"><a href="/register" id="link" class="nav-link me-5 text-decoration-none">Register</a></li>
         </ul>
     </x-header>
-    <x-footer/>
-   
+       
     <main>
         <x-tabs-component />
 
@@ -34,6 +33,7 @@
         </tr>
         @endforeach --}}
     </main>
+    <x-footer/>
     <script src="../js/app.js"></script>
 </body>
 </html>
