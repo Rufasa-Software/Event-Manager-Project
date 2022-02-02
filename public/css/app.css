@@ -15972,8 +15972,6 @@ main #tabs .nav-link {
   width: 100%;
   color: white;
   border-radius: 15px;
-  margin: 3%;
-  border: 1px solid red;
 }
 .card .col-md-4 {
   width: 30%;
@@ -16007,6 +16005,10 @@ main #tabs .nav-link {
   background-color: #1C1D2B;
   border: none;
 }
+.card .collapse-container #card {
+  width: 90%;
+  margin: 1% auto;
+}
 
 @media (min-width: 768px) {
   .card {
@@ -16020,7 +16022,6 @@ main #tabs .nav-link {
     margin-top: 4%;
     font-style: italic;
     font-size: regular;
-    border: 1px solid blue;
   }
 }
 body {

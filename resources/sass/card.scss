@@ -11,8 +11,8 @@
     width: 100%;
     color: white;
     border-radius: 15px;
-    margin: 3%;
-    border: 1px solid red;
+    
+    
     .col-md-4{
        width: 30%;
     }   
@@ -48,7 +48,12 @@
                 border: none;
             }
         }
+        #card {
+             width: 90%;
+             margin: 1% auto;
+            }
     }
+   
     
     
 }
@@ -60,12 +65,12 @@
       
          
       .card-description {
-          width:100%;
-          p {
+        width:100%;
+        p {
               margin-top: 4%;
               font-style: italic;
               font-size: regular;
-              border: 1px solid blue;
+              
           }
       }  
 

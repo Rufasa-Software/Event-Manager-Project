@@ -14,15 +14,16 @@
       </div>
       <div class="collapse-container">
         <p class="collapse-description">
-          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample1" aria-expanded="false" aria-controls="multiCollapseExample1">
+          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample{{$event->id}}" aria-expanded="false" aria-controls="multiCollapseExample{{$event->id}}">
             + info &nbsp &nbsp<i class="fas fa-chevron-down"></i>
           </button>
         </p>
-        <div class="row">
+        <div class="row hide-content">
           <div class="col">
-            <div class="collapse multi-collapse" id="multiCollapseExample1">
-              <div class="card card-body card-description">
-                {{$event->description}}
+            <div class="collapse multi-collapse" id="multiCollapseExample{{$event->id}}">
+              <div class="card card-body card-description" id="card">
+                <p>{{$event->id}}</p>
+                <p>{{$event->description}}</p>
                 <p>Plazas disponibles: {{$event->event_capacity}}</p>
               </div>
               
