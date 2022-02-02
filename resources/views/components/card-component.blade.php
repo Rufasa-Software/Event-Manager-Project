@@ -21,7 +21,7 @@
         <div class="col">
           <div class="collapse multi-collapse" id="multiCollapseExample1">
             <div class="card card-body card-description">
-              Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+              <p>{{$event->event_description}}</p>
               <p>Plazas disponibles: {{$event->event_capacity}}</p>
             </div>
             
