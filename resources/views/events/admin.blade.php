@@ -53,6 +53,6 @@
     <div>
         <button class="btnDestacados m-0 text-white" type="button">Añadir a destacados</button>
     </div>
-     
+    <x-footer/>
     </body>
 </html>
