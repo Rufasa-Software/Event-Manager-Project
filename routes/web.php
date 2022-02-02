@@ -19,6 +19,8 @@ use App\Models\Event;
 
 Route::get('/', [App\Http\Controllers\IndexController::class, 'index'])->name('index');
 
+Route::get('/admin', [EventController::class, 'index']);
+
 Route::get('/admin/create',  [EventController::class, 'create']);
 
 Route::post('/admin/create',  [EventController::class, 'store']);
@@ -27,7 +29,7 @@ Route::get('/admin/edit/{id}', [EventController::class, 'edit']);
 
 Route::put('/admin/edit/{id}',  [EventController::class, 'update']);
 
-Route::get('/admin', [EventController::class, 'index']);
+Route::get('/admin/delete/{id}', [EventController::class, 'destroy']);
 
 Auth::routes();
 
