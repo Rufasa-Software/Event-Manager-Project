@@ -16025,6 +16025,14 @@ main {
 }
 main .card {
   border: 1px solid red;
+  margin-left: 250px;
+}
+main .card .class-body #join {
+  color: #6FCF69;
+  border-radius: 30px;
+}
+main .card .class-body #link_password {
+  text-decoration: none;
 }
 
 body {

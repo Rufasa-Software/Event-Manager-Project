@@ -3,6 +3,18 @@ main {
 
     .card {
       border: 1px solid red;
+      margin-left: 250px;
+
+      .class-body {
+        #join{
+          color: #6FCF69;
+          border-radius: 30px;
+        }
+
+        #link_password {
+          text-decoration: none;
+        }
+      }      
     }
 
 }
