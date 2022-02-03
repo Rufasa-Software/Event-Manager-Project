@@ -18,11 +18,11 @@ use App\Models\Event;
 
 Route::get('/', [App\Http\Controllers\IndexController::class, 'index']);
 
-Route::resource('admin', 'App\Http\Controllers\EventController')->middleware('auth:admin');
+Route::resource('admin', 'App\Http\Controllers\EventController')->middleware('auth');
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index']);
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
