@@ -18,7 +18,7 @@ use App\Models\Event;
 
 Route::get('/', [App\Http\Controllers\IndexController::class, 'index']);
 
-Route::resource('admin', 'App\Http\Controllers\EventController');
+Route::resource('admin', 'App\Http\Controllers\EventController')->middleware('auth:admin');
 
 Auth::routes();
 
