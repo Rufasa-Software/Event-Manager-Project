@@ -13,7 +13,11 @@
             <li id="login" class="nav-item fs-2"><a href="/login" id="link" class="nav-link text-decoration-none mr-3" aria-current="page">Login</a></li>
         </ul>
     </x-header>
-    @yield('content')
+
+    <main>
+        @yield('content')
+    </main>
+    
     <x-footer/>
 </body>
 </html>

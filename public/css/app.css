@@ -16034,6 +16034,26 @@ main .card .class-body #join {
 main .card .class-body #link_password {
   text-decoration: none;
 }
+main .card .class-body #anterior {
+  text-decoration: none;
+  padding-top: 10px;
+}
+
+main {
+  margin-top: 3%;
+}
+main .card {
+  border: 1px solid red;
+  margin-left: 250px;
+}
+main .card .card-body #register {
+  color: #6FCF69;
+  border-radius: 30px;
+}
+main .card .card-body #anterior {
+  text-decoration: none;
+  padding-top: 10px;
+}
 
 body {
   height: 100%;

@@ -51,7 +51,7 @@
 
                             
                         <div id="join" class="row mb-4">
-                            <div class="col-md-5 offset-md-5">
+                            <div class="col-md-7 offset-md-7">
                                 <button type="submit" class="btn btn-primary">
                                     {{ __('Únete') }}
                                 </button>
@@ -60,15 +60,20 @@
                         
                         <div id="link_password" class="row ms-5 me-5">
                             
-                                @if (Route::has('password.request'))
-                                    <a class="btn btn-link " href="{{ route('password.request') }}">
-                                        {{ __('¿Olvidaste tu contraseña?') }}
-                                    </a>
-                                @endif
+                            @if (Route::has('password.request'))
+                                <a class="btn btn-link " href="{{ route('password.request') }}">
+                                    {{ __('¿Olvidaste tu contraseña?') }}
+                                </a>
+                            @endif
                             
                         </div>
                             
                     </form>
+
+                    <div class="row mt-3">
+                        <a id="anterior" href="{{ url()->previous('home') }}">Regresar</a>
+                    </div>
+                    
                 </div>
             </div>
         </div>
