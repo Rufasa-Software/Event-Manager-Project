@@ -1,7 +1,6 @@
 <h2>EDITAR EVENTOS</h2>
 
-<form action="/admin/edit/{{$event->id}}" method="POST">
-  
+<form action="/admin/{{$event->id}}" method="POST">
     @csrf    
     @method('PUT')
 
@@ -26,6 +25,6 @@
       <input id="event_capacity" name="event_capacity" type="number" class="form-control" value="{{$event->event_capacity}}"/>
     </div>
 
-  <a href="/events" class="btn btn-secondary">Cancelar</a>
+  <a href="/admin" class="btn btn-secondary">Cancelar</a>
   <button type="submit" class="btn btn-primary">Guardar</button>
 </form>
