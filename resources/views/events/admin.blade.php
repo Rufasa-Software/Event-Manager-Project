@@ -42,12 +42,12 @@
                 <td>{{$event->event_capacity}}</td>
                 <td>
                     <div class="icons_group">
-                        <form action="{{ route('events.destroy',$event->id) }}" method="POST">
+                        <form action="{{ route('admin.destroy', $event->id) }}" method="POST">
                             <a href="/admin/edit/{{$event->id}}" class="far fa-edit"></a>         
-                                @csrf
-                                @method('DELETE')
+                            @csrf
+                            @method('DELETE')
                             <button type="submit" class="far fa-trash-alt"></button>
-                    </form>
+                        </form>
                     </div>
                 </td>
             </tr>

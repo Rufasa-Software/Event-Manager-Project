@@ -16,26 +16,9 @@ use App\Models\Event;
 |
 */
 
-Route::get('/', function () {
-    $events = Event::All();
-    return view('events.index')->with('events',$events);
-});
+Route::get('/', [App\Http\Controllers\IndexController::class, 'index']);
 
-Route::get('/', [App\Http\Controllers\IndexController::class, 'index'])->name('index');
-
-Route::get('/admin', [EventController::class, 'index']);
-
-Route::get('/admin/create',  [EventController::class, 'create']);
-
-Route::post('/admin/create',  [EventController::class, 'store']);
-
-Route::get('/admin/edit/{id}', [EventController::class, 'edit']);
-
-Route::put('/admin/edit/{id}',  [EventController::class, 'update']);
-
-Route::get('/admin/delete/{id}', [EventController::class, 'destroy']);
-
-// Route::resource('events', 'App\Http\Controllers\EventController');
+Route::resource('admin', 'App\Http\Controllers\EventController');
 
 Auth::routes();
 
@@ -45,17 +28,17 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
 
-// landingpage - No auth - create controller
-// access to dashboard - auth
+// landingpage - No auth - create controller / -Terminado-
+// access to dashboard - auth /
 
-// Normal User - auth
-//list my events
-// unsuscribe
+// Normal User - auth /
+//list my events / -Terminado-
+// unsuscribe /
 
 //Admin User - auth
-// list events /
-// store /
-// delete /
-// edit /
-// create /
-// update /
+// list events / -Terminado-
+// store / -Terminado-
+// delete / -Terminado-
+// edit / -Terminado-
+// create / -Terminado-
+// update / -Terminado-
