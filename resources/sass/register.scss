@@ -6,15 +6,21 @@ main {
       margin-left: 250px;
 
       .card-body {
-          #register {
-            color: #6FCF69;
-            border-radius: 30px;
+          form {
+            #register {
+              button {
+                background-color: #6FCF69;
+                border-radius: 30px;
+                color: #500F6A;
+              }              
             }
 
-          #anterior {
-            text-decoration: none;
-            padding-top: 10px;
+            #anterior {
+              text-decoration: none;
+              padding-top: 10px;
             } 
-        }
+          }
+            
+      }
     }
 }

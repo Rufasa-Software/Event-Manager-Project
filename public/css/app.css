@@ -16027,16 +16027,14 @@ main .card {
   border: 1px solid red;
   margin-left: 250px;
 }
-main .card .class-body #join {
-  color: #6FCF69;
+main .card .card-body form #join button {
+  background-color: #6FCF69;
   border-radius: 30px;
+  color: #500F6A;
 }
-main .card .class-body #link_password {
+main .card .card-body form #link_password a {
   text-decoration: none;
-}
-main .card .class-body #anterior {
-  text-decoration: none;
-  padding-top: 10px;
+  color: #A911E6;
 }
 
 main {
@@ -16046,11 +16044,12 @@ main .card {
   border: 1px solid red;
   margin-left: 250px;
 }
-main .card .card-body #register {
-  color: #6FCF69;
+main .card .card-body form #register button {
+  background-color: #6FCF69;
   border-radius: 30px;
+  color: #500F6A;
 }
-main .card .card-body #anterior {
+main .card .card-body form #anterior {
   text-decoration: none;
   padding-top: 10px;
 }

@@ -5,23 +5,27 @@ main {
       border: 1px solid red;
       margin-left: 250px;
 
-      .class-body {
-        #join{
-          color: #6FCF69;
-          border-radius: 30px;
-        }
+      .card-body {
+          form {
 
-        #link_password {
-          text-decoration: none;
-        }
+            #join {
+              button {
+              background-color: #6FCF69;
+              border-radius: 30px;
+              color: #500F6A;
+              }              
+            }
 
-        #anterior {
-          text-decoration: none;
-          padding-top: 10px;
-        }
-      }      
+          #link_password {
+            a {
+              text-decoration: none;
+              color: #A911E6;
+            }
+          } 
+        
+        }      
+      }
     }
-
 }
 
 // @media (min-width: $breakpoint-tablet) {
