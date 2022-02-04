@@ -16034,6 +16034,7 @@ main .card .card-body form #join button {
   background-color: #6FCF69;
   border-radius: 30px;
   color: #500F6A;
+  box-shadow: 3px 3px 2px;
 }
 main .card .card-body form #link_password a {
   text-decoration: none;
@@ -16055,10 +16056,7 @@ main .card .card-body form #register button {
   border-radius: 30px;
   color: #500F6A;
   font-weight: bold;
-}
-main .card .card-body form #anterior {
-  text-decoration: none;
-  padding-top: 10px;
+  box-shadow: 3px 3px 2px;
 }
 
 body {
