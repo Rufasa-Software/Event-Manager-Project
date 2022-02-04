@@ -12,6 +12,12 @@
               <div class="tab-pane fade" id="nav-pastEvents" role="tabpanel" aria-labelledby="nav-pastEvents-tab">...</div>
               
             </div>
-      </div>
-  </section>
-</div>
+        
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-nextEvents" role="tabpanel" aria-labelledby="nav-nextEvents-tab">...</div>
+            <div class="tab-pane fade" id="nav-pastEvents" role="tabpanel" aria-labelledby="nav-pastEvents-tab">...</div>
+            
+          </div>
+    </div>
+</section>
+

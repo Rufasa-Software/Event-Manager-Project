@@ -18,5 +18,10 @@
         {{-- <ul class="nav nav-pills">
             <li id="home" class="nav-item fs-2"><a href="/home" id="link" class="nav-link text-decoration-none mr-3" aria-current="page">Home</a></li>
         </ul> --}}
+
+        {{--  Version Profile for the Home page being a user --}}
+        {{-- <ul class="nav nav-pills">
+            <li id="profile" class="nav-item fs-2"><a href="/profile" id="link" class="nav-link text-decoration-none mr-3" aria-current="page">Profile</a></li>
+        </ul> --}}
     </header>
 </div>

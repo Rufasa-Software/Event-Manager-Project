@@ -24,6 +24,7 @@
             <th scope="col">id</th>
             <th scope="col">event_name</th>
             <th scope="col">event_date</th>
+            <th scope="col">event_description</th>
             <th scope="col">event_image</th>
             <th scope="col">event_capacity</th>
             <th scope="col"></th>
@@ -36,13 +37,17 @@
                 <td>{{$event->id}}</td>
                 <td>{{$event->event_name}}</td>
                 <td>{{$event->event_date}}</td>
+                <td>{{$event->event_description}}</td>
                 <td>{{$event->event_image}}</td>
                 <td>{{$event->event_capacity}}</td>
                 <td>
                     <div class="icons_group">
-                        <a href="/admin/{{$event->id}}/edit" class="far fa-edit"></a>      
-                        @csrf
-                        <button type="submit" class="far fa-trash-alt"></button>
+                        <form action="{{ route('admin.destroy', $event->id) }}" method="POST">
+                            <a href="/admin/{{$event->id}}/edit" class="far fa-edit"></a>         
+                            @csrf
+                            @method('DELETE')
+                            <button type="submit" class="far fa-trash-alt"></button>
+                        </form>
                     </div>
                 </td>
             </tr>

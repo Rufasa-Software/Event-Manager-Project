@@ -16,45 +16,29 @@ use App\Models\Event;
 |
 */
 
-Route::get('/', function () {
-    $events = Event::All();
-    return view('events.index')->with('events',$events);
-});
+Route::get('/', [App\Http\Controllers\IndexController::class, 'index']);
 
-Route::get('/login', function () {
-    return view('events.login');
-});
+Route::resource('admin', 'App\Http\Controllers\EventController')->middleware('auth');
 
-Route::get('/register', function () {
-    return view('events.register');
-});
+Auth::routes();
 
-Route::get('/admin', function () {
-    $events = Event::All();
-    return view('events.admin')->with('events',$events);
-});
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index']);
 
-Route::get('/admin/create', function () {
-    return view('events.create');
-});
+Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+    return view('dashboard');
+})->name('dashboard');
 
-Auth::routes();  
+// landingpage - No auth - create controller / -Terminado-
+// access to dashboard - auth /
 
-// Route::get('/',[, 'index']);
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::resource('events', 'App\Http\Controllers\EventController')->middleware('auth');
-
-// landingpage - No auth - create controller
-// access to dashboard - auth
-
-// Normal User - auth
-//list my events
-// unsuscribe
+// Normal User - auth /
+//list my events / -Terminado-
+// unsuscribe /
 
 //Admin User - auth
-// list events
-// store
-// delete
-// edit
-// create 
-// update,
+// list events / -Terminado-
+// store / -Terminado-
+// delete / -Terminado-
+// edit / -Terminado-
+// create / -Terminado-
+// update / -Terminado-
