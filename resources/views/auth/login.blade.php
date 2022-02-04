@@ -1,4 +1,4 @@
-@extends('login')
+@extends('access.login')
 
 @section('content')
 <div class="container">

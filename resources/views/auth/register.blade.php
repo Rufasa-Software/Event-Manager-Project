@@ -1,4 +1,4 @@
-@extends('register')
+@extends('access.register')
 
 @section('content')
 <div class="container">
