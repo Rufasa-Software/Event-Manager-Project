@@ -16025,6 +16025,45 @@ main #tabs .nav-link {
     font-size: regular;
   }
 }
+main {
+  margin-top: 3%;
+}
+main .card {
+  border: 1px solid red;
+  margin-left: 250px;
+}
+main .card .card-body form #name, main .card .card-body form #password, main .card .card-body form #remember {
+  color: #A911E6;
+}
+main .card .card-body form #join button {
+  background-color: #6FCF69;
+  border-radius: 30px;
+  color: #500F6A;
+  box-shadow: 3px 3px 2px;
+}
+main .card .card-body form #link_password a {
+  text-decoration: none;
+  color: #A911E6;
+}
+
+main {
+  margin-top: 3%;
+}
+main .card {
+  border: 1px solid red;
+  margin-left: 350px;
+}
+main .card .card-body form #name, main .card .card-body form #email, main .card .card-body form #password, main .card .card-body form #confirm {
+  color: #A911E6;
+}
+main .card .card-body form #register button {
+  background-color: #6FCF69;
+  border-radius: 30px;
+  color: #500F6A;
+  font-weight: bold;
+  box-shadow: 3px 3px 2px;
+}
+
 body {
   height: 100%;
   font-family: Rasa;

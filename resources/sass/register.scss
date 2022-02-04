@@ -1,0 +1,32 @@
+main {
+    margin-top: 3%;   
+
+    .card {
+      border: 1px solid red;
+      margin-left: 350px;
+
+      .card-body {
+          form {
+            #name, #email, #password, #confirm {
+              color: #A911E6;              
+            }
+            
+            #register {
+                button {
+                background-color: #6FCF69;
+                border-radius: 30px;
+                color: #500F6A;
+                font-weight: bold;
+                box-shadow: 3px 3px 2px;
+              }              
+            }
+
+            // #anterior {
+            //   text-decoration: none;
+            //   padding-top: 10px;
+            // } 
+          }
+            
+      }
+    }
+}
