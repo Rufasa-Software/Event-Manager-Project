@@ -3,12 +3,13 @@
 namespace Tests\Feature;
 
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use Illuminate\Foundation\Testing\WithFaker;
 use Tests\TestCase;
 
-class ExampleTest extends TestCase
+class LinkTest extends TestCase
 {
     /**
-     * A basic test example.
+     * A basic feature test example.
      *
      * @return void
      */
@@ -17,3 +18,13 @@ class ExampleTest extends TestCase
         $this->assertTrue(true);
     }
 }
+
+// Testing links :
+
+// Index
+
+// Login
+// Register
+
+// Profile
+// Home
