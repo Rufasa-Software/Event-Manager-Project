@@ -15960,7 +15960,7 @@ main #tabs .nav-link {
     width: 70%;
   }
 }
-#section-cards {
+.section-cards {
   width: 90%;
   margin: 0 auto;
   display: flex;
