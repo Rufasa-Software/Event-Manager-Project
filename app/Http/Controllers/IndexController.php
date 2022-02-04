@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Event;
-use Illuminate\Http\Request;
+use Carbon\Carbon;
 
 class IndexController extends Controller
 {
@@ -17,5 +17,7 @@ class IndexController extends Controller
         $events = Event::All();
         return view('index')->with('events',$events);
     }
+    
+   
 }
 

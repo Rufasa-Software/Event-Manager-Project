@@ -16,15 +16,35 @@
         </ul>
     </x-header>
     <main>
+        
+        {{date('Y-m-d');}}
+
+        
+        
         <x-tabs-component />
-        <section id="section-cards">
+        
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="nextEvents" role="tabpanel" aria-labelledby="nextEvents-tab">
+                <div class="section-cards">
+                  
+                       @foreach ($events as $event)
+                    <x-card-component :events="$event" :event="$event"/>  
+                    @endforeach 
+                   
+                         
+                   
+                 
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pastEvents" role="tabpanel" aria-labelledby="pastEvents-tab">
+                <div class="section-cards">
+                    HOla
+                </div>
+            </div>
+        </div> 
+       
      
-          @foreach ($events as $event)
-            
-            <x-card-component :events="$event" :event="$event"/>  
-            
-          @endforeach 
-      </section>  
+           
     </main>
     <x-footer/>
     <script src="../js/app.js"></script>
@@ -43,3 +63,7 @@
   
               
         </tr> --}}
+
+
+
+
