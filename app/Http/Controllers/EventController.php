@@ -15,7 +15,7 @@ class EventController extends Controller
     public function index()
     {
         $events = Event::All();
-        return view('events.admin')->with('events',$events);
+        return view('admin.admin')->with('events',$events);
     }
 
     /**
@@ -25,7 +25,7 @@ class EventController extends Controller
      */
     public function create()
     {
-        return view('events.create');
+        return view('admin.create');
     }
 
     /**
@@ -58,7 +58,7 @@ class EventController extends Controller
     public function edit($id)
     {
         $event= Event::find($id);
-        return view('events.edit')->with('event', $event);
+        return view('admin.edit')->with('event', $event);
     }
 
     /**
