@@ -16027,6 +16027,9 @@ main .card {
   border: 1px solid red;
   margin-left: 250px;
 }
+main .card .card-body form #name, main .card .card-body form #password, main .card .card-body form #remember {
+  color: #A911E6;
+}
 main .card .card-body form #join button {
   background-color: #6FCF69;
   border-radius: 30px;
@@ -16042,12 +16045,16 @@ main {
 }
 main .card {
   border: 1px solid red;
-  margin-left: 250px;
+  margin-left: 350px;
+}
+main .card .card-body form #name, main .card .card-body form #email, main .card .card-body form #password, main .card .card-body form #confirm {
+  color: #A911E6;
 }
 main .card .card-body form #register button {
   background-color: #6FCF69;
   border-radius: 30px;
   color: #500F6A;
+  font-weight: bold;
 }
 main .card .card-body form #anterior {
   text-decoration: none;

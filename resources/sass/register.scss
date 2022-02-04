@@ -3,15 +3,20 @@ main {
 
     .card {
       border: 1px solid red;
-      margin-left: 250px;
+      margin-left: 350px;
 
       .card-body {
           form {
+            #name, #email, #password, #confirm {
+              color: #A911E6;              
+            }
+            
             #register {
-              button {
+                button {
                 background-color: #6FCF69;
                 border-radius: 30px;
                 color: #500F6A;
+                font-weight: bold;
               }              
             }
 

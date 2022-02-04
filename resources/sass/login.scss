@@ -8,6 +8,10 @@ main {
       .card-body {
           form {
 
+            #name, #password, #remember {
+              color: #A911E6;
+            }
+
             #join {
               button {
               background-color: #6FCF69;
