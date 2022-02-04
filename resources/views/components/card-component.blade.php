@@ -1,5 +1,5 @@
 
-  <div class="card mb-3 card-event">
+  <div class="card mb-3" id="card-event">
       <div class="row g-0">
         <div class="col-md-4">
           <img src="{{$event->event_image}}" class="img-fluid rounded-start" alt="Image of event">

@@ -37,8 +37,8 @@
                 </div>
             </div>
             <div class="tab-pane fade" id="pastEvents" role="tabpanel" aria-labelledby="pastEvents-tab">
-                <div class="section-cards">
-                    HOla
+                <div class="section-cards" style="color: white; font-size: 16px;">
+                    Eventos anteriores a mostrar
                 </div>
             </div>
         </div> 

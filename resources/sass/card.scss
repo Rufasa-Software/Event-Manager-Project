@@ -7,7 +7,7 @@
     justify-content: space-between;
 }
 
-.card {
+#card-event {
     width: 100%;
     color: white;
     border-radius: 15px;
@@ -59,7 +59,7 @@
 }
 
 @media (min-width: $breakpoint-tablet) {
-    .card {
+    #card-event {
       width: 40%;
       margin: 0;  
       

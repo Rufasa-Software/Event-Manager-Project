@@ -15969,25 +15969,25 @@ main #tabs .nav-link {
   justify-content: space-between;
 }
 
-.card {
+#card-event {
   width: 100%;
   color: white;
   border-radius: 15px;
 }
-.card .col-md-4 {
+#card-event .col-md-4 {
   width: 30%;
 }
-.card .col-md-8 {
+#card-event .col-md-8 {
   width: 70%;
 }
-.card .card-title {
+#card-event .card-title {
   font-size: 2em;
 }
-.card .date-event {
+#card-event .date-event {
   font-style: italic;
   font-size: 1em;
 }
-.card .btn-lg, .card .btn-group-lg > .btn {
+#card-event .btn-lg, #card-event .btn-group-lg > .btn {
   color: #500F6A;
   background-color: #6FCF69;
   border-radius: 15px;
@@ -15997,29 +15997,29 @@ main #tabs .nav-link {
   margin: 3% 0 0 auto;
   font-weight: bold;
 }
-.card .collapse-container .collapse-description {
+#card-event .collapse-container .collapse-description {
   border-top: 2px solid #63D247;
 }
-.card .collapse-container .collapse-description .btn {
+#card-event .collapse-container .collapse-description .btn {
   display: block;
   margin: 2% 0 0 auto;
   background-color: #1C1D2B;
   border: none;
 }
-.card .collapse-container #card {
+#card-event .collapse-container #card {
   width: 90%;
   margin: 1% auto;
 }
 
 @media (min-width: 768px) {
-  .card {
+  #card-event {
     width: 40%;
     margin: 0;
   }
-  .card .card-description {
+  #card-event .card-description {
     width: 100%;
   }
-  .card .card-description p {
+  #card-event .card-description p {
     margin-top: 4%;
     font-style: italic;
     font-size: regular;
