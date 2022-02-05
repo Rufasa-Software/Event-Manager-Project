@@ -42,6 +42,7 @@
                         </div>
                     </div>
                 </div>
+            
             @endif
             
             @else
@@ -75,9 +76,9 @@
                         </div>
                     </div>
                 </div>
+            </main>
     @endguest 
- 
-    </main>
+
     <x-footer/>
     <script src="../js/app.js"></script>
 </body>

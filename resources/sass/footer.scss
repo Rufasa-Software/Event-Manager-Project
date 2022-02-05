@@ -1,8 +1,7 @@
 footer {
-    flex-wrap: wrap;
+    position: absolute;
     bottom: 0;
     width: 100%;
-    border: solid 1px $card-bg;
     background-color: $card-bg;
 
     #copyright { 

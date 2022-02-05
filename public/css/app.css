@@ -15926,19 +15926,15 @@ header #bar {
 }
 
 footer {
-  flex-wrap: wrap;
+  position: absolute;
   bottom: 0;
   width: 100%;
-  border: solid 1px #1C1D2B;
   background-color: #1C1D2B;
 }
 footer #copyright {
   color: #71BE5D;
 }
 
-main {
-  margin-top: 5%;
-}
 main #tabs {
   width: 90%;
   margin: 0 auto;
@@ -16025,9 +16021,6 @@ main #tabs .nav-link {
     font-size: regular;
   }
 }
-main {
-  margin-top: 3%;
-}
 main .card {
   border: 1px solid red;
   margin-left: 250px;
@@ -16046,9 +16039,6 @@ main .card .card-body form #link_password a {
   color: #A911E6;
 }
 
-main {
-  margin-top: 3%;
-}
 main .card {
   border: 1px solid red;
   margin-left: 350px;
@@ -16065,9 +16055,10 @@ main .card .card-body form #register button {
 }
 
 body {
-  height: 100%;
+  position: relative;
   font-family: Rasa;
-  box-sizing: border-box;
+  padding-bottom: 100px;
+  min-height: 100vh;
 }
 
 .btnEvento {
