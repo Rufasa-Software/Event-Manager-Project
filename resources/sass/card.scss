@@ -9,29 +9,33 @@
 
 #card-event {
     width: 100%;
-    color: white;
+    background-color: $background-blue;
+    color: $color-white;
     border-radius: 15px;
     
-    
-    .col-md-4{
+    .col-md-4 {
        width: 30%;
-    }   
+    } 
+
     .col-md-8 {
         width: 70%;
     }
+
     .card-title{
         font-size: 2em;
     }
+
     .date-event {
         font-style: italic;
         font-size: 1em;
     }
+
     .btn-lg {
-        color: #500F6A;
-        background-color: #6FCF69;
+        color: $color-dark-purple;
+        background-color: $color-green;
         border-radius: 15px;
         border: none;
-        box-shadow: 3px 3px 2px;
+        box-shadow: $shadow;
         display: block;
         margin: 3% 0 0 auto;
         font-weight: bold;
@@ -40,40 +44,35 @@
     .collapse-container {
         
         .collapse-description{
-            border-top: 2px solid #63D247;
+            border-top: 2px solid $color-green;
             .btn{
                 display: block;
                 margin: 2% 0 0 auto;
-                background-color: $card-bg;
+                background-color: $background-blue;
                 border: none;
             }
         }
+
         #card {
-             width: 90%;
-             margin: 1% auto;
-            }
+            width: 90%;
+            margin: 1% auto;
+        }
     }
-   
-    
-    
+     
 }
 
 @media (min-width: $breakpoint-tablet) {
     #card-event {
-      width: 40%;
-      margin: 0;  
-      
-         
-      .card-description {
-        width:100%;
-        p {
-              margin-top: 4%;
-              font-style: italic;
-              font-size: regular;
-              
-          }
-      }  
-
-       
+        width: 40%;
+        margin: 0;  
+        .card-description {
+            width:100%;
+            p {
+                margin-top: 4%;
+                font-size: regular; 
+            }
+        }  
+ 
     }
+
 }

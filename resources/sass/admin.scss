@@ -1,6 +1,6 @@
 .btnEvento{
     margin-top: 50px;
-    background-color: #A911E6;
+    background-color: $color-purple;
     border-radius: 10px;
     font-size: 18px;
     width: 500px;
@@ -10,20 +10,20 @@
 
 #link_admin{
     text-decoration: none;
-    color: white;
+    color: $color-white;
 }
 
 .btnDestacados{
-    background-color: #A911E6;
+    background-color: $color-purple;
     width: fit-content;
     font-size: 18px;
     text-align: right;
     border-radius: 10px;
-    color: white;
+    color: $color-white;
     margin-top: 20px;
     // box-shadow: 3px 3px 2px;
 }
 
 .icons_group{
-    color: white;
+    color: $color-white;
 }

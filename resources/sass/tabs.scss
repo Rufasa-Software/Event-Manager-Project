@@ -1,30 +1,27 @@
-main {
-    // margin-top: 5%;    
+#tabs {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 35px;        
 
-    #tabs {
-        width: 90%;
-        margin: 0 auto;
+    .nav-tabs {
+        border-bottom: 1px solid $color-purple;
+    }
         
+    .nav-link.active {
+        color: $color-purple;
+        background-color: $background-dark-blue;
+        font-weight: bold;
+        border-color: $color-purple $color-purple transparent $color-purple;
+    }
 
-        .nav-tabs {
-            border-bottom: 1px solid $title-color;
-        }
-        
-        .nav-link.active {
-            color: $title-color;
-            font-weight: bold;
-            border-color: $title-color $title-color transparent $title-color;
-        }
-
-        .nav-link {
-            color: white;
-        }
+    .nav-link {
+        color: $color-white;
+    }
     
-    }
 }
 
-@media (min-width: $breakpoint-tablet) {
-    #tabs {
-        width: 70%;   
-    }
-}
+// @media (max-width: $breakpoint-tablet) {
+//     #tabs {
+//         width: 80%;   
+//     }
+// }

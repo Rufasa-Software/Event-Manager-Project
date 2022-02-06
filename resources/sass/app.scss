@@ -12,22 +12,25 @@
 // Styles
 @import 'header';
 @import 'footer';
+
 @import 'tabs';
 @import 'card';
-@import 'login';
-@import 'register';
+
+@import 'access';
+
+@import 'admin';
+@import 'modal';
+
+//General modifications
 
 body  {
     position: relative;
     font-family: Rasa;
-    padding-bottom: 100px;
+    padding-bottom: 60px;
     min-height: 100vh;
+    background-color: $background-dark-blue; 
+
+    main {
+        margin-top:30px; 
+    }
 }
-
-//Styles
-@import 'admin';
-
-//Modal
-@import 'modal';
-
-

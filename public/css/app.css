@@ -4654,7 +4654,7 @@ readers do not read off random characters that represent icons */
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
-  --bs-body-bg-rgb: 20, 21, 31;
+  --bs-body-bg-rgb: 255, 255, 255;
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
@@ -4663,7 +4663,7 @@ readers do not read off random characters that represent icons */
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
   --bs-body-color: #212529;
-  --bs-body-bg: #14151F;
+  --bs-body-bg: #fff;
 }
 
 *,
@@ -5207,7 +5207,7 @@ progress {
 
 .img-thumbnail {
   padding: 0.25rem;
-  background-color: #14151F;
+  background-color: #fff;
   border: 1px solid #dee2e6;
   border-radius: 0.25rem;
   max-width: 100%;
@@ -6795,7 +6795,7 @@ progress {
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
-  background-color: #14151F;
+  background-color: #fff;
   background-clip: padding-box;
   border: 1px solid #ced4da;
   -webkit-appearance: none;
@@ -6817,7 +6817,7 @@ progress {
 }
 .form-control:focus {
   color: #212529;
-  background-color: #14151F;
+  background-color: #fff;
   border-color: #86b7fe;
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
@@ -7015,7 +7015,7 @@ textarea.form-control-lg {
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
-  background-color: #14151F;
+  background-color: #fff;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
   background-position: right 0.75rem center;
@@ -7081,7 +7081,7 @@ textarea.form-control-lg {
   height: 1em;
   margin-top: 0.25em;
   vertical-align: top;
-  background-color: #14151F;
+  background-color: #fff;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -7183,10 +7183,10 @@ textarea.form-control-lg {
   outline: 0;
 }
 .form-range:focus::-webkit-slider-thumb {
-  box-shadow: 0 0 0 1px #14151F, 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  box-shadow: 0 0 0 1px #fff, 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
 }
 .form-range:focus::-moz-range-thumb {
-  box-shadow: 0 0 0 1px #14151F, 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  box-shadow: 0 0 0 1px #fff, 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
 }
 .form-range::-moz-focus-outer {
   border: 0;
@@ -8584,8 +8584,8 @@ textarea.form-control-lg {
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
   color: #495057;
-  background-color: #14151F;
-  border-color: #dee2e6 #dee2e6 #14151F;
+  background-color: #fff;
+  border-color: #dee2e6 #dee2e6 #fff;
 }
 .nav-tabs .dropdown-menu {
   margin-top: -1px;
@@ -9115,7 +9115,7 @@ textarea.form-control-lg {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #1C1D2B;
+  background-color: #fff;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
@@ -9189,10 +9189,6 @@ textarea.form-control-lg {
   margin-bottom: -0.5rem;
   margin-left: -0.5rem;
   border-bottom: 0;
-}
-.card-header-tabs .nav-link.active {
-  background-color: #1C1D2B;
-  border-bottom-color: #1C1D2B;
 }
 
 .card-header-pills {
@@ -9279,7 +9275,7 @@ textarea.form-control-lg {
   font-size: 1rem;
   color: #212529;
   text-align: left;
-  background-color: #14151F;
+  background-color: #fff;
   border: 0;
   border-radius: 0;
   overflow-anchor: none;
@@ -9330,7 +9326,7 @@ textarea.form-control-lg {
 }
 
 .accordion-item {
-  background-color: #14151F;
+  background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.125);
 }
 .accordion-item:first-of-type {
@@ -15912,7 +15908,7 @@ header #bar {
   height: 40px;
   border: 1px solid #A911E6;
 }
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   header #title {
     font-size: 24px;
   }
@@ -15935,27 +15931,24 @@ footer #copyright {
   color: #71BE5D;
 }
 
-main #tabs {
+#tabs {
   width: 90%;
   margin: 0 auto;
+  margin-bottom: 35px;
 }
-main #tabs .nav-tabs {
+#tabs .nav-tabs {
   border-bottom: 1px solid #A911E6;
 }
-main #tabs .nav-link.active {
+#tabs .nav-link.active {
   color: #A911E6;
+  background-color: #14151F;
   font-weight: bold;
   border-color: #A911E6 #A911E6 transparent #A911E6;
 }
-main #tabs .nav-link {
+#tabs .nav-link {
   color: white;
 }
 
-@media (min-width: 768px) {
-  #tabs {
-    width: 70%;
-  }
-}
 .section-cards {
   width: 90%;
   margin: 0 auto;
@@ -15967,6 +15960,7 @@ main #tabs .nav-link {
 
 #card-event {
   width: 100%;
+  background-color: #1C1D2B;
   color: white;
   border-radius: 15px;
 }
@@ -15985,7 +15979,7 @@ main #tabs .nav-link {
 }
 #card-event .btn-lg, #card-event .btn-group-lg > .btn {
   color: #500F6A;
-  background-color: #6FCF69;
+  background-color: #71BE5D;
   border-radius: 15px;
   border: none;
   box-shadow: 3px 3px 2px;
@@ -15994,7 +15988,7 @@ main #tabs .nav-link {
   font-weight: bold;
 }
 #card-event .collapse-container .collapse-description {
-  border-top: 2px solid #63D247;
+  border-top: 2px solid #71BE5D;
 }
 #card-event .collapse-container .collapse-description .btn {
   display: block;
@@ -16017,48 +16011,112 @@ main #tabs .nav-link {
   }
   #card-event .card-description p {
     margin-top: 4%;
-    font-style: italic;
     font-size: regular;
   }
 }
-main .card {
-  border: 1px solid red;
-  margin-left: 250px;
+#card-container {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  margin-bottom: 3%;
 }
-main .card .card-body form #name, main .card .card-body form #password, main .card .card-body form #remember {
+#card-container .card-content {
+  border: 1px #1C1D2B solid;
+  border-radius: 30px;
+}
+#card-container .card-content .card-body {
+  padding: 30px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #1C1D2B;
+  border-radius: 30px;
+}
+#card-container .card-content .card-body form {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+#card-container .card-content .card-body form div {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+#card-container .card-content .card-body form #remember-div {
+  justify-content: center;
+}
+#card-container .card-content .card-body form #email-div, #card-container .card-content .card-body form #password-div, #card-container .card-content .card-body form #remember-div, #card-container .card-content .card-body form #name, #card-container .card-content .card-body form #confirm {
+  font-size: 24px;
   color: #A911E6;
 }
-main .card .card-body form #join button {
-  background-color: #6FCF69;
+#card-container .card-content .card-body form #email-div .email-label, #card-container .card-content .card-body form #email-div .password-label, #card-container .card-content .card-body form #email-div .name-label, #card-container .card-content .card-body form #email-div .confirm-label, #card-container .card-content .card-body form #password-div .email-label, #card-container .card-content .card-body form #password-div .password-label, #card-container .card-content .card-body form #password-div .name-label, #card-container .card-content .card-body form #password-div .confirm-label, #card-container .card-content .card-body form #remember-div .email-label, #card-container .card-content .card-body form #remember-div .password-label, #card-container .card-content .card-body form #remember-div .name-label, #card-container .card-content .card-body form #remember-div .confirm-label, #card-container .card-content .card-body form #name .email-label, #card-container .card-content .card-body form #name .password-label, #card-container .card-content .card-body form #name .name-label, #card-container .card-content .card-body form #name .confirm-label, #card-container .card-content .card-body form #confirm .email-label, #card-container .card-content .card-body form #confirm .password-label, #card-container .card-content .card-body form #confirm .name-label, #card-container .card-content .card-body form #confirm .confirm-label {
+  display: inline-block;
+  width: 150px;
+  justify-content: start;
+  padding: 5px;
+}
+#card-container .card-content .card-body form #email-div .remember-label, #card-container .card-content .card-body form #password-div .remember-label, #card-container .card-content .card-body form #remember-div .remember-label, #card-container .card-content .card-body form #name .remember-label, #card-container .card-content .card-body form #confirm .remember-label {
+  margin-left: 15px;
+}
+#card-container .card-content .card-body form #email-div .email-input, #card-container .card-content .card-body form #email-div .password-input, #card-container .card-content .card-body form #email-div .name-input, #card-container .card-content .card-body form #email-div .confirm-input, #card-container .card-content .card-body form #password-div .email-input, #card-container .card-content .card-body form #password-div .password-input, #card-container .card-content .card-body form #password-div .name-input, #card-container .card-content .card-body form #password-div .confirm-input, #card-container .card-content .card-body form #remember-div .email-input, #card-container .card-content .card-body form #remember-div .password-input, #card-container .card-content .card-body form #remember-div .name-input, #card-container .card-content .card-body form #remember-div .confirm-input, #card-container .card-content .card-body form #name .email-input, #card-container .card-content .card-body form #name .password-input, #card-container .card-content .card-body form #name .name-input, #card-container .card-content .card-body form #name .confirm-input, #card-container .card-content .card-body form #confirm .email-input, #card-container .card-content .card-body form #confirm .password-input, #card-container .card-content .card-body form #confirm .name-input, #card-container .card-content .card-body form #confirm .confirm-input {
+  padding: 5px;
+  height: 50px;
+  width: 300px;
+  border: #1C1D2B solid;
+  background-color: #14151F;
+  color: white;
+  border-radius: 10px;
+}
+#card-container .card-content .card-body form #email-div .remember-input, #card-container .card-content .card-body form #password-div .remember-input, #card-container .card-content .card-body form #remember-div .remember-input, #card-container .card-content .card-body form #name .remember-input, #card-container .card-content .card-body form #confirm .remember-input {
+  margin: 0px;
+  height: 30px;
+  width: 30px;
+  border: #1C1D2B solid;
+  background-color: #14151F;
+  color: white;
+  border-radius: 50px;
+}
+#card-container .card-content .card-body form #email-div input::-moz-placeholder, #card-container .card-content .card-body form #password-div input::-moz-placeholder, #card-container .card-content .card-body form #remember-div input::-moz-placeholder, #card-container .card-content .card-body form #name input::-moz-placeholder, #card-container .card-content .card-body form #confirm input::-moz-placeholder {
+  color: white;
+}
+#card-container .card-content .card-body form #email-div input:-ms-input-placeholder, #card-container .card-content .card-body form #password-div input:-ms-input-placeholder, #card-container .card-content .card-body form #remember-div input:-ms-input-placeholder, #card-container .card-content .card-body form #name input:-ms-input-placeholder, #card-container .card-content .card-body form #confirm input:-ms-input-placeholder {
+  color: white;
+}
+#card-container .card-content .card-body form #email-div input::placeholder, #card-container .card-content .card-body form #password-div input::placeholder, #card-container .card-content .card-body form #remember-div input::placeholder, #card-container .card-content .card-body form #name input::placeholder, #card-container .card-content .card-body form #confirm input::placeholder {
+  color: white;
+}
+#card-container .card-content .card-body form #join button, #card-container .card-content .card-body form #register button {
+  font-size: 24px;
+  background-color: #71BE5D;
   border-radius: 30px;
   color: #500F6A;
   box-shadow: 3px 3px 2px;
+  border: #71BE5D;
 }
-main .card .card-body form #link_password a {
+#card-container .card-content .card-body form #link-password {
+  justify-content: center;
+}
+#card-container .card-content .card-body form #link-password a {
+  font-size: 24px;
   text-decoration: none;
   color: #A911E6;
 }
-
-main .card {
-  border: 1px solid red;
-  margin-left: 350px;
-}
-main .card .card-body form #name, main .card .card-body form #email, main .card .card-body form #password, main .card .card-body form #confirm {
-  color: #A911E6;
-}
-main .card .card-body form #register button {
-  background-color: #6FCF69;
-  border-radius: 30px;
-  color: #500F6A;
-  font-weight: bold;
-  box-shadow: 3px 3px 2px;
-}
-
-body {
-  position: relative;
-  font-family: Rasa;
-  padding-bottom: 100px;
-  min-height: 100vh;
+@media (max-width: 768px) {
+  #card-container .card-content .card-body form #email-div, #card-container .card-content .card-body form #password-div, #card-container .card-content .card-body form #remember-div, #card-container .card-content .card-body form #name, #card-container .card-content .card-body form #confirm, #card-container .card-content .card-body form #join button, #card-container .card-content .card-body form #register button, #card-container .card-content .card-body form #link-password a {
+    font-size: 18px;
+  }
+  #card-container .card-content .card-body form #email-div .email-input, #card-container .card-content .card-body form #email-div .password-input, #card-container .card-content .card-body form #email-div .name-input, #card-container .card-content .card-body form #email-div .confirm-input, #card-container .card-content .card-body form #password-div .email-input, #card-container .card-content .card-body form #password-div .password-input, #card-container .card-content .card-body form #password-div .name-input, #card-container .card-content .card-body form #password-div .confirm-input, #card-container .card-content .card-body form #remember-div .email-input, #card-container .card-content .card-body form #remember-div .password-input, #card-container .card-content .card-body form #remember-div .name-input, #card-container .card-content .card-body form #remember-div .confirm-input, #card-container .card-content .card-body form #name .email-input, #card-container .card-content .card-body form #name .password-input, #card-container .card-content .card-body form #name .name-input, #card-container .card-content .card-body form #name .confirm-input, #card-container .card-content .card-body form #confirm .email-input, #card-container .card-content .card-body form #confirm .password-input, #card-container .card-content .card-body form #confirm .name-input, #card-container .card-content .card-body form #confirm .confirm-input, #card-container .card-content .card-body form #join button .email-input, #card-container .card-content .card-body form #join button .password-input, #card-container .card-content .card-body form #join button .name-input, #card-container .card-content .card-body form #join button .confirm-input, #card-container .card-content .card-body form #register button .email-input, #card-container .card-content .card-body form #register button .password-input, #card-container .card-content .card-body form #register button .name-input, #card-container .card-content .card-body form #register button .confirm-input, #card-container .card-content .card-body form #link-password a .email-input, #card-container .card-content .card-body form #link-password a .password-input, #card-container .card-content .card-body form #link-password a .name-input, #card-container .card-content .card-body form #link-password a .confirm-input {
+    height: 40px;
+    width: 200px;
+  }
+  #card-container .card-content .card-body form #email-div .remember-input, #card-container .card-content .card-body form #password-div .remember-input, #card-container .card-content .card-body form #remember-div .remember-input, #card-container .card-content .card-body form #name .remember-input, #card-container .card-content .card-body form #confirm .remember-input, #card-container .card-content .card-body form #join button .remember-input, #card-container .card-content .card-body form #register button .remember-input, #card-container .card-content .card-body form #link-password a .remember-input {
+    height: 25px;
+    width: 25px;
+  }
+  #card-container .card-content .card-body form #register {
+    justify-content: center;
+  }
 }
 
 .btnEvento {
@@ -16093,4 +16151,15 @@ body {
 
 .formulario {
   margin: 50px 200px 0px 200px;
+}
+
+body {
+  position: relative;
+  font-family: Rasa;
+  padding-bottom: 60px;
+  min-height: 100vh;
+  background-color: #14151F;
+}
+body main {
+  margin-top: 30px;
 }
