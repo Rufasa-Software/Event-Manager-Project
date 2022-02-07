@@ -1,8 +1,38 @@
-// Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+// Font
+@import url('https://fonts.googleapis.com/css2?family=Rasa:wght@600&family=Roboto&display=swap');
 
 // Variables
 @import 'variables';
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+//Fontawesome
+@import '~@fortawesome/fontawesome-free/css/all.css';
+
+// Styles
+@import 'header';
+@import 'footer';
+
+@import 'tabs';
+@import 'card';
+
+@import 'access';
+
+@import 'user';
+
+@import 'admin';
+@import 'modal';
+
+//General modifications
+body  {
+    position: relative;
+    font-family: Rasa;
+    padding-bottom: 60px;
+    min-height: 100vh;
+    background-color: $background-dark-blue; 
+
+    main {
+        margin-top:30px; 
+    }
+}

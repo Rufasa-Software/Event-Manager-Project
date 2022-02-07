@@ -1,6 +1,9 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\EventController;
+use App\Models\Event;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,10 +16,29 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [App\Http\Controllers\IndexController::class, 'index']);
+
+Route::resource('admin', 'App\Http\Controllers\EventController')->middleware('auth');
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index']);
+
+Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+    return view('dashboard');
+})->name('dashboard');
+
+// landingpage - No auth - create controller / -Terminado-
+// access to dashboard - auth /
+
+// Normal User - auth /
+//list my events / -Terminado-
+// unsuscribe /
+
+//Admin User - auth
+// list events / -Terminado-
+// store / -Terminado-
+// delete / -Terminado-
+// edit / -Terminado-
+// create / -Terminado-
+// update / -Terminado-

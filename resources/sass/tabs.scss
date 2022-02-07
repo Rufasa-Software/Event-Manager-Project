@@ -1,0 +1,20 @@
+#tabs {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 35px;        
+
+    .nav-tabs {
+        border-bottom: 1px solid $color-purple;
+    }
+        
+    .nav-link.active {
+        color: $color-purple;
+        background-color: $background-dark-blue;
+        font-weight: bold;
+        border-color: $color-purple $color-purple transparent $color-purple;
+    }
+
+    .nav-link {
+        color: $color-white;
+    }
+}

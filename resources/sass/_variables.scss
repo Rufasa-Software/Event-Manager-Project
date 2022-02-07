@@ -1,7 +1,13 @@
-// Body
-$body-bg: #f8fafc;
+// Colors
+$background-dark-blue: #14151F;
+$background-blue: #1C1D2B;
+$color-purple: #A911E6;
+$color-dark-purple: #500F6A;
+$color-green: #71BE5D;
+$color-white: white;
 
-// Typography
-$font-family-sans-serif: 'Nunito', sans-serif;
-$font-size-base: 0.9rem;
-$line-height-base: 1.6;
+// Shadows
+$shadow: 3px 3px 2px;
+
+// Breakpoints
+$breakpoint-tablet: 768px;
