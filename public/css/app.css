@@ -16008,6 +16008,7 @@ footer #copyright {
   }
   #card-event .card-description {
     width: 100%;
+    background-color: #1C1D2B;
   }
   #card-event .card-description p {
     margin-top: 4%;
@@ -16119,6 +16120,31 @@ footer #copyright {
   }
 }
 
+.my-events-container {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  justify-content: center;
+  align-items: center;
+}
+.my-events-container .my-events {
+  width: 90%;
+  background-color: #1C1D2B;
+  border-radius: 10px;
+  padding: 5px 0px 0px 0px;
+}
+.my-events-container .my-events .text {
+  justify-content: center;
+  font-size: 18px;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .my-events {
+    width: 40%;
+    font-size: 14px;
+  }
+}
 .btnEvento {
   margin-top: 50px;
   background-color: #A911E6;

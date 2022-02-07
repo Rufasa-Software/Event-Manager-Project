@@ -28,6 +28,7 @@
                         <li id="events" class="nav-item fs-2"><a href="/" id="link" class="nav-link text-decoration-none mr-3" aria-current="page">Events</a></li>
                     </ul>
                 </x-header>
+                <x-my-profile/>
                 {{-- <main class="py-4">
                     @yield('content')
                     

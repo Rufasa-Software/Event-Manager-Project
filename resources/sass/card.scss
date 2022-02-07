@@ -57,8 +57,7 @@
             width: 90%;
             margin: 1% auto;
         }
-    }
-     
+    }  
 }
 
 @media (min-width: $breakpoint-tablet) {
@@ -67,12 +66,11 @@
         margin: 0;  
         .card-description {
             width:100%;
+            background-color: $background-blue;
             p {
                 margin-top: 4%;
                 font-size: regular; 
             }
         }  
- 
     }
-
 }
