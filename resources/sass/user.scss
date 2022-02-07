@@ -1,0 +1,24 @@
+.my-events-container {
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    .my-events {
+        width:90%;
+        background-color: $background-blue;
+        border-radius: 10px;
+        padding: 5px 0px 0px 0px;
+
+        .text {
+            justify-content: center;
+            font-size: 18px;
+            color: $color-white;
+        }
+    }
+}
+
+@media (min-width: $breakpoint-tablet) {
+    .my-events {
+        width:40%;
+        font-size: 14px;
+    }
+}

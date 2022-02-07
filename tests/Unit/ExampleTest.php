@@ -2,6 +2,7 @@
 
 namespace Tests\Unit;
 
+use App\Models\Event;
 use PHPUnit\Framework\TestCase;
 
 class ExampleTest extends TestCase

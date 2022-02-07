@@ -1,0 +1,39 @@
+header {
+    background-color: $background-blue;
+
+    #title {
+        font-size: 36px;
+        color: $color-green;
+    }
+
+    #link {
+        font-size: 24px;
+        color: $color-purple;
+    }
+
+    #link:hover {
+        transition-delay:0.1s;
+        color: #E7ABFF;
+    }
+
+    #bar {
+        align-self: center;
+        height: 40px;
+        border: 1px solid $color-purple;
+    }
+
+    @media (max-width: $breakpoint-tablet) {
+        #title {
+            font-size: 24px;
+        }
+
+        #link {
+            font-size: 18px;
+        }
+
+        #bar {
+            align-self: center;
+            height: 20px;
+        }
+    }
+}

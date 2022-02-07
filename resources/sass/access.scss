@@ -1,0 +1,105 @@
+#card-container {
+    height: fit-content;
+    width: 100%;
+    margin-bottom: 3%;
+    .card-content {
+      border: 1px $background-blue solid;
+      border-radius: 30px;
+      .card-body {
+        padding: 30px;
+        width: fit-content;
+        background-color: $background-blue;
+        border-radius: 30px;
+        form {
+          width: fit-content;
+          div {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+          }
+          #remember-div {
+            justify-content: center;
+          }
+  
+          #email-div, #password-div, #remember-div, #name, #confirm { //Mixin to all input
+            font-size: 24px;
+            color: $color-purple;
+  
+            .email-label, .password-label, .name-label, .confirm-label{
+              display: inline-block;
+              width: 150px;
+              justify-content: start;
+              padding: 5px;
+            }
+  
+            .remember-label {
+              margin-left: 15px;
+            }
+  
+            .email-input, .password-input, .name-input, .confirm-input{
+              padding: 5px;
+              height: 50px;
+              width: 300px;
+              border: $background-blue solid;
+              background-color: $background-dark-blue;
+              color: $color-white;
+              border-radius: 10px;
+            }
+  
+            .remember-input {
+              margin: 0px;
+              height: 30px;
+              width: 30px;
+              border: $background-blue solid;
+              background-color: $background-dark-blue;
+              color: $color-white;
+              border-radius: 50px;
+            }
+  
+            input::placeholder {
+              color: $color-white; //Mixin all pseudo placeholders
+            }
+          }
+  
+          #join, #register {
+            button { // Mixin to all buttons
+              font-size: 24px;
+              background-color: $color-green;
+              border-radius: 30px;
+              color: $color-dark-purple;
+              box-shadow: $shadow;
+              border: $color-green;
+            }              
+          }
+  
+          #link-password {
+            justify-content: center;
+            a { // Mixin to all a's
+              font-size: 24px;
+              text-decoration: none;
+              color: $color-purple;
+            }
+          } 
+  
+          @media(max-width: $breakpoint-tablet) {
+            #email-div, #password-div, #remember-div, #name, #confirm, #join button, #register button, #link-password a {
+              font-size: 18px;
+              .email-input, .password-input, .name-input, .confirm-input {
+                height: 40px;
+                width: 200px;
+              }
+  
+              .remember-input {
+                height: 25px;
+                width: 25px;
+              }
+            }
+            
+            #register {
+              justify-content: center;
+            }
+          }   
+        }      
+      }
+    }
+  }
