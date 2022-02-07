@@ -6,6 +6,7 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
 //Fontawesome
 @import '~@fortawesome/fontawesome-free/css/all.css';
 
@@ -23,9 +24,7 @@
 @import 'admin';
 @import 'modal';
 
-
 //General modifications
-
 body  {
     position: relative;
     font-family: Rasa;
