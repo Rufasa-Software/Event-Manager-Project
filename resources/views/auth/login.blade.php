@@ -6,7 +6,7 @@
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
-                        <div id="email-div" class="d-flex wrap email-login-div">
+                        <div id="email-div" class="d-flex wrap">
                             <label for="email" class="col-form-label email-label">E-Mail</label>
                             <input type="email" class="email-input form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
                             
@@ -15,7 +15,7 @@
                             @enderror
                         </div>
 
-                        <div id="password-div" class="d-flex wrap password-login-div">
+                        <div id="password-div" class="d-flex wrap">
                             <label for="password input" class="col-form-label password-label">Contraseña</label>
                             <input type="password" class="password-input form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
 

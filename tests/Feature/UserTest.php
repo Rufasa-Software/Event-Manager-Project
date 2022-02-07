@@ -17,26 +17,6 @@ class UserTest extends TestCase
     {
         $this->assertTrue(true);
     }
-    public function test_example()
-    {
-        $response = $this->get('/');
-
-        $response->assertStatus(200);
-    }
-
-    public function test_login_form()
-    {
-        $response = $this->get('/login');
-
-        $response->assertStatus(200);
-    }
-
-    public function test_register_form()
-    {
-        $response = $this->get('/register');
-
-        $response->assertStatus(200);
-    }
 
     public function test_user_duplication()
     {
@@ -53,17 +33,11 @@ class UserTest extends TestCase
         $this->assertTrue($user1->name != $user2->name);
     }
 
-    // public function test_store()
-    // {
-    //     $response = $this->post('/web/events', [
-    //         'event_name' => 'Php',
-    //         'event_date' => '10/10/2023',
-    //         'event_description' => 'Hello PHP!!',
-    //         'event_img' => 'https://unsplash.com/images/stock/high-resolution',
-    //         'event_capacity' => '12',
-    //     ]);
-
-    //     $response->assertStatus(200);
-    // }
-
 }
+
+// User testing :
+
+// user(index)
+// get user
+// store user
+// user duplicity 
