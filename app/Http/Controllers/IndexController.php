@@ -16,6 +16,7 @@ class IndexController extends Controller
     {
         $events = Event::All();
         return view('index')->with('events',$events);
+        
     }
 
 }
