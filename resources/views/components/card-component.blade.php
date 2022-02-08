@@ -2,6 +2,7 @@
   <div class="card mb-3" id="card-event">
       <div class="row g-0">
         <div class="col-md-4">
+       
           <img src="{{$event->event_image}}" class="img-fluid rounded-start" alt="Image of event">
         </div>
         <div class="col-md-8">
@@ -24,7 +25,7 @@
                 <div class="collapse multi-collapse" id="multiCollapse{{$event->id}}">
                   <div class="card card-body card-description" id="card">
                     <p>{{$event->id}}</p>
-                    <p>{{$event->description}}</p>
+                    <p>{{$event->event_description}}</p>
                     <p>Plazas disponibles: {{$event->event_capacity}}</p>
                   </div>
                </div>
