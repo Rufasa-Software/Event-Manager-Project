@@ -25,6 +25,7 @@
                     
                     <div class="tab-pane fade show active" id="nextEvents" role="tabpanel" aria-labelledby="nextEvents-tab">
                         <div class="section-cards"> 
+                           
                             @foreach ($nextEvents as $event)
                                 <x-card-component :event="$event"/>  
                             @endforeach

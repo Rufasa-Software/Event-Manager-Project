@@ -18,25 +18,19 @@ class IndexController extends Controller
     {   
         $actualDate =  date('Y-m-d');
         $events = Event::All();
-        $nextEvents = $this->filtergetNextEvents($events);
-        $pastEvents = $this->filtergetOLdEvents($events);
+        $nextEvents = $this->filtergetNextEvents($events, $actualDate);
+        $pastEvents = $this->filtergetOLdEvents($events, $actualDate);
        
         return view('index', compact('nextEvents','pastEvents' ));
     }
-    public function filtergetNextEvents($events){
-        $actualDate =  date('Y-m-d');
-        $events = Event::All()
-                ->sortBy(['event_date', 'asc'])
-                ->where('event->event_date','>=', $actualDate);
-         return $events;
+    public function filtergetNextEvents($events, $actualDate){
+        $nextEvent= $events->where('event_date', '>=' , $actualDate)->sortBy(['event_date', 'asc']);
+        return $nextEvent;
     }  
     
-    public function filtergetOLdEvents($events){
-        $actualDate =  date('Y-m-d');
-        $events = Event::All()
-            ->sortBy(['event_date', 'asc'])
-            ->where('event->event_date','<', $actualDate);
-        return $events;
+    public function filtergetOLdEvents($events, $actualDate){
+      $pastEvent=$events->where('event_date','<', $actualDate);
+        return $pastEvent;
    } 
 
     
