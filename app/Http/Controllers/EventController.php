@@ -16,6 +16,7 @@ class EventController extends Controller
     {
         $events = Event::All();
         return view('admin.admin')->with('events',$events);
+
     }
 
     /**
