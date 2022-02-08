@@ -21,16 +21,21 @@
             <main>
                 <x-tabs-component />
                 <div class="tab-content" id="myTabContent">
+                
+                    
                     <div class="tab-pane fade show active" id="nextEvents" role="tabpanel" aria-labelledby="nextEvents-tab">
-                        <div class="section-cards">
-                            @foreach ($events as $event)
-                            <x-card-component :events="$event" :event="$event"/>  
-                            @endforeach 
+                        <div class="section-cards"> 
+                            @foreach ($nextEvents as $event)
+                                <x-card-component :event="$event"/>  
+                            @endforeach
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="pastEvents" role="tabpanel" aria-labelledby="pastEvents-tab">
-                        <div class="section-cards" font-size: 16px;">
-                            Eventos anteriores a mostrar
+                    <div class="tab-pane fade" id="pastEvents" role="tabpa(nel" aria-labelledby="pastEvents-tab">
+                        <div class="section-cards" font-size: 16px;>
+                          
+                            @foreach ($pastEvents as $event)
+                                <x-card-component  :event="$event"/>  
+                            @endforeach 
                         </div>
                     </div>
                 </div>
@@ -43,23 +48,7 @@
                 </ul>
             </x-header>
 
-            <main>
-                <x-tabs-component />
-                <div class="tab-content" id="myTabContent">
-                    <div class="tab-pane fade show active" id="nextEvents" role="tabpanel" aria-labelledby="nextEvents-tab">
-                        <div class="section-cards">
-                            @foreach ($events as $event)
-                            <x-card-component :events="$event" :event="$event"/>  
-                            @endforeach
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="pastEvents" role="tabpanel" aria-labelledby="pastEvents-tab">
-                        <div class="section-cards" style=" font-size: 16px;">
-                            Eventos anteriores a mostrar
-                        </div>
-                    </div>
-                </div>
-            </main>
+           
     @endguest 
 
     <x-footer/>
