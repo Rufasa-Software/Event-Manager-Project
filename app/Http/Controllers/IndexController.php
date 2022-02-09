@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Event;
-use Illuminate\Http\Request;
+
 
 class IndexController extends Controller
 {
@@ -29,7 +29,7 @@ class IndexController extends Controller
     }  
     
     public function filtergetOLdEvents($events, $actualDate){
-      $pastEvent=$events->where('event_date','<', $actualDate);
+      $pastEvent=$events->where('event_date','<', $actualDate)->paginate(10);
         return $pastEvent;
    } 
 
