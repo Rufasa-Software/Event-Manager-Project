@@ -24,15 +24,16 @@ class IndexController extends Controller
         return view('index', compact('nextEvents','pastEvents' ));
     }
     public function filtergetNextEvents($events, $actualDate){
-        $nextEvent= $events->where('event_date', '>=' , $actualDate)->sortBy(['event_date', 'asc']);
+        $nextEvent = Event::where('event_date', '>=' , $actualDate)->paginate(6);
         return $nextEvent;
+        //->sortBy(['event_date', 'asc'])
     }  
     
     public function filtergetOLdEvents($events, $actualDate){
-      $pastEvent=$events->where('event_date','<', $actualDate)->paginate(10);
+      $pastEvent=Event::where('event_date','<', $actualDate)->paginate(6);
         return $pastEvent;
    } 
-
+   
     
  } 
     
