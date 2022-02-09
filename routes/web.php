@@ -18,7 +18,7 @@ use App\Models\Event;
 
 Route::get('/', [App\Http\Controllers\IndexController::class, 'index']);
 
-Route::resource('admin', 'App\Http\Controllers\EventController')->middleware('auth');
+Route::resource('admin', 'App\Http\Controllers\EventController');
 
 Auth::routes();
 
@@ -29,13 +29,13 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 })->name('dashboard');
 
 // landingpage - No auth - create controller / -Terminado-
-// access to dashboard - auth /
+// access to dashboard - auth / -A medias-
 
-// Normal User - auth /
+// Normal User - auth / -A medias-
 //list my events / -Terminado-
 // unsuscribe /
 
-//Admin User - auth
+//Admin User - auth / -A medias-
 // list events / -Terminado-
 // store / -Terminado-
 // delete / -Terminado-
