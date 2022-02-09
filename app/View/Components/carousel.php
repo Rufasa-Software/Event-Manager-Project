@@ -3,6 +3,8 @@
 namespace App\View\Components;
 
 use Illuminate\View\Component;
+use Illuminate\Support\Facades\DB;
+
 
 class carousel extends Component
 {
@@ -11,9 +13,12 @@ class carousel extends Component
      *
      * @return void
      */
-    public function __construct()
+    
+    public $carousel; 
+    
+     public function __construct()
     {
-        //
+    
     }
 
     /**
@@ -23,6 +28,7 @@ class carousel extends Component
      */
     public function render()
     {
-        return view('components.carousel');
+        $carousel = DB::select('select * from events');        ;
+        return view('components.carousel', ['carousel' => $carousel]);
     }
 }

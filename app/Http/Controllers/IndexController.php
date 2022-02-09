@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Models\Event;
-use App\Models\Carrousel;
 use Illuminate\Http\Request;
 
 class IndexController extends Controller
@@ -19,11 +18,10 @@ class IndexController extends Controller
     {   
         $actualDate =  date('Y-m-d');
         $events = Event::All();
-        $carousel = Event::All();
         $nextEvents = $this->filtergetNextEvents($events, $actualDate);
         $pastEvents = $this->filtergetOLdEvents($events, $actualDate);
        
-        return view('index', compact('carousel','nextEvents','pastEvents' ));
+        return view('index', compact('nextEvents','pastEvents' ));
     }
     public function filtergetNextEvents($events, $actualDate){
         $nextEvent= $events->where('event_date', '>=' , $actualDate)->sortBy(['event_date', 'asc']);
