@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Controllers\Auth;
+use EventUser;
 use Illuminate\Http\Request;
 
 class EventUserController extends Controller
@@ -13,6 +15,9 @@ class EventUserController extends Controller
      */
     public function index()
     {
-        // return view('home');
+        $user_id = Auth::id();
+ 
+        $user_id->events()->attach($event_id);
+        return view('user')->with('user',$user);
     }
 }
