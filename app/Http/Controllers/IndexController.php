@@ -33,7 +33,4 @@ class IndexController extends Controller
         return $pastEvent;
    } 
 
-    
- } 
-    
-
+}

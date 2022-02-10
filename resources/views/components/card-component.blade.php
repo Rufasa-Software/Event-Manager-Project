@@ -9,7 +9,13 @@
           <div class="card-body">
             <h5 class="card-title">{{$event->event_name}}</h5>
             <p class="date-event">{{$event->event_date}}</p>
-            <button type="button" class="btn btn-primary btn-lg">Apuntarse</button>
+            @guest
+              @if (Route::has('login'))
+                <button type="button" class="btn btn-primary btn-lg"><a href="/login">Not logged</a></button>
+              @endif
+              @else
+                <button type="button" class="btn btn-primary btn-lg">Logged</button>
+            @endguest
           </div>
         </div>
       </div>
