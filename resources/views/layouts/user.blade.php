@@ -34,12 +34,11 @@
                     
                 </main> --}}
                 <main>
-                    <x-tabs-component/>
-                    {{-- <section id="section-cards">
-                        @foreach ($events as $event)
-                            <x-card-component :events="$event" :event="$event"/>  
-                        @endforeach 
-                    </section>   --}}
+                                       
+                    @foreach ($events as $event)
+                        <x-card-component :event="$event"/>  
+                    @endforeach
+                
                 </main>
 
         @endguest
