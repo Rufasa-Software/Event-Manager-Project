@@ -19,7 +19,7 @@
             </x-header>
 
             <main>
-                <x-carousel/>
+                {{-- <x-carousel/> --}}
                 <x-tabs-component />
                 <div class="tab-content" id="myTabContent">
                 
