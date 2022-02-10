@@ -30,9 +30,9 @@
                             @foreach ($nextEvents as $event)
                                 <x-card-component :event="$event"/>  
                             @endforeach
-                            {{-- <div style="width: 50%; margin: 0 auto;">
+                           <div style="width: 50%; margin: 0 auto;">
                                 {{ $nextEvents->links() }}
-                            </div> --}}
+                            </div>
                         </div>
                     </div>
                     <div class="tab-pane fade" id="pastEvents" role="tabpanel" aria-labelledby="pastEvents-tab">
