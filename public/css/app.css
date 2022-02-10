@@ -15987,6 +15987,10 @@ footer #copyright {
   margin: 3% 0 0 auto;
   font-weight: bold;
 }
+#card-event .btn-lg a, #card-event .btn-group-lg > .btn a {
+  text-decoration: none;
+  color: #500F6A;
+}
 #card-event .collapse-container .collapse-description {
   border-top: 2px solid #71BE5D;
 }
@@ -16131,7 +16135,7 @@ footer #copyright {
   width: 90%;
   background-color: #1C1D2B;
   border-radius: 10px;
-  padding: 5px 0px 0px 0px;
+  padding: 15px 0px 0px 0px;
 }
 .my-events-container .my-events .text {
   justify-content: center;
@@ -16139,9 +16143,11 @@ footer #copyright {
   color: white;
 }
 
-@media (min-width: 768px) {
-  .my-events {
+@media (max-width: 768px) {
+  .my-events-container .my-events {
     width: 40%;
+  }
+  .my-events-container .my-events .text {
     font-size: 14px;
   }
 }

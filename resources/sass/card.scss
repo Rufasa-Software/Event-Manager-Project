@@ -39,6 +39,10 @@
         display: block;
         margin: 3% 0 0 auto;
         font-weight: bold;
+        a {
+            text-decoration: none;
+            color: $color-dark-purple;
+        }
     }
     
     .collapse-container {
