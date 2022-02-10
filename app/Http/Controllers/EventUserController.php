@@ -15,9 +15,8 @@ class EventUserController extends Controller
      */
     public function index()
     {
-        $user_id = Auth::id();
- 
-        $user_id->events()->attach($event_id);
-        return view('user')->with('user',$user);
+        // $user_id = Auth::id();
+        // $user_id->events()->attach($event_id);
+        // return view('user')->with('user',$user);
     }
 }

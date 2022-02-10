@@ -12,9 +12,22 @@ class IndexController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {
+    {   
+        $actualDate =  date('Y-m-d');
         $events = Event::All();
-        return view('index')->with('events',$events);
+        $nextEvents = $this->filtergetNextEvents($events, $actualDate);
+        $pastEvents = $this->filtergetOLdEvents($events, $actualDate);
+       
+        return view('index', compact('nextEvents','pastEvents' ));
     }
+    public function filtergetNextEvents($events, $actualDate){
+        $nextEvent= $events->where('event_date', '>=' , $actualDate)->sortBy(['event_date', 'asc']);
+        return $nextEvent;
+    }  
+    
+    public function filtergetOLdEvents($events, $actualDate){
+      $pastEvent=$events->where('event_date','<', $actualDate);
+        return $pastEvent;
+   } 
 
 }
