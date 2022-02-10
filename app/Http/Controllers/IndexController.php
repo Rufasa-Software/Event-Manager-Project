@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Event;
-use Illuminate\Http\Request;
+
 
 class IndexController extends Controller
 {
@@ -17,22 +17,23 @@ class IndexController extends Controller
     public function index()
     {   
         $actualDate =  date('Y-m-d');
-        $events = Event::All();
-        $nextEvents = $this->filtergetNextEvents($events, $actualDate);
-        $pastEvents = $this->filtergetOLdEvents($events, $actualDate);
+        
+        $nextEvents = $this->filtergetNextEvents($actualDate);
+        $pastEvents = $this->filtergetOLdEvents($actualDate);
        
         return view('index', compact('nextEvents','pastEvents' ));
     }
-    public function filtergetNextEvents($events, $actualDate){
-        $nextEvent= $events->where('event_date', '>=' , $actualDate)->sortBy(['event_date', 'asc']);
+    public function filtergetNextEvents($actualDate){
+        $nextEvent = Event::where('event_date', '>=' , $actualDate)->paginate(1);
         return $nextEvent;
+        //->sortBy(['event_date', 'asc'])
     }  
     
-    public function filtergetOLdEvents($events, $actualDate){
-      $pastEvent=$events->where('event_date','<', $actualDate);
+    public function filtergetOLdEvents($actualDate){
+      $pastEvent=Event::where('event_date','<', $actualDate)->paginate(6);
         return $pastEvent;
    } 
-
+   
     
  } 
     
