@@ -15,11 +15,11 @@ class carousel extends Component
      * @return void
      */
     
-    public $event; 
+    public $nextEvents;
     
-     public function __construct($event)
+     public function __construct($nextEvents)
     {
-    $this->event = $event;
+        $this->nextEvents = $nextEvents;
     }
 
     /**
@@ -29,7 +29,6 @@ class carousel extends Component
      */
     public function render()
     {
-        $event = Event::All();
-        return view('components.carousel', compact('event'));
+        return view('components.carousel');
     }
 }
