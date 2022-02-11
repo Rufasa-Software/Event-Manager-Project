@@ -30,7 +30,6 @@
               <div class="col">
                 <div class="collapse multi-collapse" id="multiCollapse{{$event->id}}">
                   <div class="card card-body card-description" id="card">
-                    <p>{{$event->id}}</p>
                     <p>{{$event->event_description}}</p>
                     <p>Plazas disponibles: {{$event->event_capacity}}</p>
                   </div>

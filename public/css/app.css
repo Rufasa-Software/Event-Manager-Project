@@ -16003,6 +16003,7 @@ footer #copyright {
 #card-event .collapse-container #card {
   width: 90%;
   margin: 1% auto;
+  background-color: #1C1D2B;
 }
 
 @media (min-width: 768px) {

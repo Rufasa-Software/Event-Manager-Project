@@ -30,8 +30,12 @@ class HomeController extends Controller
         $user=Auth::user();
         $id = $user->id;
         $events = $user->events;
-        
-        return view('home', compact('events'));
+        $sorted = $events->sortByDesc('event_date');
+  
+        $sorted->all();
+    
+              
+        return view('home', compact('sorted'));
     }
     
     

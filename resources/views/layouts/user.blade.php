@@ -34,10 +34,13 @@
                     
                 </main> --}}
                 <main>
-                                       
-                    @foreach ($events as $event)
-                        <x-card-component :event="$event"/>  
-                    @endforeach
+                                      
+                    <div class="section-cards">
+                        @foreach ($sorted as $event)
+                            <x-card-component :event="$event"/>  
+                        @endforeach   
+                    </div>                   
+                    
                 
                 </main>
 
