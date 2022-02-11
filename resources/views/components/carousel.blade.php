@@ -11,7 +11,7 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="https://loremflickr.com/320/240/dog"
-            class="d-block w-100" alt="..."/>
+            class="d-block w-50" alt="..."/>
           </div>
         </div>
        
