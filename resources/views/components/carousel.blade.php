@@ -3,13 +3,13 @@
 
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="https://loremflickr.com/320/240/computer" class="mx-auto d-block w-50">
+        <img src="https://loremflickr.com/320/240/computer" class="mx-auto d-block w-25">
       </div>
       <div class="carousel-item">
-        <img src="https://loremflickr.com/320/240/mobilephone" class="mx-auto d-block w-50">
+        <img src="https://loremflickr.com/320/240/mobilephone" class="mx-auto d-block w-25">
       </div>
       <div class="carousel-item">
-        <img src="https://loremflickr.com/320/240/laptop" class=" mx-auto d-block w-50">
+        <img src="https://loremflickr.com/320/240/laptop" class=" mx-auto d-block w-25">
       </div>
     </div>
 
