@@ -29,8 +29,12 @@ class HomeController extends Controller
 
         $id = $user->id;
         $events = $user->events;
-        
-        return view('home', compact('events'));
+        $sorted = $events->sortByDesc('event_date');
+  
+        $sorted->all();
+    
+              
+        return view('home', compact('sorted'));
     }
 
 }

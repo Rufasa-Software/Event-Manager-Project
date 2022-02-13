@@ -31,7 +31,6 @@
     }
     
     .subscribe-div{
-        
         display: flex;
         justify-content: flex-end;
         
@@ -61,10 +60,12 @@
                 border: none;
             }
         }
+        
 
         #card {
             width: 90%;
             margin: 1% auto;
+            background-color: $background-blue;
         }
     }  
 }

@@ -12,21 +12,22 @@
         </div>
         
       </div>
-    </div>
-  </div>
-  <div class="collapse-container">
-    <p class="collapse-description">
-      <button class="btn btn-primary" id="collapse{{$event->id}}" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{$event->id}}" aria-expanded="false" aria-controls="multiCollapse{{$event->id}}">
-      + info &nbsp &nbsp<i class="fas fa-chevron-down"></i></button>
-    </p>
-    <div class="hide-content">
-      <div>
-        <div class="col">
-          <div class="collapse" id="collapse{{$event->id}}">
-            <div class="card card-body card-description">
-              <p>{{$event->event_description}}</p>
-              <p>Plazas disponibles: {{$event->event_capacity}}</p>
-            </div>
+      <div class="collapse-container">
+        <p class="collapse-description">
+          <button class="btn btn-primary" id="multiCollapse{{$event->id}}" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapse{{$event->id}}" aria-expanded="false" aria-controls="multiCollapse{{$event->id}}">
+            + info &nbsp &nbsp<i class="fas fa-chevron-down"></i>
+          </button>
+        </p>
+        <div class="hide-content">
+          <div>
+              <div class="col">
+                <div class="collapse multi-collapse" id="multiCollapse{{$event->id}}">
+                  <div class="card card-body card-description" id="card">
+                    <p>{{$event->event_description}}</p>
+                    <p>Plazas disponibles: {{$event->event_capacity}}</p>
+                  </div>
+               </div>
+              </div>
           </div>
         </div>
       </div>
