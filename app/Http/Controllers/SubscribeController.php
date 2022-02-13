@@ -13,11 +13,13 @@ class SubscribeController extends Controller
      *
      * @return void
      */
+    //Authentication
     public function __construct()
     {
         $this->middleware('auth');
     }
 
+    //Subscribe function, many to many relationship using attachment
     public function subscribe(Request $request)
     {   
         $event_id = $request->route('id');
