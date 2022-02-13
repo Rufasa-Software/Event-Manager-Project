@@ -20,8 +20,6 @@ class CardComponent extends Component
     public function __construct($event)
     {
         $this->event=$event;
-        
-   
     }
 
     /**

@@ -24,7 +24,7 @@ class IndexController extends Controller
         return view('index', compact('nextEvents','pastEvents' ));
     }
     public function filtergetNextEvents($actualDate){
-        $nextEvent = Event::where('event_date', '>=' , $actualDate)->paginate(1);
+        $nextEvent = Event::where('event_date', '>=' , $actualDate)->paginate(6);
         return $nextEvent;
         //->sortBy(['event_date', 'asc'])
     }  

@@ -2,8 +2,9 @@
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\EventController;
-use App\Models\Event;
+use App\Http\Controllers\IndexController;
+use App\Http\Controllers\SubscribeController;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,13 +17,15 @@ use App\Models\Event;
 |
 */
 
-Route::get('/', [App\Http\Controllers\IndexController::class, 'index']);
+Route::get('/', [IndexController::class, 'index']);
+
+Route::get('/subscribe/{id}', [SubscribeController::class, 'subscribe'])->name('subscribe');
 
 Route::resource('admin', 'App\Http\Controllers\EventController');
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index']);
+Route::get('/home', [HomeController::class, 'index']);
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');

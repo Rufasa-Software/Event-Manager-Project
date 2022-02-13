@@ -23,8 +23,6 @@ class EventController extends Controller
         $events = Event::paginate(6);
         return view('admin.admin')->with('events',$events);
 
-        
-
     }
 
     /**

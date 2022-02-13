@@ -29,19 +29,24 @@
         font-style: italic;
         font-size: 1em;
     }
-
-    .btn-lg {
-        color: $color-dark-purple;
-        background-color: $color-green;
-        border-radius: 15px;
-        border: none;
-        box-shadow: $shadow;
-        display: block;
-        margin: 3% 0 0 auto;
-        font-weight: bold;
+    
+    .subscribe-div{
+        
+        display: flex;
+        justify-content: flex-end;
+        
         a {
+            justify-content: flex-end;
+            width: 135px;
+            height: 45px;
+            padding: 10px 0px;
             text-decoration: none;
             color: $color-dark-purple;
+            background-color: $color-green;
+            border-radius: 15px;
+            border: none;
+            box-shadow: $shadow;
+            font-weight: bold;
         }
     }
     

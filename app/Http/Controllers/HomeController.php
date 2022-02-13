@@ -18,7 +18,6 @@ class HomeController extends Controller
     {
         $this->middleware('auth');
     }
-
     /**
      * Show the application dashboard.
      *
@@ -26,15 +25,12 @@ class HomeController extends Controller
      */
     public function index()
     {   
-       
         $user=Auth::user();
+
         $id = $user->id;
         $events = $user->events;
         
         return view('home', compact('events'));
     }
-    
-    
-       
-    
+
 }

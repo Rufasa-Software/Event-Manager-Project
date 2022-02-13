@@ -44,11 +44,10 @@
                             <div style="width: 50%; margin: 0 auto; color: $color-dark-purple"  >
                                 {{ $pastEvents->links() }}
                             </div>
-                            
-                            
                         </div>
                     </div>
                 </div>
+            </main>
             @endif
             
             @else
@@ -57,7 +56,35 @@
                     <li id="profile" class="nav-item"><a href="/home" id="link" class="nav-link text-decoration-none mr-3" aria-current="page">Profile</a></li>
                 </ul>
             </x-header>
-
+            <main>
+                {{-- <x-carousel/> --}}
+                <x-tabs-component />
+                <div class="tab-content" id="myTabContent">
+                
+                    
+                    <div class="tab-pane fade show active" id="nextEvents" role="tabpanel" aria-labelledby="nextEvents-tab">
+                        <div class="section-cards"> 
+                           
+                            @foreach ($nextEvents as $event)
+                                <x-card-component :event="$event"/>  
+                            @endforeach
+                           <div style="width: 50%; margin: 0 auto;">
+                                {{ $nextEvents->links() }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pastEvents" role="tabpanel" aria-labelledby="pastEvents-tab">
+                        <div class="section-cards" font-size: 16px;>
+                          
+                            @foreach ($pastEvents as $event)
+                                <x-card-component  :event="$event"/>  
+                            @endforeach 
+                            <div style="width: 50%; margin: 0 auto; color: $color-dark-purple"  >
+                                {{ $pastEvents->links() }}
+                            </div>
+                        </div>
+                    </div>
+                </main>
            
     @endguest 
 

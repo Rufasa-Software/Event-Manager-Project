@@ -15977,19 +15977,22 @@ footer #copyright {
   font-style: italic;
   font-size: 1em;
 }
-#card-event .btn-lg, #card-event .btn-group-lg > .btn {
+#card-event .subscribe-div {
+  display: flex;
+  justify-content: flex-end;
+}
+#card-event .subscribe-div a {
+  justify-content: flex-end;
+  width: 135px;
+  height: 45px;
+  padding: 10px 0px;
+  text-decoration: none;
   color: #500F6A;
   background-color: #71BE5D;
   border-radius: 15px;
   border: none;
   box-shadow: 3px 3px 2px;
-  display: block;
-  margin: 3% 0 0 auto;
   font-weight: bold;
-}
-#card-event .btn-lg a, #card-event .btn-group-lg > .btn a {
-  text-decoration: none;
-  color: #500F6A;
 }
 #card-event .collapse-container .collapse-description {
   border-top: 2px solid #71BE5D;
@@ -16072,6 +16075,7 @@ footer #copyright {
   background-color: #14151F;
   color: white;
   border-radius: 10px;
+  border-color: #753e8b;
 }
 #card-container .card-content .card-body form #email-div .remember-input, #card-container .card-content .card-body form #password-div .remember-input, #card-container .card-content .card-body form #remember-div .remember-input, #card-container .card-content .card-body form #name .remember-input, #card-container .card-content .card-body form #confirm .remember-input {
   margin: 0px;
@@ -16081,6 +16085,7 @@ footer #copyright {
   background-color: #14151F;
   color: white;
   border-radius: 50px;
+  border-color: #753e8b;
 }
 #card-container .card-content .card-body form #email-div input::-moz-placeholder, #card-container .card-content .card-body form #password-div input::-moz-placeholder, #card-container .card-content .card-body form #remember-div input::-moz-placeholder, #card-container .card-content .card-body form #name input::-moz-placeholder, #card-container .card-content .card-body form #confirm input::-moz-placeholder {
   color: white;
@@ -16194,4 +16199,29 @@ body {
 }
 body main {
   margin-top: 30px;
+}
+
+.collapse:not(.show) {
+  display: none;
+}
+
+.collapsing {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.35s ease;
+}
+@media (prefers-reduced-motion: reduce) {
+  .collapsing {
+    transition: none;
+  }
+}
+.collapsing.collapse-horizontal {
+  width: 0;
+  height: auto;
+  transition: width 0.35s ease;
+}
+@media (prefers-reduced-motion: reduce) {
+  .collapsing.collapse-horizontal {
+    transition: none;
+  }
 }
