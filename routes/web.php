@@ -16,13 +16,26 @@ use App\Models\Event;
 |
 */
 
-Route::get('/', [App\Http\Controllers\IndexController::class, 'index']);
 
+
+//Routes in index
+Route::get('/', [App\Http\Controllers\IndexController::class, 'index'])->name('index');
+
+Route::get('/carousel', [App\Http\Controllers\HomeController::class, 'index'])->name('carousel');
+
+//Login and register routes
+Route::get('/login', [App\Http\Controllers\IndexController::class, 'index'])->name('login');
+
+Route::get('/register', [App\Http\Controllers\IndexController::class, 'index'])->name('register');
+
+//Route home (The user's profile)
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+//Routes in admin (CRUD)
 Route::resource('admin', 'App\Http\Controllers\EventController')->middleware('auth');
 
+//Authentication
 Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index']);
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
