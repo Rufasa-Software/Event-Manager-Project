@@ -12,12 +12,15 @@
 
 // Styles
 @import 'header';
+
 @import 'footer';
 
 @import 'tabs';
 @import 'card';
 
 @import 'access';
+
+@import 'carousel';
 
 @import 'user';
 
@@ -26,13 +29,31 @@
 
 //General modifications
 body  {
-    position: relative;
-    font-family: Rasa;
-    padding-bottom: 60px;
-    min-height: 100vh;
-    background-color: $background-dark-blue; 
+  position: relative;
+  font-family: Rasa;
+  padding-bottom: 100px;
+  min-height: 100vh;
+  background-color: $background-dark-blue; 
 
-    main {
-        margin-top:30px; 
-    }
+  main {
+    margin-top:30px; 
+  }
 }
+
+.collapse {
+    &:not(.show) {
+      display: none;
+    }
+  }
+  
+  .collapsing {
+    height: 0;
+    overflow: hidden;
+    @include transition($transition-collapse);
+  
+    &.collapse-horizontal {
+      width: 0;
+      height: auto;
+      @include transition($transition-collapse-width);
+    }
+  }

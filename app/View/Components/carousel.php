@@ -3,23 +3,23 @@
 namespace App\View\Components;
 
 use Illuminate\View\Component;
+use Illuminate\Support\Facades\DB;
+use App\Models\Event;
 
-class CardComponent extends Component
+
+class carousel extends Component
 {
     /**
      * Create a new component instance.
      *
      * @return void
      */
-
     
+    public $nextEvents;
     
-    public $event; 
-  
-
-    public function __construct($event)
+     public function __construct($nextEvents)
     {
-        $this->event=$event;
+        $this->nextEvents = $nextEvents;
     }
 
     /**
@@ -29,6 +29,6 @@ class CardComponent extends Component
      */
     public function render()
     {
-        return view('components.card-component');
+        return view('components.carousel');
     }
 }

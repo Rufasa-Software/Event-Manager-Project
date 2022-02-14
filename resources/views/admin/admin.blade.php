@@ -8,16 +8,11 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
-    <div class="d-flex justify-content-center">
-        <div>
-            <button class="btnEvento" type="button"><a id="link_admin" href="admin/create">Crear nuevo evento</a></button>
-        </div>
+    <x-header/>
+    <div class="d-flex justify-content-center mb-5">
+        <button class="btnEvento" type="button"><a id="link_admin" href="{{ route('admin.create')}}">Crear nuevo evento</a></button>
     </div>
-    <div class="mb-3 form-check color-white">
-            <input type="checkbox" class="form-check-input">
-            <label class="form-check-label" id="check_icon" for="Check"></label>
-    </div>
-
+    
     <table class="table table-dark table-striped mt-4">
         <thead>
           <tr>
@@ -56,8 +51,8 @@
     </table>
 
     <div>
-        <button class="btnDestacados m-0 text-white" type="button">Añadir a destacados</button>
+        <button class="btnDestacados text-white" type="button">Añadir a destacados</button>
     </div>
     <x-footer/>
-    </body>
+</body>    
 </html>

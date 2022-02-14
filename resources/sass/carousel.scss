@@ -1,0 +1,30 @@
+.carousel-inner {
+    max-width: 95%;
+    width: fit-content;
+    height: fit-content;
+    border: 1px $color-purple solid;
+
+    p {
+        justify-content: flex-start;
+        color: $color-purple;
+        font-size: 18px;
+    }
+
+    #carousel-images {
+        padding: 0px 200px;
+        align-items: center;
+
+        div {
+            margin-bottom: 50px;
+        }
+    }
+}
+
+.carousel-indicators {
+    .carousel-btn {
+        width: 15px;
+        height: 15px;
+        background-color: $color-purple;
+        border-radius: 100%;
+    }
+}

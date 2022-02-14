@@ -8,7 +8,7 @@
                         @csrf
                         <div id="email-div" class="d-flex wrap">
                             <label for="email" class="col-form-label email-label">E-Mail</label>
-                            <input type="email" class="email-input form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+                            <input type="email" class="email-input form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
                             
                             @error('email')
                                 <span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>

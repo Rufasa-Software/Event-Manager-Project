@@ -9,7 +9,7 @@
 </head>
 <body>
     <x-header></x-header>
-    <x-modal />  
+    <x-modal/>  
     <x-footer/>
 </body>
 </html>
