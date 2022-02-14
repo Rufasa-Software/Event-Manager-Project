@@ -8,39 +8,22 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">  
 </head>
 <body>
-    {{-- @guest
-        @if (Route::has('login'))
-            <li class="nav-item">
-                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-            </li>
-        @endif
+    <x-header> 
+        <ul class="nav nav-pills">
+            <li id="events" class="nav-item fs-2"><a href="{{ route('index') }}" id="link" class="nav-link text-decoration-none mr-3" aria-current="page">Events</a></li>
+        </ul>
+    </x-header>
 
-        @if (Route::has('register'))
-            <li class="nav-item">
-                <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-            </li>
-        @endif
+    <x-my-profile/>
 
-        @else --}}
-            <x-header> 
-                <ul class="nav nav-pills">
-                    <li id="events" class="nav-item fs-2"><a href="{{ route('index') }}" id="link" class="nav-link text-decoration-none mr-3" aria-current="page">Events</a></li>
-                </ul>
-            </x-header>
-
-            <x-my-profile/>
-
-            <main>           
-                <div class="section-cards">
-                    @foreach ($sorted as $event)
-                        <x-card-component :event="$event"/>  
-                    @endforeach   
-                </div>                   
-            </main>
-    {{-- @endguest --}}
-    
+    <main>           
+        <div class="section-cards">
+            @foreach ($sorted as $event)
+                <x-card-component :event="$event"/>  
+            @endforeach   
+        </div>                   
+    </main>
     <x-footer/>
     <script src="{{ asset('js/app.js') }}" defer></script>
 </body>
-    
 </html>

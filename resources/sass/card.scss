@@ -10,7 +10,6 @@
 #card-event {
     width: 100%;
     background-color: $background-blue;
-    color: $color-white;
     border-radius: 15px;
     
     .col-md-4 {
@@ -31,26 +30,18 @@
     }
     
     .subscribe-div{
-        display: flex;
         justify-content: flex-end;
-        
-        a {
-            justify-content: flex-end;
-            width: 135px;
-            height: 45px;
-            padding: 10px 0px;
-            text-decoration: none;
-            color: $color-dark-purple;
-            background-color: $color-green;
-            border-radius: 15px;
-            border: none;
-            box-shadow: $shadow;
-            font-weight: bold;
+
+        #subscribe-btn {
+            @include subscribe;
         }
-    }
+    
+        #unsubscribe-btn {
+            @include subscribe($color : $color-white, $background-color : $color-purple, $shadow: $shadow $color-dark-purple);
+        }
+    }    
     
     .collapse-container {
-        
         .collapse-description{
             border-top: 2px solid $color-green;
             .btn{
@@ -61,7 +52,6 @@
             }
         }
         
-
         #card {
             width: 90%;
             margin: 1% auto;

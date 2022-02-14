@@ -32,12 +32,10 @@ class SubscribeController extends Controller
 
         if ($user->events($event_id)->count() == 0 && $user->events($event_date) >= $actualDate){
             $user->events()->attach($event_id);
-            
+            return redirect('/');
         }else if($user->events($event_id)->count() != 0 && $user->events($event_date) >= $actualDate){
             $user->events()->detach($event_id);
-        }else{
-            return redirect('/')->with('message', 'Está intentando suscribirse a un evento caducado');
+            return redirect('/home');
         }
-        return redirect('/');
     }
 }

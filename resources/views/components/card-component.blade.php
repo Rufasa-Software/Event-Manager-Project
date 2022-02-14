@@ -1,4 +1,4 @@
-<div class="card mb-3" id="card-event">
+<div class="card mb-3 text-white" id="card-event">
   <div class="row g-0">
     <div class="col-md-4">
       <img src="{{$event->event_image}}" class="img-fluid rounded-start" alt="Image of event">
@@ -7,9 +7,15 @@
       <div class="card-body">
         <h5 class="card-title">{{$event->event_name}}</h5>
         <p class="date-event">{{$event->event_date}}</p>
-        <div class="subscribe-div">
-            <a class="d-flex justify-content-center align-content-center"href="{{ route('subscribe', ['id' => $event->id]) }}">Apuntarse</a>  
-          </div>
+        <div class="subscribe-div d-flex">
+          @auth
+            @if (Route::is('index'))
+              <a class="d-flex justify-content-center align-content-center" id='subscribe-btn' href="{{ route('subscribe', ['id' => $event->id]) }}">Apuntarse</a>  
+            @else
+              <a class="d-flex justify-content-center align-content-center" id='unsubscribe-btn' href="{{ route('subscribe', ['id' => $event->id]) }}">Desapuntarse</a>  
+            @endif
+          @endauth
+        </div>
       </div>
     </div>
   </div>
