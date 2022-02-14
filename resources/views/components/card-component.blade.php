@@ -11,8 +11,30 @@
         <h5 class="card-title">{{$event->event_name}}</h5>
         <p class="date-event">{{$event->event_date}}</p>
         <div class="subscribe-div">
-            <a class="d-flex justify-content-center align-content-center"href="{{ route('subscribe', ['id' => $event->id]) }}">Apuntarse</a>  
-            {{-- {{-- <a class="d-flex justify-content-center align-content-center"href="{{ route('subscribe', ['id' => $event->id]) }}">Desapuntarse</a> -->  --}}
+         
+        @auth
+        @if (Route::is('index') || Route::is('home'))
+          <a class="d-flex justify-content-center align-content-center" href="{{ route('subscribe', ['id' => $event->id]) }}">Apuntarse</a>
+                
+        @endif    
+        @if (Route::is('admin'))
+        <div class="icons_group">
+            <form action="{{ route('admin.destroy', $event->id) }}" method="POST">
+                <a href="/admin/{{$event->id}}/edit" class="far fa-edit"></a>         
+                @csrf
+                @method('DELETE')
+                <button type="submit" class="far fa-trash-alt"></button>
+            </form>
+          </div>
+          @endif
+        @endauth
+
+        @guest
+            <a class="d-flex justify-content-center align-content-center" href="{{ route('subscribe', ['id' => $event->id]) }}">Apuntarse</a>
+        @endguest
+         
+          
+          
         </div>
       </div>
     </div>
@@ -24,7 +46,7 @@
       <div class="col">
         <div class="collapse multi-collapse" id="multiCollapse{{$event->id}}">
           <div class="card card-body card-description" id="card">
-            <p>{{$event->id}}</p>
+           
             <p>{{$event->event_description}}</p>
             <p>Plazas disponibles: {{$event->event_capacity}}</p>
           </div>
