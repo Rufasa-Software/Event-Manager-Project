@@ -8,7 +8,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">  
 </head>
 <body>
-    @guest
+    {{-- @guest
         @if (Route::has('login'))
             <li class="nav-item">
                 <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
@@ -21,7 +21,7 @@
             </li>
         @endif
 
-        @else
+        @else --}}
             <x-header> 
                 <ul class="nav nav-pills">
                     <li id="events" class="nav-item fs-2"><a href="{{ route('index') }}" id="link" class="nav-link text-decoration-none mr-3" aria-current="page">Events</a></li>
@@ -37,7 +37,7 @@
                     @endforeach   
                 </div>                   
             </main>
-    @endguest
+    {{-- @endguest --}}
     
     <x-footer/>
     <script src="{{ asset('js/app.js') }}" defer></script>

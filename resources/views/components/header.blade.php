@@ -1,6 +1,4 @@
-{{-- Header --}}
 <div>
-    {{-- Header with name and distribution --}}
     <header class="d-flex justify-content-center align-items-center py-3">
         <a href="{{ route('index')}}" class="d-flex align-items-center me-auto  ms-5 text-decoration-none">
             <span id="title">Tech Events Manager</span>
@@ -10,8 +8,6 @@
 
     </header>
 </div>
-
-{{-- Slots --}}
 
 {{-- Version de Login | Register for the front page--}}
 {{-- <ul class="nav nav-pills">
