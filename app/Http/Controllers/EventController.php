@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Event;
 use Illuminate\Http\Request;
 
+
 class EventController extends Controller
 {
     /**
@@ -12,10 +13,16 @@ class EventController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+    
     public function index()
     {
-        $events = Event::All();
+        $events = Event::paginate(6);
         return view('admin.admin')->with('events',$events);
+
     }
 
     /**

@@ -1,67 +1,3 @@
-<<<<<<< HEAD
-@import url(https://fonts.googleapis.com/css?family=Nunito);
-@charset "UTF-8";
-/*!
- * Bootstrap v5.1.3 (https://getbootstrap.com/)
- * Copyright 2011-2021 The Bootstrap Authors
- * Copyright 2011-2021 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */
-:root {
-  --bs-blue: #0d6efd;
-  --bs-indigo: #6610f2;
-  --bs-purple: #6f42c1;
-  --bs-pink: #d63384;
-  --bs-red: #dc3545;
-  --bs-orange: #fd7e14;
-  --bs-yellow: #ffc107;
-  --bs-green: #198754;
-  --bs-teal: #20c997;
-  --bs-cyan: #0dcaf0;
-  --bs-white: #fff;
-  --bs-gray: #6c757d;
-  --bs-gray-dark: #343a40;
-  --bs-gray-100: #f8f9fa;
-  --bs-gray-200: #e9ecef;
-  --bs-gray-300: #dee2e6;
-  --bs-gray-400: #ced4da;
-  --bs-gray-500: #adb5bd;
-  --bs-gray-600: #6c757d;
-  --bs-gray-700: #495057;
-  --bs-gray-800: #343a40;
-  --bs-gray-900: #212529;
-  --bs-primary: #0d6efd;
-  --bs-secondary: #6c757d;
-  --bs-success: #198754;
-  --bs-info: #0dcaf0;
-  --bs-warning: #ffc107;
-  --bs-danger: #dc3545;
-  --bs-light: #f8f9fa;
-  --bs-dark: #212529;
-  --bs-primary-rgb: 13, 110, 253;
-  --bs-secondary-rgb: 108, 117, 125;
-  --bs-success-rgb: 25, 135, 84;
-  --bs-info-rgb: 13, 202, 240;
-  --bs-warning-rgb: 255, 193, 7;
-  --bs-danger-rgb: 220, 53, 69;
-  --bs-light-rgb: 248, 249, 250;
-  --bs-dark-rgb: 33, 37, 41;
-  --bs-white-rgb: 255, 255, 255;
-  --bs-black-rgb: 0, 0, 0;
-  --bs-body-color-rgb: 33, 37, 41;
-  --bs-body-bg-rgb: 248, 250, 252;
-  --bs-font-sans-serif: "Nunito", sans-serif;
-  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-  --bs-body-font-family: var(--bs-font-sans-serif);
-  --bs-body-font-size: 0.9rem;
-  --bs-body-font-weight: 400;
-  --bs-body-line-height: 1.6;
-  --bs-body-color: #212529;
-  --bs-body-bg: #f8fafc;
-}
-
-=======
 @import url(https://fonts.googleapis.com/css2?family=Rasa:wght@600&family=Roboto&display=swap);
 /*!
  * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com
@@ -4730,7 +4666,6 @@ readers do not read off random characters that represent icons */
   --bs-body-bg: #fff;
 }
 
->>>>>>> develop
 *,
 *::before,
 *::after {
@@ -4776,87 +4711,47 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 }
 
 h1, .h1 {
-<<<<<<< HEAD
-  font-size: calc(1.35rem + 1.2vw);
-}
-@media (min-width: 1200px) {
-  h1, .h1 {
-    font-size: 2.25rem;
-=======
   font-size: calc(1.375rem + 1.5vw);
 }
 @media (min-width: 1200px) {
   h1, .h1 {
     font-size: 2.5rem;
->>>>>>> develop
   }
 }
 
 h2, .h2 {
-<<<<<<< HEAD
-  font-size: calc(1.305rem + 0.66vw);
-}
-@media (min-width: 1200px) {
-  h2, .h2 {
-    font-size: 1.8rem;
-=======
   font-size: calc(1.325rem + 0.9vw);
 }
 @media (min-width: 1200px) {
   h2, .h2 {
     font-size: 2rem;
->>>>>>> develop
   }
 }
 
 h3, .h3 {
-<<<<<<< HEAD
-  font-size: calc(1.2825rem + 0.39vw);
-}
-@media (min-width: 1200px) {
-  h3, .h3 {
-    font-size: 1.575rem;
-=======
   font-size: calc(1.3rem + 0.6vw);
 }
 @media (min-width: 1200px) {
   h3, .h3 {
     font-size: 1.75rem;
->>>>>>> develop
   }
 }
 
 h4, .h4 {
-<<<<<<< HEAD
-  font-size: calc(1.26rem + 0.12vw);
-}
-@media (min-width: 1200px) {
-  h4, .h4 {
-    font-size: 1.35rem;
-=======
   font-size: calc(1.275rem + 0.3vw);
 }
 @media (min-width: 1200px) {
   h4, .h4 {
     font-size: 1.5rem;
->>>>>>> develop
   }
 }
 
 h5, .h5 {
-<<<<<<< HEAD
-  font-size: 1.125rem;
-}
-
-h6, .h6 {
-  font-size: 0.9rem;
-=======
   font-size: 1.25rem;
 }
 
 h6, .h6 {
   font-size: 1rem;
->>>>>>> develop
 }
 
 p {
@@ -5195,11 +5090,7 @@ progress {
 }
 
 .lead {
-<<<<<<< HEAD
-  font-size: 1.125rem;
-=======
   font-size: 1.25rem;
->>>>>>> develop
   font-weight: 300;
 }
 
@@ -5293,11 +5184,7 @@ progress {
 
 .blockquote {
   margin-bottom: 1rem;
-<<<<<<< HEAD
-  font-size: 1.125rem;
-=======
   font-size: 1.25rem;
->>>>>>> develop
 }
 .blockquote > :last-child {
   margin-bottom: 0;
@@ -5320,11 +5207,7 @@ progress {
 
 .img-thumbnail {
   padding: 0.25rem;
-<<<<<<< HEAD
-  background-color: #f8fafc;
-=======
   background-color: #fff;
->>>>>>> develop
   border: 1px solid #dee2e6;
   border-radius: 0.25rem;
   max-width: 100%;
@@ -6883,31 +6766,19 @@ progress {
   padding-bottom: calc(0.375rem + 1px);
   margin-bottom: 0;
   font-size: inherit;
-<<<<<<< HEAD
-  line-height: 1.6;
-=======
   line-height: 1.5;
->>>>>>> develop
 }
 
 .col-form-label-lg {
   padding-top: calc(0.5rem + 1px);
   padding-bottom: calc(0.5rem + 1px);
-<<<<<<< HEAD
-  font-size: 1.125rem;
-=======
   font-size: 1.25rem;
->>>>>>> develop
 }
 
 .col-form-label-sm {
   padding-top: calc(0.25rem + 1px);
   padding-bottom: calc(0.25rem + 1px);
-<<<<<<< HEAD
-  font-size: 0.7875rem;
-=======
   font-size: 0.875rem;
->>>>>>> develop
 }
 
 .form-text {
@@ -6920,19 +6791,11 @@ progress {
   display: block;
   width: 100%;
   padding: 0.375rem 0.75rem;
-<<<<<<< HEAD
-  font-size: 0.9rem;
-  font-weight: 400;
-  line-height: 1.6;
-  color: #212529;
-  background-color: #f8fafc;
-=======
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
   background-color: #fff;
->>>>>>> develop
   background-clip: padding-box;
   border: 1px solid #ced4da;
   -webkit-appearance: none;
@@ -6954,21 +6817,13 @@ progress {
 }
 .form-control:focus {
   color: #212529;
-<<<<<<< HEAD
-  background-color: #f8fafc;
-=======
   background-color: #fff;
->>>>>>> develop
   border-color: #86b7fe;
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
 }
 .form-control::-webkit-date-and-time-value {
-<<<<<<< HEAD
-  height: 1.6em;
-=======
   height: 1.5em;
->>>>>>> develop
 }
 .form-control::-moz-placeholder {
   color: #6c757d;
@@ -7063,11 +6918,7 @@ progress {
   width: 100%;
   padding: 0.375rem 0;
   margin-bottom: 0;
-<<<<<<< HEAD
-  line-height: 1.6;
-=======
   line-height: 1.5;
->>>>>>> develop
   color: #212529;
   background-color: transparent;
   border: solid transparent;
@@ -7079,15 +6930,9 @@ progress {
 }
 
 .form-control-sm {
-<<<<<<< HEAD
-  min-height: calc(1.6em + 0.5rem + 2px);
-  padding: 0.25rem 0.5rem;
-  font-size: 0.7875rem;
-=======
   min-height: calc(1.5em + 0.5rem + 2px);
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
->>>>>>> develop
   border-radius: 0.2rem;
 }
 .form-control-sm::-webkit-file-upload-button {
@@ -7110,15 +6955,9 @@ progress {
 }
 
 .form-control-lg {
-<<<<<<< HEAD
-  min-height: calc(1.6em + 1rem + 2px);
-  padding: 0.5rem 1rem;
-  font-size: 1.125rem;
-=======
   min-height: calc(1.5em + 1rem + 2px);
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
->>>>>>> develop
   border-radius: 0.3rem;
 }
 .form-control-lg::-webkit-file-upload-button {
@@ -7141,15 +6980,6 @@ progress {
 }
 
 textarea.form-control {
-<<<<<<< HEAD
-  min-height: calc(1.6em + 0.75rem + 2px);
-}
-textarea.form-control-sm {
-  min-height: calc(1.6em + 0.5rem + 2px);
-}
-textarea.form-control-lg {
-  min-height: calc(1.6em + 1rem + 2px);
-=======
   min-height: calc(1.5em + 0.75rem + 2px);
 }
 textarea.form-control-sm {
@@ -7157,7 +6987,6 @@ textarea.form-control-sm {
 }
 textarea.form-control-lg {
   min-height: calc(1.5em + 1rem + 2px);
->>>>>>> develop
 }
 
 .form-control-color {
@@ -7169,19 +6998,11 @@ textarea.form-control-lg {
   cursor: pointer;
 }
 .form-control-color::-moz-color-swatch {
-<<<<<<< HEAD
-  height: 1.6em;
-  border-radius: 0.25rem;
-}
-.form-control-color::-webkit-color-swatch {
-  height: 1.6em;
-=======
   height: 1.5em;
   border-radius: 0.25rem;
 }
 .form-control-color::-webkit-color-swatch {
   height: 1.5em;
->>>>>>> develop
   border-radius: 0.25rem;
 }
 
@@ -7190,19 +7011,11 @@ textarea.form-control-lg {
   width: 100%;
   padding: 0.375rem 2.25rem 0.375rem 0.75rem;
   -moz-padding-start: calc(0.75rem - 3px);
-<<<<<<< HEAD
-  font-size: 0.9rem;
-  font-weight: 400;
-  line-height: 1.6;
-  color: #212529;
-  background-color: #f8fafc;
-=======
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
   background-color: #fff;
->>>>>>> develop
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
   background-position: right 0.75rem center;
@@ -7240,11 +7053,7 @@ textarea.form-control-lg {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
   padding-left: 0.5rem;
-<<<<<<< HEAD
-  font-size: 0.7875rem;
-=======
   font-size: 0.875rem;
->>>>>>> develop
   border-radius: 0.2rem;
 }
 
@@ -7252,21 +7061,13 @@ textarea.form-control-lg {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 1rem;
-<<<<<<< HEAD
-  font-size: 1.125rem;
-=======
   font-size: 1.25rem;
->>>>>>> develop
   border-radius: 0.3rem;
 }
 
 .form-check {
   display: block;
-<<<<<<< HEAD
-  min-height: 1.44rem;
-=======
   min-height: 1.5rem;
->>>>>>> develop
   padding-left: 1.5em;
   margin-bottom: 0.125rem;
 }
@@ -7278,15 +7079,9 @@ textarea.form-control-lg {
 .form-check-input {
   width: 1em;
   height: 1em;
-<<<<<<< HEAD
-  margin-top: 0.3em;
-  vertical-align: top;
-  background-color: #f8fafc;
-=======
   margin-top: 0.25em;
   vertical-align: top;
   background-color: #fff;
->>>>>>> develop
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -7388,17 +7183,10 @@ textarea.form-control-lg {
   outline: 0;
 }
 .form-range:focus::-webkit-slider-thumb {
-<<<<<<< HEAD
-  box-shadow: 0 0 0 1px #f8fafc, 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
-}
-.form-range:focus::-moz-range-thumb {
-  box-shadow: 0 0 0 1px #f8fafc, 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
-=======
   box-shadow: 0 0 0 1px #fff, 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
 }
 .form-range:focus::-moz-range-thumb {
   box-shadow: 0 0 0 1px #fff, 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
->>>>>>> develop
 }
 .form-range::-moz-focus-outer {
   border: 0;
@@ -7577,15 +7365,9 @@ textarea.form-control-lg {
   display: flex;
   align-items: center;
   padding: 0.375rem 0.75rem;
-<<<<<<< HEAD
-  font-size: 0.9rem;
-  font-weight: 400;
-  line-height: 1.6;
-=======
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
->>>>>>> develop
   color: #212529;
   text-align: center;
   white-space: nowrap;
@@ -7599,11 +7381,7 @@ textarea.form-control-lg {
 .input-group-lg > .input-group-text,
 .input-group-lg > .btn {
   padding: 0.5rem 1rem;
-<<<<<<< HEAD
-  font-size: 1.125rem;
-=======
   font-size: 1.25rem;
->>>>>>> develop
   border-radius: 0.3rem;
 }
 
@@ -7612,11 +7390,7 @@ textarea.form-control-lg {
 .input-group-sm > .input-group-text,
 .input-group-sm > .btn {
   padding: 0.25rem 0.5rem;
-<<<<<<< HEAD
-  font-size: 0.7875rem;
-=======
   font-size: 0.875rem;
->>>>>>> develop
   border-radius: 0.2rem;
 }
 
@@ -7657,11 +7431,7 @@ textarea.form-control-lg {
   max-width: 100%;
   padding: 0.25rem 0.5rem;
   margin-top: 0.1rem;
-<<<<<<< HEAD
-  font-size: 0.7875rem;
-=======
   font-size: 0.875rem;
->>>>>>> develop
   color: #fff;
   background-color: rgba(25, 135, 84, 0.9);
   border-radius: 0.25rem;
@@ -7676,19 +7446,11 @@ textarea.form-control-lg {
 
 .was-validated .form-control:valid, .form-control.is-valid {
   border-color: #198754;
-<<<<<<< HEAD
-  padding-right: calc(1.6em + 0.75rem);
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23198754' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
-  background-repeat: no-repeat;
-  background-position: right calc(0.4em + 0.1875rem) center;
-  background-size: calc(0.8em + 0.375rem) calc(0.8em + 0.375rem);
-=======
   padding-right: calc(1.5em + 0.75rem);
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23198754' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
   background-position: right calc(0.375em + 0.1875rem) center;
   background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
->>>>>>> develop
 }
 .was-validated .form-control:valid:focus, .form-control.is-valid:focus {
   border-color: #198754;
@@ -7696,13 +7458,8 @@ textarea.form-control-lg {
 }
 
 .was-validated textarea.form-control:valid, textarea.form-control.is-valid {
-<<<<<<< HEAD
-  padding-right: calc(1.6em + 0.75rem);
-  background-position: top calc(0.4em + 0.1875rem) right calc(0.4em + 0.1875rem);
-=======
   padding-right: calc(1.5em + 0.75rem);
   background-position: top calc(0.375em + 0.1875rem) right calc(0.375em + 0.1875rem);
->>>>>>> develop
 }
 
 .was-validated .form-select:valid, .form-select.is-valid {
@@ -7712,11 +7469,7 @@ textarea.form-control-lg {
   padding-right: 4.125rem;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e"), url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23198754' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
   background-position: right 0.75rem center, center right 2.25rem;
-<<<<<<< HEAD
-  background-size: 16px 12px, calc(0.8em + 0.375rem) calc(0.8em + 0.375rem);
-=======
   background-size: 16px 12px, calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
->>>>>>> develop
 }
 .was-validated .form-select:valid:focus, .form-select.is-valid:focus {
   border-color: #198754;
@@ -7767,11 +7520,7 @@ textarea.form-control-lg {
   max-width: 100%;
   padding: 0.25rem 0.5rem;
   margin-top: 0.1rem;
-<<<<<<< HEAD
-  font-size: 0.7875rem;
-=======
   font-size: 0.875rem;
->>>>>>> develop
   color: #fff;
   background-color: rgba(220, 53, 69, 0.9);
   border-radius: 0.25rem;
@@ -7786,19 +7535,11 @@ textarea.form-control-lg {
 
 .was-validated .form-control:invalid, .form-control.is-invalid {
   border-color: #dc3545;
-<<<<<<< HEAD
-  padding-right: calc(1.6em + 0.75rem);
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e");
-  background-repeat: no-repeat;
-  background-position: right calc(0.4em + 0.1875rem) center;
-  background-size: calc(0.8em + 0.375rem) calc(0.8em + 0.375rem);
-=======
   padding-right: calc(1.5em + 0.75rem);
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
   background-position: right calc(0.375em + 0.1875rem) center;
   background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
->>>>>>> develop
 }
 .was-validated .form-control:invalid:focus, .form-control.is-invalid:focus {
   border-color: #dc3545;
@@ -7806,13 +7547,8 @@ textarea.form-control-lg {
 }
 
 .was-validated textarea.form-control:invalid, textarea.form-control.is-invalid {
-<<<<<<< HEAD
-  padding-right: calc(1.6em + 0.75rem);
-  background-position: top calc(0.4em + 0.1875rem) right calc(0.4em + 0.1875rem);
-=======
   padding-right: calc(1.5em + 0.75rem);
   background-position: top calc(0.375em + 0.1875rem) right calc(0.375em + 0.1875rem);
->>>>>>> develop
 }
 
 .was-validated .form-select:invalid, .form-select.is-invalid {
@@ -7822,11 +7558,7 @@ textarea.form-control-lg {
   padding-right: 4.125rem;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e"), url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e");
   background-position: right 0.75rem center, center right 2.25rem;
-<<<<<<< HEAD
-  background-size: 16px 12px, calc(0.8em + 0.375rem) calc(0.8em + 0.375rem);
-=======
   background-size: 16px 12px, calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
->>>>>>> develop
 }
 .was-validated .form-select:invalid:focus, .form-select.is-invalid:focus {
   border-color: #dc3545;
@@ -7864,11 +7596,7 @@ textarea.form-control-lg {
 .btn {
   display: inline-block;
   font-weight: 400;
-<<<<<<< HEAD
-  line-height: 1.6;
-=======
   line-height: 1.5;
->>>>>>> develop
   color: #212529;
   text-align: center;
   text-decoration: none;
@@ -7881,11 +7609,7 @@ textarea.form-control-lg {
   background-color: transparent;
   border: 1px solid transparent;
   padding: 0.375rem 0.75rem;
-<<<<<<< HEAD
-  font-size: 0.9rem;
-=======
   font-size: 1rem;
->>>>>>> develop
   border-radius: 0.25rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
@@ -8360,21 +8084,13 @@ textarea.form-control-lg {
 
 .btn-lg, .btn-group-lg > .btn {
   padding: 0.5rem 1rem;
-<<<<<<< HEAD
-  font-size: 1.125rem;
-=======
   font-size: 1.25rem;
->>>>>>> develop
   border-radius: 0.3rem;
 }
 
 .btn-sm, .btn-group-sm > .btn {
   padding: 0.25rem 0.5rem;
-<<<<<<< HEAD
-  font-size: 0.7875rem;
-=======
   font-size: 0.875rem;
->>>>>>> develop
   border-radius: 0.2rem;
 }
 
@@ -8446,11 +8162,7 @@ textarea.form-control-lg {
   min-width: 10rem;
   padding: 0.5rem 0;
   margin: 0;
-<<<<<<< HEAD
-  font-size: 0.9rem;
-=======
   font-size: 1rem;
->>>>>>> develop
   color: #212529;
   text-align: left;
   list-style: none;
@@ -8685,11 +8397,7 @@ textarea.form-control-lg {
   display: block;
   padding: 0.5rem 1rem;
   margin-bottom: 0;
-<<<<<<< HEAD
-  font-size: 0.7875rem;
-=======
   font-size: 0.875rem;
->>>>>>> develop
   color: #6c757d;
   white-space: nowrap;
 }
@@ -8876,13 +8584,8 @@ textarea.form-control-lg {
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
   color: #495057;
-<<<<<<< HEAD
-  background-color: #f8fafc;
-  border-color: #dee2e6 #dee2e6 #f8fafc;
-=======
   background-color: #fff;
   border-color: #dee2e6 #dee2e6 #fff;
->>>>>>> develop
 }
 .nav-tabs .dropdown-menu {
   margin-top: -1px;
@@ -8948,17 +8651,10 @@ textarea.form-control-lg {
   justify-content: space-between;
 }
 .navbar-brand {
-<<<<<<< HEAD
-  padding-top: 0.32rem;
-  padding-bottom: 0.32rem;
-  margin-right: 1rem;
-  font-size: 1.125rem;
-=======
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
   margin-right: 1rem;
   font-size: 1.25rem;
->>>>>>> develop
   text-decoration: none;
   white-space: nowrap;
 }
@@ -8990,11 +8686,7 @@ textarea.form-control-lg {
 
 .navbar-toggler {
   padding: 0.25rem 0.75rem;
-<<<<<<< HEAD
-  font-size: 1.125rem;
-=======
   font-size: 1.25rem;
->>>>>>> develop
   line-height: 1;
   background-color: transparent;
   border: 1px solid transparent;
@@ -9498,13 +9190,6 @@ textarea.form-control-lg {
   margin-left: -0.5rem;
   border-bottom: 0;
 }
-<<<<<<< HEAD
-.card-header-tabs .nav-link.active {
-  background-color: #fff;
-  border-bottom-color: #fff;
-}
-=======
->>>>>>> develop
 
 .card-header-pills {
   margin-right: -0.5rem;
@@ -9587,17 +9272,10 @@ textarea.form-control-lg {
   align-items: center;
   width: 100%;
   padding: 1rem 1.25rem;
-<<<<<<< HEAD
-  font-size: 0.9rem;
-  color: #212529;
-  text-align: left;
-  background-color: #f8fafc;
-=======
   font-size: 1rem;
   color: #212529;
   text-align: left;
   background-color: #fff;
->>>>>>> develop
   border: 0;
   border-radius: 0;
   overflow-anchor: none;
@@ -9648,11 +9326,7 @@ textarea.form-control-lg {
 }
 
 .accordion-item {
-<<<<<<< HEAD
-  background-color: #f8fafc;
-=======
   background-color: #fff;
->>>>>>> develop
   border: 1px solid rgba(0, 0, 0, 0.125);
 }
 .accordion-item:first-of-type {
@@ -9787,11 +9461,7 @@ textarea.form-control-lg {
 
 .pagination-lg .page-link {
   padding: 0.75rem 1.5rem;
-<<<<<<< HEAD
-  font-size: 1.125rem;
-=======
   font-size: 1.25rem;
->>>>>>> develop
 }
 .pagination-lg .page-item:first-child .page-link {
   border-top-left-radius: 0.3rem;
@@ -9804,11 +9474,7 @@ textarea.form-control-lg {
 
 .pagination-sm .page-link {
   padding: 0.25rem 0.5rem;
-<<<<<<< HEAD
-  font-size: 0.7875rem;
-=======
   font-size: 0.875rem;
->>>>>>> develop
 }
 .pagination-sm .page-item:first-child .page-link {
   border-top-left-radius: 0.2rem;
@@ -9954,11 +9620,7 @@ textarea.form-control-lg {
   display: flex;
   height: 1rem;
   overflow: hidden;
-<<<<<<< HEAD
-  font-size: 0.675rem;
-=======
   font-size: 0.75rem;
->>>>>>> develop
   background-color: #e9ecef;
   border-radius: 0.25rem;
 }
@@ -10512,11 +10174,7 @@ textarea.form-control-lg {
 
 .modal-title {
   margin-bottom: 0;
-<<<<<<< HEAD
-  line-height: 1.6;
-=======
   line-height: 1.5;
->>>>>>> develop
 }
 
 .modal-body {
@@ -10708,11 +10366,7 @@ textarea.form-control-lg {
   font-family: var(--bs-font-sans-serif);
   font-style: normal;
   font-weight: 400;
-<<<<<<< HEAD
-  line-height: 1.6;
-=======
   line-height: 1.5;
->>>>>>> develop
   text-align: left;
   text-align: start;
   text-decoration: none;
@@ -10723,11 +10377,7 @@ textarea.form-control-lg {
   word-spacing: normal;
   white-space: normal;
   line-break: auto;
-<<<<<<< HEAD
-  font-size: 0.7875rem;
-=======
   font-size: 0.875rem;
->>>>>>> develop
   word-wrap: break-word;
   opacity: 0;
 }
@@ -10818,11 +10468,7 @@ textarea.form-control-lg {
   font-family: var(--bs-font-sans-serif);
   font-style: normal;
   font-weight: 400;
-<<<<<<< HEAD
-  line-height: 1.6;
-=======
   line-height: 1.5;
->>>>>>> develop
   text-align: left;
   text-align: start;
   text-decoration: none;
@@ -10833,11 +10479,7 @@ textarea.form-control-lg {
   word-spacing: normal;
   white-space: normal;
   line-break: auto;
-<<<<<<< HEAD
-  font-size: 0.7875rem;
-=======
   font-size: 0.875rem;
->>>>>>> develop
   word-wrap: break-word;
   background-color: #fff;
   background-clip: padding-box;
@@ -10931,11 +10573,7 @@ textarea.form-control-lg {
 .popover-header {
   padding: 0.5rem 1rem;
   margin-bottom: 0;
-<<<<<<< HEAD
-  font-size: 0.9rem;
-=======
   font-size: 1rem;
->>>>>>> develop
   background-color: #f0f0f0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   border-top-left-radius: calc(0.3rem - 1px);
@@ -11279,11 +10917,7 @@ textarea.form-control-lg {
 
 .offcanvas-title {
   margin-bottom: 0;
-<<<<<<< HEAD
-  line-height: 1.6;
-=======
   line-height: 1.5;
->>>>>>> develop
 }
 
 .offcanvas-body {
@@ -12564,29 +12198,6 @@ textarea.form-control-lg {
 }
 
 .fs-1 {
-<<<<<<< HEAD
-  font-size: calc(1.35rem + 1.2vw) !important;
-}
-
-.fs-2 {
-  font-size: calc(1.305rem + 0.66vw) !important;
-}
-
-.fs-3 {
-  font-size: calc(1.2825rem + 0.39vw) !important;
-}
-
-.fs-4 {
-  font-size: calc(1.26rem + 0.12vw) !important;
-}
-
-.fs-5 {
-  font-size: 1.125rem !important;
-}
-
-.fs-6 {
-  font-size: 0.9rem !important;
-=======
   font-size: calc(1.375rem + 1.5vw) !important;
 }
 
@@ -12608,7 +12219,6 @@ textarea.form-control-lg {
 
 .fs-6 {
   font-size: 1rem !important;
->>>>>>> develop
 }
 
 .fst-italic {
@@ -12648,11 +12258,7 @@ textarea.form-control-lg {
 }
 
 .lh-base {
-<<<<<<< HEAD
-  line-height: 1.6 !important;
-=======
   line-height: 1.5 !important;
->>>>>>> develop
 }
 
 .lh-lg {
@@ -16226,21 +15832,6 @@ textarea.form-control-lg {
 }
 @media (min-width: 1200px) {
   .fs-1 {
-<<<<<<< HEAD
-    font-size: 2.25rem !important;
-  }
-
-  .fs-2 {
-    font-size: 1.8rem !important;
-  }
-
-  .fs-3 {
-    font-size: 1.575rem !important;
-  }
-
-  .fs-4 {
-    font-size: 1.35rem !important;
-=======
     font-size: 2.5rem !important;
   }
 
@@ -16254,7 +15845,6 @@ textarea.form-control-lg {
 
   .fs-4 {
     font-size: 1.5rem !important;
->>>>>>> develop
   }
 }
 @media print {
@@ -16298,8 +15888,6 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-<<<<<<< HEAD
-=======
 header {
   background-color: #1C1D2B;
 }
@@ -16389,14 +15977,21 @@ footer #copyright {
   font-style: italic;
   font-size: 1em;
 }
-#card-event .btn-lg, #card-event .btn-group-lg > .btn {
+#card-event .subscribe-div {
+  display: flex;
+  justify-content: flex-end;
+}
+#card-event .subscribe-div a {
+  justify-content: flex-end;
+  width: 135px;
+  height: 45px;
+  padding: 10px 0px;
+  text-decoration: none;
   color: #500F6A;
   background-color: #71BE5D;
   border-radius: 15px;
   border: none;
   box-shadow: 3px 3px 2px;
-  display: block;
-  margin: 3% 0 0 auto;
   font-weight: bold;
 }
 #card-event .collapse-container .collapse-description {
@@ -16411,6 +16006,7 @@ footer #copyright {
 #card-event .collapse-container #card {
   width: 90%;
   margin: 1% auto;
+  background-color: #1C1D2B;
 }
 
 @media (min-width: 768px) {
@@ -16480,6 +16076,7 @@ footer #copyright {
   background-color: #14151F;
   color: white;
   border-radius: 10px;
+  border-color: #753e8b;
 }
 #card-container .card-content .card-body form #email-div .remember-input, #card-container .card-content .card-body form #password-div .remember-input, #card-container .card-content .card-body form #remember-div .remember-input, #card-container .card-content .card-body form #name .remember-input, #card-container .card-content .card-body form #confirm .remember-input {
   margin: 0px;
@@ -16489,6 +16086,7 @@ footer #copyright {
   background-color: #14151F;
   color: white;
   border-radius: 50px;
+  border-color: #753e8b;
 }
 #card-container .card-content .card-body form #email-div input::-moz-placeholder, #card-container .card-content .card-body form #password-div input::-moz-placeholder, #card-container .card-content .card-body form #remember-div input::-moz-placeholder, #card-container .card-content .card-body form #name input::-moz-placeholder, #card-container .card-content .card-body form #confirm input::-moz-placeholder {
   color: white;
@@ -16532,6 +16130,36 @@ footer #copyright {
   }
 }
 
+.carousel-inner {
+  max-width: 95%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border: 1px #A911E6 solid;
+}
+.carousel-inner p {
+  justify-content: flex-start;
+  color: #A911E6;
+  font-size: 18px;
+}
+.carousel-inner #carousel-images {
+  padding: 0px 200px;
+  align-items: center;
+}
+.carousel-inner #carousel-images div {
+  margin-bottom: 50px;
+}
+
+.carousel-indicators .carousel-btn {
+  width: 15px;
+  height: 15px;
+  background-color: #A911E6;
+  border-radius: 100%;
+}
+
 .my-events-container {
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -16543,7 +16171,7 @@ footer #copyright {
   width: 90%;
   background-color: #1C1D2B;
   border-radius: 10px;
-  padding: 5px 0px 0px 0px;
+  padding: 15px 0px 0px 0px;
 }
 .my-events-container .my-events .text {
   justify-content: center;
@@ -16551,9 +16179,11 @@ footer #copyright {
   color: white;
 }
 
-@media (min-width: 768px) {
-  .my-events {
+@media (max-width: 768px) {
+  .my-events-container .my-events {
     width: 40%;
+  }
+  .my-events-container .my-events .text {
     font-size: 14px;
   }
 }
@@ -16594,11 +16224,35 @@ footer #copyright {
 body {
   position: relative;
   font-family: Rasa;
-  padding-bottom: 60px;
+  padding-bottom: 100px;
   min-height: 100vh;
   background-color: #14151F;
 }
 body main {
   margin-top: 30px;
 }
->>>>>>> develop
+
+.collapse:not(.show) {
+  display: none;
+}
+
+.collapsing {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.35s ease;
+}
+@media (prefers-reduced-motion: reduce) {
+  .collapsing {
+    transition: none;
+  }
+}
+.collapsing.collapse-horizontal {
+  width: 0;
+  height: auto;
+  transition: width 0.35s ease;
+}
+@media (prefers-reduced-motion: reduce) {
+  .collapsing.collapse-horizontal {
+    transition: none;
+  }
+}
