@@ -10,11 +10,11 @@ use Illuminate\Support\Facades\Redirect as FacadesRedirect;
 
 class SubscribeController extends Controller
 {
-     /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
+    /**
+    * Create a new controller instance.
+    *
+    * @return void
+    */
     //Authentication
     public function __construct()
     {
@@ -22,7 +22,7 @@ class SubscribeController extends Controller
     }
 
     public function subscribe(Request $request)
-    {   
+    {
         $actualDate =  date('Y-m-d');
         $event_id = $request->route('id');
         $event = Event::find($event_id);
@@ -30,12 +30,18 @@ class SubscribeController extends Controller
         
         $user = Auth::user();
 
-        if ($user->events($event_id)->count() == 0 && $user->events($event_date) >= $actualDate){
-            $user->events()->attach($event_id);
-            return redirect('/');
-        }else if($user->events($event_id)->count() != 0 && $user->events($event_date) >= $actualDate){
-            $user->events()->detach($event_id);
-            return redirect('/home');
+        if ($event_date < $actualDate) {
+            return redirect('/')->with('message', ' Está intentando suscribirse a un evento caducado');
+        
+        }else {
+            if($user->events()->where('event_id', $event_id)->exists()) {
+                $user->events()->detach($event_id);
+                return redirect('/home');
+            
+            }else {
+                $user->events()->attach($event_id);
+                return redirect('/');
+            }
         }
     }
-}
+} 
