@@ -3,6 +3,9 @@
 namespace App\View\Components;
 
 use Illuminate\View\Component;
+use Illuminate\Support\Facades\DB;
+use App\Models\Event;
+
 
 class carousel extends Component
 {
@@ -11,9 +14,12 @@ class carousel extends Component
      *
      * @return void
      */
-    public function __construct()
+    
+    public $nextEvents;
+    
+     public function __construct($nextEvents)
     {
-        //
+        $this->nextEvents = $nextEvents;
     }
 
     /**

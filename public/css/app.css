@@ -16130,6 +16130,36 @@ footer #copyright {
   }
 }
 
+.carousel-inner {
+  max-width: 95%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border: 1px #A911E6 solid;
+}
+.carousel-inner p {
+  justify-content: flex-start;
+  color: #A911E6;
+  font-size: 18px;
+}
+.carousel-inner #carousel-images {
+  padding: 0px 200px;
+  align-items: center;
+}
+.carousel-inner #carousel-images div {
+  margin-bottom: 50px;
+}
+
+.carousel-indicators .carousel-btn {
+  width: 15px;
+  height: 15px;
+  background-color: #A911E6;
+  border-radius: 100%;
+}
+
 .my-events-container {
   height: -webkit-fit-content;
   height: -moz-fit-content;

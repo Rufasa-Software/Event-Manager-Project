@@ -1,28 +1,30 @@
-<div class = container-fluid >
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+{{-- Carousel --}}
+<div class="container-fluid mb-4">
+  <div id="carouselExampleIndicators" class="carousel slide d-flex justify-content-center" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      {{-- Text --}}
+      <p class="ms-3 mt-3">Eventos destacados</p>
+
+      {{-- Images --}}
+      <div id="carousel-images">
+        <div class="carousel-item active">
+          <img src="https://loremflickr.com/320/240/computer">
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="..." class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
-          </div>
+
+        <div class="carousel-item">
+          <img src="https://loremflickr.com/320/240/mobilephone">
         </div>
-        {{-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button> --}}
+
+        <div class="carousel-item">
+          <img src="https://loremflickr.com/320/240/laptop">
+        </div>
       </div>
+    </div>
+    {{-- Buttons --}}
+    <div class="carousel-indicators d-flex justify-self-center">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active carousel-btn" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" class="carousel-btn"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" class="carousel-btn"></button>
+    </div>
+  </div>
 </div>

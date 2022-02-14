@@ -20,7 +20,7 @@ class UnsubscribeController extends Controller
     public function unsubscribe($event_id)
     {   
         $user=Auth::user();
-        $user->events->attach($event_id);
+        $user->events()->detach($event_id);
 
         return redirect('/home');
     }
