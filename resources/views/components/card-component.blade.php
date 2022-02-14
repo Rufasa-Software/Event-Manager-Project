@@ -11,7 +11,8 @@
         <h5 class="card-title">{{$event->event_name}}</h5>
         <p class="date-event">{{$event->event_date}}</p>
         <div class="subscribe-div">
-          <a class="d-flex justify-content-center align-content-center" href="{{ route('subscribe', ['id' => $event->id]) }}">Apuntarse</a>
+            <a class="d-flex justify-content-center align-content-center"href="{{ route('subscribe', ['id' => $event->id]) }}">Apuntarse</a>  
+            {{-- {{-- <a class="d-flex justify-content-center align-content-center"href="{{ route('subscribe', ['id' => $event->id]) }}">Desapuntarse</a> -->  --}}
         </div>
       </div>
     </div>

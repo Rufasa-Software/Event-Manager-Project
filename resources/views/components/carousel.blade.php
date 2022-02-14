@@ -4,7 +4,6 @@
     <div class="carousel-inner">
       {{-- Text --}}
       <p class="ms-3 mt-3">Eventos destacados</p>
-
       {{-- Images --}}
       <div id="carousel-images">
         <div class="carousel-item active">

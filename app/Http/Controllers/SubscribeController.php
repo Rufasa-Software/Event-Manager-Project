@@ -19,14 +19,17 @@ class SubscribeController extends Controller
         $this->middleware('auth');
     }
 
-    //Subscribe function, many to many relationship using attachment
     public function subscribe(Request $request)
     {   
         $event_id = $request->route('id');
         $user = Auth::user();
-        // dd($user, $event_id);
-        $user->events()->attach($event_id);
 
+        if ($user->events($event_id)->count() == 0 ){
+            $user->events()->attach($event_id);
+            
+        }else if($user->events($event_id)->count() != 0){
+            $user->events()->detach($event_id);
+        }
         return redirect('/');
     }
 }

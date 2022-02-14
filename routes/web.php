@@ -16,32 +16,26 @@ use App\Http\Controllers\HomeController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-//Routes in index ~
 Route::get('/', [App\Http\Controllers\IndexController::class, 'index'])->name('index');
 
 Route::get('/carousel', [App\Http\Controllers\HomeController::class, 'index'])->name('carousel');
 
 Route::get('/subscribe/{id}', [SubscribeController::class, 'subscribe'])->name('subscribe');
 
-//Login and register routes ~
 Route::get('/login', [App\Http\Controllers\IndexController::class, 'index'])->name('login');
 
 Route::get('/register', [App\Http\Controllers\IndexController::class, 'index'])->name('register');
 
-//Route home (The user's profile) ~
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-//Routes in admin (CRUD) ~
 Route::resource('admin', 'App\Http\Controllers\EventController')->middleware('auth')->names([
     'index' => 'admin',
     'create' => 'admin.create',
     'edit' => 'admin.edit'
 ]);
 
-//Authentication ~
 Auth::routes();
 
-//Middleware ~
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
