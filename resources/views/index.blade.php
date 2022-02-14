@@ -57,7 +57,7 @@
                 </ul>
             </x-header>
             <main>
-                {{-- <x-carousel/> --}}
+                <x-carousel :nextEvents="$nextEvents"/>
                 <x-tabs-component />
                 <div class="tab-content" id="myTabContent">
                     <div class="tab-pane fade show active" id="nextEvents" role="tabpanel" aria-labelledby="nextEvents-tab">
