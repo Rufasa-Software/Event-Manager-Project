@@ -5,6 +5,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\SubscribeController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\AdminController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -16,35 +18,43 @@ use App\Http\Controllers\HomeController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-//Routes in index ~
 Route::get('/', [App\Http\Controllers\IndexController::class, 'index'])->name('index');
 
 Route::get('/carousel', [App\Http\Controllers\HomeController::class, 'index'])->name('carousel');
 
-Route::get('/subscribe/{id}', [SubscribeController::class, 'subscribe'])->name('subscribe');
+Route::get('/subscribe/{id}', [App\Http\Controllers\SubscribeController::class, 'subscribe'])->name('subscribe');
 
-//Login and register routes ~
+Route::get('/unsubscribe/{id}', [App\Http\Controllers\UnsubscribeController::class, 'unsubscribe'])->name('unsubscribe');
+
+
 Route::get('/login', [App\Http\Controllers\IndexController::class, 'index'])->name('login');
+
+Route::post('/login', [App\Http\Controllers\LoginController::class, 'store'])->name('login.store');
+
+Route::get('/logout', [App\Http\Controllers\LoginController::class, 'destroy'])->name('login.destroy');
+
 
 Route::get('/register', [App\Http\Controllers\IndexController::class, 'index'])->name('register');
 
-//Route home (The user's profile) ~
+Route::post('/register', [App\Http\Controllers\RegisterController::class, 'store'])->name('register.store');
+
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-//Routes in admin (CRUD) ~
 Route::resource('admin', 'App\Http\Controllers\EventController')->middleware('auth')->names([
     'index' => 'admin',
     'create' => 'admin.create',
     'edit' => 'admin.edit'
 ]);
 
-//Authentication ~
 Auth::routes();
 
-//Middleware ~
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
+
+Route::get('/admin', [AdminController::class, 'index'])
+    ->middleware('auth.admin')
+    ->name('admin.index');
 
 // landingpage - No auth - create controller / -Terminado-
 // access to dashboard - auth / -A medias-
@@ -60,3 +70,4 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 // edit / -Terminado-
 // create / -Terminado-
 // update / -Terminado-
+

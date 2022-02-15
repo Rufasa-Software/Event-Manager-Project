@@ -25,15 +25,11 @@ class HomeController extends Controller
      */
     public function index()
     {   
+        
         $user=Auth::user();
-
-        $id = $user->id;
         $events = $user->events;
         $sorted = $events->sortByDesc('event_date');
-  
-        $sorted->all();
     
-              
         return view('home', compact('sorted'));
     }
 

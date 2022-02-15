@@ -1,3 +1,45 @@
 .formulario {
-    margin: 50px 200px 0px 200px;
+    height: fit-content;
+    width: 650px;
+    margin-top: 30px;
+    padding: 10px 50px 0px 50px;
+    border-radius: 25px;
+    background-color: $background-blue;
+
+    div {
+        input::placeholder {
+            color: $color-purple;
+        }
+        .form-control {
+            background-color: $background-dark-blue;
+            border: 2px $color-purple solid;
+            color: $color-white;
+        }
+
+        .form-control::placeholder{
+            color: $color-white;
+        }
+
+        label {
+            font-size: 18px;
+            color: $color-purple;
+        }
+    }
+    
+    .modal-footer {
+        height: fit-content;
+        border: 5px $background-blue solid;
+        justify-content: space-around;
+
+        button {
+            width: 140px;
+            height: 70px;
+            font-size: 24px;
+            background-color: $color-purple;
+            border-radius: 20px;
+            color: $color-white;
+            font-size: 18px;
+            border: none;
+        }
+    }
 }

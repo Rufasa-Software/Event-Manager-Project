@@ -14,7 +14,7 @@ class CardComponent extends Component
 
     
     
-    public $event; 
+    public $event;
   
 
     public function __construct($event)
