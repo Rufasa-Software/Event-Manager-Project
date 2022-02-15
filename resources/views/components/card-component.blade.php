@@ -27,7 +27,7 @@
             @endif
           @endauth
           @guest
-            <a class="d-flex justify-content-center align-content-center" href="{{ route('subscribe', ['id' => $event->id]) }}">Apuntarse</a>
+            <a class="d-flex justify-content-center align-content-center" id='subscribe-btn' href="{{ route('subscribe', ['id' => $event->id]) }}">Apuntarse</a>
           @endguest
         </div>
       </div>
