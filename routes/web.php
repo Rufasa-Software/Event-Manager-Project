@@ -20,7 +20,9 @@ Route::get('/', [App\Http\Controllers\IndexController::class, 'index'])->name('i
 
 Route::get('/carousel', [App\Http\Controllers\HomeController::class, 'index'])->name('carousel');
 
-Route::get('/subscribe/{id}', [SubscribeController::class, 'subscribe'])->name('subscribe');
+Route::get('/subscribe/{id}', [App\Http\Controllers\SubscribeController::class, 'subscribe'])->name('subscribe');
+
+Route::get('/unsubscribe/{id}', [App\Http\Controllers\UnsubscribeController::class, 'unsubscribe'])->name('unsubscribe');
 
 Route::get('/login', [App\Http\Controllers\IndexController::class, 'index'])->name('login');
 
