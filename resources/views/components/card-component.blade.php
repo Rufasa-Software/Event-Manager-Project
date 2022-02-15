@@ -11,10 +11,24 @@
           @auth
             @if (Route::is('index'))
               <a class="d-flex justify-content-center align-content-center" id='subscribe-btn' href="{{ route('subscribe', ['id' => $event->id]) }}">Apuntarse</a>  
-            @else
-              <a class="d-flex justify-content-center align-content-center" id='unsubscribe-btn' href="{{ route('subscribe', ['id' => $event->id]) }}">Desapuntarse</a>  
+            @endif
+            @if (Route::is('home'))
+              <a class="d-flex justify-content-center align-content-center" id='unsubscribe-btn' href="{{ route('unsubscribe', ['id' => $event->id]) }}">Desapuntarse</a>  
+            @endif
+            @if (Route::is('admin'))
+            <div class="icons_group">
+              <form action="{{ route('admin.destroy', $event->id) }}" method="POST">
+                  <a href="/admin/{{$event->id}}/edit" class="far fa-edit"></a>         
+                  @csrf
+                  @method('DELETE')
+                  <button type="submit" class="far fa-trash-alt"></button>
+              </form>
+            </div>
             @endif
           @endauth
+          @guest
+            <a class="d-flex justify-content-center align-content-center" href="{{ route('subscribe', ['id' => $event->id]) }}">Apuntarse</a>
+          @endguest
         </div>
       </div>
     </div>

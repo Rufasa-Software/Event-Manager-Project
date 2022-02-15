@@ -8,6 +8,12 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
+    @if(Session::has('message'))
+        <div class="alert alert-dark alert-dismissible fade show position-absolute" role="alert">
+            <strong class="fs-5">No es posible esta acción!</strong>{{' Está intentando suscribirse a un evento caducado'}}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    @endif
     @guest
         @if (Route::has('login'))
             <x-header>
@@ -91,22 +97,3 @@
     <script src="../js/app.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-{{-- @if(Session::has('message'))
-                <div class="alert alert-dark alert-dismissible fade show position-absolute" role="alert">
-                    <strong class="fs-5">No es posible esta acción!</strong>{{'message'}}
-                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                </div>
-            @endif --}}

@@ -12,47 +12,21 @@
     <div class="d-flex justify-content-center mb-5">
         <button class="btnEvento" type="button"><a id="link_admin" href="{{ route('admin.create')}}">Crear nuevo evento</a></button>
     </div>
-    
-    <table class="table table-dark table-striped mt-4">
-        <thead>
-          <tr>
-            <th scope="col">id</th>
-            <th scope="col">event_name</th>
-            <th scope="col">event_date</th>
-            <th scope="col">event_description</th>
-            <th scope="col">event_image</th>
-            <th scope="col">event_capacity</th>
-            <th scope="col"></th>
-          </tr>
-        </thead>
+    <div class="section-cards">
+        @foreach ($events as $event)
+            <x-card-component :event="$event"/>  
+        @endforeach
 
-        <tbody>
-         @foreach ($events as $event)
-            <tr>
-                <td>{{$event->id}}</td>
-                <td>{{$event->event_name}}</td>
-                <td>{{$event->event_date}}</td>
-                <td>{{$event->event_description}}</td>
-                <td>{{$event->event_image}}</td>
-                <td>{{$event->event_capacity}}</td>
-                <td>
-                    <div class="icons_group">
-                        <form action="{{ route('admin.destroy', $event->id) }}" method="POST">
-                            <a href="/admin/{{$event->id}}/edit" class="far fa-edit"></a>         
-                            @csrf
-                            @method('DELETE')
-                            <button type="submit" class="far fa-trash-alt"></button>
-                        </form>
-                    </div>
-                </td>
-            </tr>
-         @endforeach
-        </tbody>
-    </table>
+        <div style="width: 50%; margin: 0 auto;">
+            {{ $events->links() }}
+        </div>
+    </div>
+    
 
     <div>
         <button class="btnDestacados text-white" type="button">Añadir a destacados</button>
     </div>
     <x-footer/>
+    <script src="../js/app.js"></script>   
 </body>    
 </html>
