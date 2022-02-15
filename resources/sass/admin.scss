@@ -1,27 +1,16 @@
 .btnEvento{
-    margin-top: 50px;
-    background-color: $color-purple;
-    border-radius: 10px;
-    font-size: 18px;
-    width: 500px;
-    height: 50px;
-    // box-shadow: 3px 3px 2px;
+    height: 100px;
+    @include button;
 }
 
 #link_admin{
-    text-decoration: none;
-    color: $color-white;
+    @include link;
 }
 
 .btnDestacados{
-    background-color: $color-purple;
-    width: fit-content;
-    font-size: 18px;
-    text-align: right;
-    border-radius: 10px;
+    text-align: right;  
     color: $color-white;
-    margin-top: 20px;
-    // box-shadow: 3px 3px 2px;
+    @include button($mt : 20px, $width : fit-content);
 }
 
 .icons_group{

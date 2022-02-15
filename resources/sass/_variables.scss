@@ -11,3 +11,43 @@ $shadow: 3px 3px 2px;
 
 // Breakpoints
 $breakpoint-tablet: 768px;
+
+
+// Mixins
+@mixin subscribe($color : $color-dark-purple, $background-color : $color-green, $shadow : $shadow){
+    color: $color;
+    background-color: $background-color;
+    box-shadow: $shadow;
+    justify-content: flex-end;
+    width: 135px;
+    height: 45px;
+    padding: 10px 0px;
+    text-decoration: none;
+    border-radius: 15px;
+    border: none;
+    font-weight: bold;
+}
+
+@mixin login-register($height : 50px, $width : 300px, $radius : 10px) {
+    height: $height;
+    width: $width;
+    border: $background-blue solid;
+    background-color: $background-dark-blue;
+    color: $color-white;
+    border-radius: $radius;
+    border-color: #753e8b;
+}
+
+
+@mixin button($mt : 50px, $width : 500px) {
+    margin-top: $mt;
+    background-color: $color-purple;
+    border-radius: 10px;
+    font-size: 20px;
+    width: 500px;
+}
+
+@mixin link ($color : $color-white) {
+    text-decoration: none;
+    color: $color-white;
+}

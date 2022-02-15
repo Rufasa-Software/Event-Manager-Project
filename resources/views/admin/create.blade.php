@@ -9,7 +9,11 @@
 </head>
 <body>
     <x-header></x-header>
-    <x-modal/>  
+    <form action="/admin" method="POST" class="d-flex justify-content-center">
+        <x-modal>
+            @csrf
+        </x-modal> 
+    </form>
     <x-footer/>
 </body>
 </html>

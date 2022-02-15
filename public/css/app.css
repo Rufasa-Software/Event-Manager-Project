@@ -15961,7 +15961,6 @@ footer #copyright {
 #card-event {
   width: 100%;
   background-color: #1C1D2B;
-  color: white;
   border-radius: 15px;
 }
 #card-event .col-md-4 {
@@ -15978,20 +15977,32 @@ footer #copyright {
   font-size: 1em;
 }
 #card-event .subscribe-div {
-  display: flex;
   justify-content: flex-end;
 }
-#card-event .subscribe-div a {
+#card-event .subscribe-div #subscribe-btn {
+  color: #500F6A;
+  background-color: #71BE5D;
+  box-shadow: 3px 3px 2px;
   justify-content: flex-end;
   width: 135px;
   height: 45px;
   padding: 10px 0px;
   text-decoration: none;
-  color: #500F6A;
-  background-color: #71BE5D;
   border-radius: 15px;
   border: none;
-  box-shadow: 3px 3px 2px;
+  font-weight: bold;
+}
+#card-event .subscribe-div #unsubscribe-btn {
+  color: white;
+  background-color: #A911E6;
+  box-shadow: 3px 3px 2px #500F6A;
+  justify-content: flex-end;
+  width: 135px;
+  height: 45px;
+  padding: 10px 0px;
+  text-decoration: none;
+  border-radius: 15px;
+  border: none;
   font-weight: bold;
 }
 #card-event .collapse-container .collapse-description {
@@ -16111,7 +16122,7 @@ footer #copyright {
 #card-container .card-content .card-body form #link-password a {
   font-size: 24px;
   text-decoration: none;
-  color: #A911E6;
+  color: white;
 }
 @media (max-width: 768px) {
   #card-container .card-content .card-body form #email-div, #card-container .card-content .card-body form #password-div, #card-container .card-content .card-body form #remember-div, #card-container .card-content .card-body form #name, #card-container .card-content .card-body form #confirm, #card-container .card-content .card-body form #join button, #card-container .card-content .card-body form #register button, #card-container .card-content .card-body form #link-password a {
@@ -16188,12 +16199,12 @@ footer #copyright {
   }
 }
 .btnEvento {
+  height: 100px;
   margin-top: 50px;
   background-color: #A911E6;
   border-radius: 10px;
-  font-size: 18px;
+  font-size: 20px;
   width: 500px;
-  height: 50px;
 }
 
 #link_admin {
@@ -16202,15 +16213,13 @@ footer #copyright {
 }
 
 .btnDestacados {
-  background-color: #A911E6;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  font-size: 18px;
   text-align: right;
-  border-radius: 10px;
   color: white;
   margin-top: 20px;
+  background-color: #A911E6;
+  border-radius: 10px;
+  font-size: 20px;
+  width: 500px;
 }
 
 .icons_group {
@@ -16218,7 +16227,58 @@ footer #copyright {
 }
 
 .formulario {
-  margin: 50px 200px 0px 200px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 650px;
+  margin-top: 30px;
+  padding: 10px 50px 0px 50px;
+  border-radius: 25px;
+  background-color: #1C1D2B;
+}
+.formulario div input::-moz-placeholder {
+  color: #A911E6;
+}
+.formulario div input:-ms-input-placeholder {
+  color: #A911E6;
+}
+.formulario div input::placeholder {
+  color: #A911E6;
+}
+.formulario div .form-control {
+  background-color: #14151F;
+  border: 2px #A911E6 solid;
+  color: white;
+}
+.formulario div .form-control::-moz-placeholder {
+  color: white;
+}
+.formulario div .form-control:-ms-input-placeholder {
+  color: white;
+}
+.formulario div .form-control::placeholder {
+  color: white;
+}
+.formulario div label {
+  font-size: 18px;
+  color: #A911E6;
+}
+.formulario .modal-footer {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border: 5px #1C1D2B solid;
+  justify-content: space-around;
+}
+.formulario .modal-footer button {
+  width: 140px;
+  height: 70px;
+  font-size: 24px;
+  background-color: #A911E6;
+  border-radius: 20px;
+  color: white;
+  font-size: 18px;
+  border: none;
 }
 
 body {
