@@ -54,9 +54,9 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
 
-Route::get('/admin', [AdminController::class, 'index'])
-    ->middleware('auth.admin')
-    ->name('admin.index');
+// Route::get('/admin', [AdminController::class, 'index'])
+//     ->middleware('auth.admin')
+//     ->name('admin.index');
 
 // landingpage - No auth - create controller / -Terminado-
 // access to dashboard - auth / -A medias-
