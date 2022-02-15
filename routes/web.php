@@ -5,6 +5,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\SubscribeController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\AdminController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -22,9 +24,17 @@ Route::get('/carousel', [App\Http\Controllers\HomeController::class, 'index'])->
 
 Route::get('/subscribe/{id}', [SubscribeController::class, 'subscribe'])->name('subscribe');
 
+
 Route::get('/login', [App\Http\Controllers\IndexController::class, 'index'])->name('login');
 
+Route::post('/login', [App\Http\Controllers\LoginController::class, 'store'])->name('login.store');
+
+Route::get('/logout', [App\Http\Controllers\LoginController::class, 'destroy'])->name('login.destroy');
+
+
 Route::get('/register', [App\Http\Controllers\IndexController::class, 'index'])->name('register');
+
+Route::post('/register', [App\Http\Controllers\RegisterController::class, 'store'])->name('register.store');
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
@@ -40,6 +50,10 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
 
+Route::get('/admin', [AdminController::class, 'index'])
+    ->middleware('auth.admin')
+    ->name('admin.index');
+
 // landingpage - No auth - create controller / -Terminado-
 // access to dashboard - auth / -A medias-
 
@@ -54,3 +68,4 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 // edit / -Terminado-
 // create / -Terminado-
 // update / -Terminado-
+

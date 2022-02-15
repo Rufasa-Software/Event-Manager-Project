@@ -55,6 +55,11 @@
                 <ul class="nav nav-pills">
                     <li id="profile" class="nav-item"><a href="/home" id="link" class="nav-link text-decoration-none mr-3" aria-current="page">Profile</a></li>
                 </ul>
+
+                <ul class="nav nav-pills">
+                    <li id="logOut" class="nav-item"><a href="../views/auth/login.blade.php" id="link" class="nav-link text-decoration-none mr-3" aria-current="page">Log Out</a></li>
+                </ul>
+
             </x-header>
             <main>
                 <x-carousel :nextEvents="$nextEvents"/>
