@@ -27,14 +27,16 @@ Route::get('/subscribe/{id}', [App\Http\Controllers\SubscribeController::class, 
 Route::get('/unsubscribe/{id}', [App\Http\Controllers\UnsubscribeController::class, 'unsubscribe'])->name('unsubscribe');
 
 
-Route::get('/login', [App\Http\Controllers\IndexController::class, 'create'])->name('login');
+Route::get('/login', [App\Http\Controllers\LoginController::class, 'index'])->name('login');
+
+Route::get('/login', [App\Http\Controllers\LoginController::class, 'create'])->name('login');
 
 Route::post('/login', [App\Http\Controllers\LoginController::class, 'store'])->name('login.store');
 
 Route::get('/logout', [App\Http\Controllers\LoginController::class, 'destroy'])->name('login.destroy');
 
 
-Route::get('/register', [App\Http\Controllers\IndexController::class, 'create'])->name('register');
+Route::get('/register', [App\Http\Controllers\RegisterController::class, 'index'])->name('register');
 
 Route::post('/register', [App\Http\Controllers\RegisterController::class, 'store'])->name('register.store');
 
@@ -70,4 +72,3 @@ Route::get('/admin', [AdminController::class, 'index'])
 // edit / -Terminado-
 // create / -Terminado-
 // update / -Terminado-
-

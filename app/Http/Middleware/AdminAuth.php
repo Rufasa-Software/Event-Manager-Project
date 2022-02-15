@@ -21,6 +21,6 @@ class AdminAuth
             }
             
         }
-        return redirect()->to('/resources/views/admin/admin.blade.php');
+        return view('admin.admin');
     }
 }
