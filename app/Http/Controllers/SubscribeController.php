@@ -19,6 +19,11 @@ class SubscribeController extends Controller
         $this->middleware('auth');
     }
 
+     /**
+     * Show the application dashboard.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
     public function subscribe(Request $request)
     {
         $actualDate =  date('Y-m-d');

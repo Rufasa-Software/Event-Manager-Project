@@ -27,7 +27,7 @@
             @endif
           @endauth
           @guest
-            <a class="d-flex justify-content-center align-content-center" href="{{ route('subscribe', ['id' => $event->id]) }}">Apuntarse</a>
+            <a class="d-flex justify-content-center align-content-center" id='subscribe-btn' href="{{ route('subscribe', ['id' => $event->id]) }}">Apuntarse</a>
           @endguest
         </div>
       </div>
@@ -39,7 +39,7 @@
       <div class="col">
         <div class="collapse multi-collapse" id="multiCollapse{{$event->id}}">
           <div class="card card-body card-description" id="card">
-            <p>{{$event->id}}</p>
+           
             <p>{{$event->event_description}}</p>
             <p>Plazas disponibles: {{$event->event_capacity}}</p>
           </div>

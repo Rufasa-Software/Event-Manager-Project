@@ -17,18 +17,23 @@ class UnsubscribeController extends Controller
     {
         $this->middleware('auth');
     }
-
+    
+    /**
+     * Show the application dashboard.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
     public function unsubscribe(Request $request){
 
-    $event_id = $request->route('id');
-        
-    $user = Auth::user();
+        $event_id = $request->route('id');
+            
+        $user = Auth::user();
 
-    if ($user->events()->where('event_id', $event_id)->exists()) {
-        $user->events()->detach($event_id);
-        return redirect('/home');
-    } else {
-        return redirect('/home');
+        if ($user->events()->where('event_id', $event_id)->exists()) {
+            $user->events()->detach($event_id);
+            return redirect('/home');
+        } else {
+            return redirect('/home');
+        }
     }
-}
 }
